@@ -1,3 +1,4 @@
+"use client";
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors");
 module.exports = {
@@ -27,8 +28,14 @@ module.exports = {
           "100%": { transform: "translateX(0%)" }
         }
       }
+    },
+    fontFamily: {
+      body: ["Anton"]
     }
   },
   variants: {},
-  plugins: []
+  plugins: [
+    require("tailwindcss-base-font-size"),
+    require("tailwindcss-animated")
+  ]
 };
