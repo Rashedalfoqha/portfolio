@@ -16,7 +16,7 @@ export default function Page() {
     },
     {
       name: "Quiz Game",
-      des: `The Quiz Game application is an interactive web application designed to test users' knowledge on various topics. The application leverages HTML for creating the basic structure of the pages, CSS for styling and designing an attractive user interface, and jQuery for adding interactivity and smooth user experience.`,
+      des: `The Quiz Game application is an interactive web application designed to test users&apos; knowledge on various topics. The application leverages HTML for creating the basic structure of the pages, CSS for styling and designing an attractive user interface, and jQuery for adding interactivity and smooth user experience.`,
       image: "https://i.ibb.co/54H1qYS/1.png",
       deployLink: "https://projectonequizgmae.netlify.app/",
       codeLink: "https://github.com/C9-Rashedalfoqha/MERAKI_Academy_Project_2"
@@ -24,7 +24,7 @@ export default function Page() {
   ];
 
   return (
-    <div className=" bg-gray-100">
+    <div className="bg-gray-100">
       <h1 className="text-start text-5xl p-2 pb-2 pt-14 mb-6 font-extrabold pl-80">
         Project
       </h1>
