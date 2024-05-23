@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 export default function Page() {
   const projects = [
     {
@@ -34,10 +36,12 @@ export default function Page() {
             key={index}
             className="max-w-sm rounded overflow-hidden shadow-lg m-4 hover:scale-125 transition duration-500"
           >
-            <img
+            <Image
               className="w-full"
               src={project.image}
               alt={`${project.name} Logo`}
+              width={400}
+              height={300}
             />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">{project.name}</div>

@@ -1,4 +1,6 @@
-export default function page() {
+"use client";
+import Image from "next/image";
+export default function Page() {
   const technologies = [
     {
       image: "https://www.svgrepo.com/show/354274/redux.svg",
@@ -99,17 +101,25 @@ export default function page() {
 
   return (
     <>
-      {" "}
       <h1 className="text-start text-5xl p-2 pb-2 pt-14 mb-6 font-extrabold pl-80">
         Technologies
       </h1>
       <div className="flex justify-center">
-        <div className="flex flex-wrap justify-center w-3/4 p-16  ">
+        <div className="flex flex-wrap justify-center w-3/4 p-16">
           {technologies.map((elem, id) => {
             return (
-              <div className="p-4 hover:transform hover:scale-110 transition duration-300 w-40 h-40 ">
-                <a href={elem.link}>
-                  <img src={elem.image} className=" p-2 w-32 h-32 " />
+              <div
+                key={id}
+                className="p-4 hover:transform hover:scale-110 transition duration-300 w-40 h-40"
+              >
+                <a href={elem.link} target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={elem.image}
+                    alt={elem.alt}
+                    className="p-2 w-32 h-32"
+                    width={32}
+                    height={32}
+                  />
                 </a>
               </div>
             );

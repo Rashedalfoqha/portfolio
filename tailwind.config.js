@@ -31,7 +31,9 @@ module.exports = {
     },
     fontFamily: {
       body: ["Anton"]
+
     }
+    
   },
   variants: {},
   plugins: [

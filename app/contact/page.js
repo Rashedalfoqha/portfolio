@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <section className="bg-white dark:bg-gray-900">
-      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md" key="1">
         <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
           Contact Us
         </h2>

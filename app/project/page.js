@@ -1,4 +1,7 @@
+"use client"
+import Image from "next/image";
 export default function Page() {
+
   const projects = [
     {
       name: "RA Job Search",
@@ -34,7 +37,7 @@ export default function Page() {
             key={index}
             className="max-w-sm rounded overflow-hidden shadow-lg m-4 hover:scale-125 transition duration-500"
           >
-            <img
+            <Image
               className="w-full"
               src={project.image}
               alt={`${project.name} Logo`}

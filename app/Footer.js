@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 export default function Footer() {
   return (
     <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
@@ -7,12 +9,13 @@ export default function Footer() {
             href="https://flowbite.com/"
             class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
-            <img
+            <Image
               src="https://i.ibb.co/BHJ4MRh/Untitled-1.png"
               class="h-10"
               alt="Flowbite Logo"
+              width={200}
+              height={10}
             />
-            
           </a>
           <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
