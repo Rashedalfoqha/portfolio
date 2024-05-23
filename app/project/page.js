@@ -1,7 +1,6 @@
-"use client"
+"use client";
 import Image from "next/image";
 export default function Page() {
-
   const projects = [
     {
       name: "RA Job Search",
@@ -41,6 +40,8 @@ export default function Page() {
               className="w-full"
               src={project.image}
               alt={`${project.name} Logo`}
+              width={400}
+              height={300}
             />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">{project.name}</div>
