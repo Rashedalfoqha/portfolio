@@ -17,10 +17,10 @@ export default function Navbar() {
           </a>{" "}
         </li>
         <li className="cursor-pointer hover:text-teal-600 transform hover:scale-110 transition duration-300 text-2xl pt-5">
-          <a href="/Project">Project</a>
+          <a href="/project">Project</a>
         </li>
         <li className="cursor-pointer hover:text-teal-600 transform hover:scale-110 transition duration-300 text-2xl pt-5 ">
-          <a href="/Contact">Contact</a>
+          <a href="/contact">Contact</a>
         </li>
       </ul>
     </nav>

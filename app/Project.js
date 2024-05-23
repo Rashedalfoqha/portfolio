@@ -26,13 +26,13 @@ export default function Page() {
   return (
     <div className=" bg-gray-100">
       <h1 className="text-start text-5xl p-2 pb-2 pt-14 mb-6 font-extrabold pl-80">
-        Project{" "}
+        Project
       </h1>
       <div className="flex justify-center items-center min-h-screen bg-gray-100 flex-wrap">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="max-w-sm rounded overflow-hidden shadow-lg m-4"
+            className="max-w-sm rounded overflow-hidden shadow-lg m-4 hover:scale-125 transition duration-500"
           >
             <img
               className="w-full"
