@@ -3,18 +3,18 @@ export default function Page() {
     {
       image: "https://www.svgrepo.com/show/475654/github-color.svg",
       alt: "GitHub",
-      link: "https://github.com",
+      link: "https://github.com"
     },
     {
       image: "https://www.svgrepo.com/show/217146/gmail.svg",
       alt: "Gmail",
-      link: "mailto:your-email@gmail.com",
+      link: "mailto:your-email@gmail.com"
     },
     {
       image: "https://www.svgrepo.com/show/452047/linkedin-1.svg",
       alt: "LinkedIn",
-      link: "https://linkedin.com",
-    },
+      link: "https://linkedin.com"
+    }
   ];
 
   return (
@@ -25,15 +25,15 @@ export default function Page() {
             <h1 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6">
               Hello, I&apos;m Rashed Mohammad
             </h1>
-     <div className="animated-text">
-  <div className="line">Full Stack</div>
-  <div className="line">FrontEnd</div>
-  <div className="line">BackEnd</div>
-</div>
+            <div className="animated-text ">
+              <div className="line">FullStack</div>
+              <div className="line">FrontEnd</div>
+              <div className="line">BackEnd</div>
+            </div>
             <img
               src="https://i.ibb.co/r7fwh58/Whats-App-Image-2024-03-01-at-1-47-18-PM.png"
               alt="Profile Image"
-              className="object-cover rounded-full mt-8 mx-auto md:absolute md:right-full md:bottom-16 w-40 h-40 md:w-[30vw] md:h-[30vw] lg:w-[400px] lg:h-[400px]"
+              className="object-cover m- rounded-full mt-8 mx-auto md:absolute md:right-full md:bottom-16 w-72 h-72 md:w-[30vw] md:h-[30vw] lg:w-[400px] lg:h-[400px]"
             />
           </div>
         </div>

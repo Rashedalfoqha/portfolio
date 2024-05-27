@@ -5,7 +5,7 @@
 .animated-text {
   color: #000;
   position: absolute;
-  top: 35%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0 20px;
@@ -16,8 +16,9 @@
 .line {
   text-transform: uppercase;
   text-align: center;
-  font-size: 1rem; 
+  font-size: 3rem;
   line-height: 60px;
+  font-weight: bolder;
 }
 
 .line:first-child {
@@ -48,27 +49,30 @@
   }
 }
 
-
 @media (min-width: 640px) {
   .line {
     font-size: 1.25rem;
+    font-weight: bolder;
   }
 }
 
 @media (min-width: 768px) {
   .line {
-    font-size: 1.5rem; 
+    font-size: 5rem;
+    font-weight: bolder;
   }
 }
 
 @media (min-width: 1024px) {
   .line {
-    font-size: 2rem; 
+    font-size: 5rem;
+    font-weight: bolder;
   }
 }
 
 @media (min-width: 1280px) {
   .line {
-    font-size: 2.5rem; 
+    font-size: 5rem;
+    font-weight: bolder;
   }
 }
