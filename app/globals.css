@@ -8,7 +8,7 @@
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 0 80px;
+  padding: 0 20px;
   height: 60px;
   overflow: hidden;
 }
@@ -16,7 +16,7 @@
 .line {
   text-transform: uppercase;
   text-align: center;
-  font-size: 40px;
+  font-size: 1rem; 
   line-height: 60px;
 }
 
@@ -45,5 +45,30 @@
   }
   100% {
     margin-top: 0px;
+  }
+}
+
+
+@media (min-width: 640px) {
+  .line {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .line {
+    font-size: 1.5rem; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .line {
+    font-size: 2rem; 
+  }
+}
+
+@media (min-width: 1280px) {
+  .line {
+    font-size: 2.5rem; 
   }
 }
