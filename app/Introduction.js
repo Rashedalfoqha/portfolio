@@ -25,7 +25,7 @@ export default function Page() {
             <h1 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6">
               Hello, I&apos;m Rashed Mohammad
             </h1>
-            <div className="animated-text text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+     <div className="animated-text">
   <div className="line">Full Stack</div>
   <div className="line">FrontEnd</div>
   <div className="line">BackEnd</div>
