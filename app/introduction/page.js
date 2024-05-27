@@ -1,52 +1,48 @@
-"use client";
-import Image from "next/image";
 export default function Page() {
   const contact = [
     {
       image: "https://www.svgrepo.com/show/475654/github-color.svg",
       alt: "GitHub",
-      link: "https://github.com"
+      link: "https://github.com",
     },
     {
       image: "https://www.svgrepo.com/show/217146/gmail.svg",
       alt: "Gmail",
-      link: "mailto:your-email@gmail.com"
+      link: "mailto:your-email@gmail.com",
     },
     {
       image: "https://www.svgrepo.com/show/452047/linkedin-1.svg",
       alt: "LinkedIn",
-      link: "https://linkedin.com"
-    }
+      link: "https://linkedin.com",
+    },
   ];
+
   return (
     <>
       <div className="flex min-h-screen justify-center items-center p-0 bg-slate-50 animate-fade animate-once animate-duration-[1500ms] animate-ease-in">
-        <div className="flex flex-col items-center text-center space-y-28">
-          <div className="relative left-56 w-auto h-96 ml-3.5">
-            <h1 className="text-4xl mr-32 ml-32 font-bold">
+        <div className="flex flex-col items-center text-center space-y-10 md:space-y-28 px-4">
+          <div className="relative md:left-56 w-full max-w-md md:max-w-none h-auto md:h-96">
+            <h1 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6">
               Hello, I&apos;m Rashed Mohammad
             </h1>
-            <div className="animated-text">
+            <div className="animated-text text-lg md:text-xl lg:text-2xl">
               <div className="line">Full Stack</div>
               <div className="line">FrontEnd</div>
               <div className="line">BackEnd</div>
-              {/* <div class="line">Software Engineering</div> */}
             </div>
-            <Image
+            <img
               src="https://i.ibb.co/r7fwh58/Whats-App-Image-2024-03-01-at-1-47-18-PM.png"
               alt="Profile Image"
-              className="absolute right-full bottom-16  object-cover rounded-full m-10 "
-              width={600}
-              height={500}
+              className="object-cover rounded-full mt-8 mx-auto md:absolute md:right-full md:bottom-16 w-40 h-40 md:w-[30vw] md:h-[30vw] lg:w-[400px] lg:h-[400px]"
             />
           </div>
         </div>
       </div>
-      <div className="bg-indigo-200 w-full pl-80 pb-28 pt-10 border-indigo-200 rounded-tr-full">
-        <h1 className="text-start text-5xl p-4 pb-10 mb-16 font-extrabold">
+      <div className="bg-indigo-200 w-full py-10 px-4 md:pl-10 md:pr-10 lg:pl-80 lg:pr-80 md:pb-28 md:pt-10 border-indigo-200">
+        <h1 className="text-3xl md:text-5xl text-center font-extrabold mb-4 md:mb-8 lg:mb-12">
           Introduction
         </h1>
-        <p className="text-2xl w-1/2 text-start whitespace-normal">
+        <p className="text-base md:text-xl text-start mb-4 md:mb-8 lg:mb-12">
           Hello, I&apos;m Rashed, an experienced Full Stack Developer
           specializing in web development. Equipped with expertise in both
           front-end and back-end technologies, I am fueled by a passion for
@@ -54,7 +50,8 @@ export default function Page() {
           to deliver high-quality solutions while advancing my professional
           development.
         </p>
-        <div className="flex space-x-4 mt-8">
+
+        <div className="flex justify-center md:justify-start space-x-4 mt-8">
           {contact.map((tech, index) => (
             <a
               href={tech.link}
@@ -62,12 +59,12 @@ export default function Page() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
+              <img
                 src={tech.image}
                 alt={tech.alt}
-                width={50}
-                height={50}
-                className="hover:scale-110 transition-transform animate-spin"
+                width={40}
+                height={40}
+                className="hover:scale-110 transition-transform w-10 h-10"
               />
             </a>
           ))}
