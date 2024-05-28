@@ -28,7 +28,7 @@ export default function Page() {
   return (
     <div className="bg-gray-100">
       <h1 className="text-center text-4xl md:text-5xl p-2 pb-2 pt-14 mb-6 font-extrabold">
-        Project
+        My Project
       </h1>
       <div className="flex justify-center items-center min-h-screen bg-gray-100 flex-wrap">
         {projects.map((project, index) => (
