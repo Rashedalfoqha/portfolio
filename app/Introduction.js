@@ -3,17 +3,17 @@ export default function Page() {
     {
       image: "https://www.svgrepo.com/show/475654/github-color.svg",
       alt: "GitHub",
-      link: "https://github.com"
+      link: "https://github.com/Rashedalfoqha"
     },
     {
       image: "https://www.svgrepo.com/show/217146/gmail.svg",
       alt: "Gmail",
-      link: "mailto:your-email@gmail.com"
+      link: "rashedmohammadalfoqha@gmail.com"
     },
     {
       image: "https://www.svgrepo.com/show/452047/linkedin-1.svg",
       alt: "LinkedIn",
-      link: "https://linkedin.com"
+      link: "https://www.linkedin.com/in/rashed-alfoqha/"
     }
   ];
 
