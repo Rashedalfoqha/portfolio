@@ -8,6 +8,17 @@ export default function Page() {
       link: "https://redux-toolkit.js.org/",
     },
     {
+      image: "https://i.ibb.co/1tvBHVL1/Nest-js.png",
+      alt: "Nest-js",
+      link: "https://nestjs.com/",
+    },
+    {
+      image: "https://i.ibb.co/DHvHrwC2/MySQL.png",
+      alt: "MySql",
+      link: "https://www.mysql.com/",
+    },
+
+    {
       image: "https://www.svgrepo.com/show/368858/nextjs.svg",
       alt: "next js",
       link: "https://nextjs.org/",
