@@ -1,10 +1,12 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
+
 export default function Page() {
   const projects = [
     {
       name: "RA Job Search",
-      des: `I independently developed a full-stack website aimed at assisting users in finding suitable job opportunities. The site was designed with a user-friendly interface to streamline the job search process for individuals of all backgrounds. Its goal is to simplify the job search experience and help users .`,
+      des: `I independently developed a full-stack website aimed at assisting users in finding suitable job opportunities. The site was designed with a user-friendly interface to streamline the job search process for individuals of all backgrounds. Its goal is to simplify the job search experience and help users.`,
       image: "https://i.ibb.co/N2PhfDm/3.png",
       codeLink: "https://github.com/C9-Rashedalfoqha/RA-Job",
     },
@@ -16,20 +18,19 @@ export default function Page() {
     },
     {
       name: "Quiz Game",
-      des: `The Quiz Game application is an interactive web application designed to test users&apos; knowledge on various topics. The application leverages HTML for creating the basic structure of the pages, CSS for styling and designing an attractive user interface, and jQuery for adding interactivity and smooth user experience.`,
+      des: `The Quiz Game application is an interactive web application designed to test users' knowledge on various topics. The application leverages HTML, CSS, and jQuery for interactivity and smooth user experience.`,
       image: "https://i.ibb.co/54H1qYS/1.png",
       codeLink: "https://github.com/C9-Rashedalfoqha/MERAKI_Academy_Project_2",
     },
     {
       name: "Tickln",
-      des: `Tickln is a powerful team collaboration tool designed to streamline task management and improve workflow efficiency. With its intuitive interface, teams can create, assign, and track tickets in real time, ensuring seamless communication and project organization. Built with modern technologies, Tickln offers real-time updates, notifications, and a user-friendly dashboard to enhance productivity. Whether you're managing a small project or coordinating a large team, Tickln keeps everything organized and accessible in one place.`,
+      des: `Tickln is a powerful team collaboration tool designed to streamline task management and improve workflow efficiency. With its intuitive interface, teams can create, assign, and track tickets in real time, ensuring seamless communication and project organization.`,
       image: "https://i.ibb.co/Wk6R9kj/tickin-high-resolution-logo.png",
-
       codeLink: "https://github.com/Not2Null/NotNullBoards",
     },
     {
       name: "Course Management System",
-      des: "The Course Management System is a comprehensive platform designed to streamline course creation, student enrollment, and progress tracking. Built with modern web technologies, it provides educators with an intuitive interface to manage courses efficiently while offering students a seamless learning experience. Key features include user authentication, real-time course updates, automated enrollment tracking, and a responsive design to ensure accessibility across devices.",
+      des: "The Course Management System is a comprehensive platform designed to streamline course creation, student enrollment, and progress tracking. Built with modern web technologies, it provides educators with an intuitive interface to manage courses efficiently while offering students a seamless learning experience.",
       image: "https://i.ibb.co/Q7qMw7zC/1.png",
       codeLink: "https://github.com/Not2Null/CourseManagementSystem",
     },
