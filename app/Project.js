@@ -36,36 +36,51 @@ export default function Page() {
   ];
 
   return (
-    <div className="bg-gray-100">
-      <h1 className="text-center text-4xl md:text-5xl p-2 pb-2 pt-14 mb-6 font-extrabold">
-        My Project
+    <div className="bg-gray-100 min-h-screen p-10">
+      <h1 className="text-center text-4xl md:text-5xl font-extrabold mb-10">
+        My Projects
       </h1>
-      <div className="flex justify-center items-center min-h-screen bg-gray-100 flex-wrap">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className="max-w-sm rounded overflow-hidden shadow-lg m-4 hover:scale-125 transition duration-500"
-          >
-            <Image
-              className="w-full"
-              src={project.image}
-              alt={`${project.name} Logo`}
-              width={400}
-              height={300}
-            />
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">{project.name}</div>
-              <p className="text-gray-700 text-base">{project.des}</p>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <a href={project.codeLink}>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:scale-110 transition duration-300">
-                  Code GitHub
-                </span>
-              </a>
-            </div>
-          </div>
+          <ProjectCard key={index} project={project} />
         ))}
+      </div>
+    </div>
+  );
+}
+
+function ProjectCard({ project }) {
+  const [readMore, setReadMore] = useState(false);
+
+  return (
+    <div className="bg-white shadow-lg rounded-lg p-5 flex flex-col justify-between h-[400px] hover:scale-105 transition duration-300">
+      <Image
+        className="rounded-lg object-cover w-full h-40"
+        src={project.image}
+        alt={`${project.name} Logo`}
+        width={400}
+        height={200}
+      />
+      <div className="mt-3 flex-grow">
+        <h2 className="text-xl font-bold mb-2">{project.name}</h2>
+        <p className="text-gray-700 text-sm">
+          {readMore ? project.des : `${project.des.substring(0, 100)}...`}
+        </p>
+        {project.des.length > 100 && (
+          <button
+            className="text-blue-500 text-sm mt-2"
+            onClick={() => setReadMore(!readMore)}
+          >
+            {readMore ? "Read Less" : "Read More"}
+          </button>
+        )}
+      </div>
+      <div className="mt-3">
+        <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
+          <span className="block text-center bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-700 transition">
+            View Code
+          </span>
+        </a>
       </div>
     </div>
   );
