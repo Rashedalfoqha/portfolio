@@ -1,17 +1,16 @@
-import Introduction from "./Introduction";
-import Technologies from "./Technologies";
-import Project from "./Project";
-import Contact from "./Contact";
+import { ContactSection } from "./Contact";
 import { HeroSection } from "./HeroSection";
-
+import { IntroductionSection } from "./Introduction";
+import { ProjectsSection } from "./Project";
+import { TechnologiesSection } from "./Technologies";
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <Introduction />
-      <Technologies />
-      <Project />
-      <Contact />
+      <IntroductionSection />
+      <TechnologiesSection />
+      <ProjectsSection />
+      <ContactSection />
     </>
   );
 }

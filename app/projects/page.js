@@ -1,6 +1,9 @@
-import Image from 'next/image';
-export function ProjectsSection() {
-  const projects = [
+"use client";
+import { useState } from "react";
+import Image from "next/image";
+
+export default function Page() {
+const projects = [
     {
       name: "RA Job Search",
       description: "I independently developed a full-stack website aimed at assisting users in finding suitable job opportunities. The site was designed with a user-friendly interface to streamline the job search process for individuals of all backgrounds.",

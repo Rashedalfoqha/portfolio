@@ -1,6 +1,6 @@
 "use client";
-import { useState } from "react";
-import Image from "next/image";
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 // Navbar Component
 export default function Navbar() {
