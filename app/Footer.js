@@ -1,53 +1,118 @@
-"use client";
+'use client';
 import Image from "next/image";
-export default function Footer() {
+
+export function Footer() {
+  const currentYear = new Date().getFullYear();
+  const socialLinks = [
+    {
+      name: "GitHub",
+      url: "https://github.com/Rashedalfoqha",
+      icon: (
+        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+        </svg>
+      )
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/rashed-alfoqha/",
+      icon: (
+        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+        </svg>
+      )
+    },
+    {
+      name: "Email",
+      url: "mailto:rashedmohammadalfoqha@gmail.com",
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      )
+    }
+  ];
+
   return (
-    <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
-      <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <a
-            href="https://flowbite.com/"
-            className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
-          >
-            <Image
-              src="https://i.ibb.co/BHJ4MRh/Untitled-1.png"
-              className="h-10"
-              alt="Flowbite Logo"
-              width={200}
-              height={10}
-            />
-          </a>
-          <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-            <li>
-              <a href="/" className="hover:underline me-4 md:me-6">
-                About
+    <footer className="bg-gray-900 text-gray-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Brand Info */}
+          <div className="space-y-4">
+            <div className="flex items-center">
+              <Image
+                src="https://i.ibb.co/BHJ4MRh/Untitled-1.png"
+                alt="Rashed Alfogha Logo"
+                width={160}
+                height={40}
+                className="h-10 w-auto"
+              />
+            </div>
+            <p className="text-sm">
+              Full Stack Developer creating modern, responsive web applications with a focus on user experience.
+            </p>
+            <div className="flex space-x-4">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                  aria-label={link.name}
+                >
+                  {link.icon}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div className="md:text-center">
+            <h3 className="text-white text-sm font-semibold tracking-wider uppercase mb-4">
+              Quick Links
+            </h3>
+            <ul className="space-y-2">
+              {['Home', 'About', 'Projects', 'Technologies', 'Contact'].map((item) => (
+                <li key={item}>
+                  <a
+                    href={`#${item.toLowerCase()}`}
+                    className="text-sm hover:text-white transition-colors duration-300"
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div className="md:text-right">
+            <h3 className="text-white text-sm font-semibold tracking-wider uppercase mb-4">
+              Contact
+            </h3>
+            <address className="not-italic text-sm space-y-2">
+              <p>Amman, Jordan</p>
+              <a 
+                href="mailto:rashedmohammadalfoqha@gmail.com" 
+                className="hover:text-white transition-colors duration-300"
+              >
+                rashedmohammadalfoqha@gmail.com
               </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
-                Licensing
-              </a>
-            </li>
-            <li>
-              <a href="/contact" className="hover:underline">
-                Contact
-              </a>
-            </li>
-          </ul>
+              <p>Available for freelance work</p>
+            </address>
+          </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          © 2024{" "}
-          <a href="https://flowbite.com/" className="hover:underline">
-            RashedMohammad™
-          </a>
-          . All Rights Reserved.
-        </span>
+
+        {/* Copyright */}
+        <div className="mt-12 pt-8 border-t border-gray-800 text-sm text-center">
+          <p>
+            &copy; {currentYear} Rashed Alfogha. All rights reserved.
+          </p>
+          <p className="mt-1">
+            Built with Next.js, Tailwind CSS, and ❤️
+          </p>
+        </div>
       </div>
     </footer>
   );

@@ -18,7 +18,7 @@ export function HeroSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Hello, I'm <span className="text-indigo-600">Rashed</span> Mohammad
+              Hello, I&apos;m <span className="text-indigo-600">Rashed</span> Mohammad
             </h1>
             
             <div className="h-16">
@@ -36,13 +36,13 @@ export function HeroSection() {
             
             <div className="flex space-x-4 justify-center md:justify-start">
               <a 
-                href="#contact" 
+                href="/contact" 
                 className="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow-md hover:bg-indigo-700 transition duration-300"
               >
                 Contact Me
               </a>
               <a 
-                href="#projects" 
+                href="/projects" 
                 className="px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50 transition duration-300"
               >
                 View Projects

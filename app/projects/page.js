@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 export default function Page() {
-const projects = [
+ const projects = [
     {
       name: "RA Job Search",
       description: "I independently developed a full-stack website aimed at assisting users in finding suitable job opportunities. The site was designed with a user-friendly interface to streamline the job search process for individuals of all backgrounds.",
@@ -53,29 +53,28 @@ const projects = [
           </p>
           <div className="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div 
+            <div
               key={index}
               className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-500 transform hover:-translate-y-2 border border-gray-100"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative w-full h-48">
                 <Image
                   src={project.image}
                   alt={project.name}
-                  layout="fill"
-                  objectFit="cover"
-                  className="transition duration-500 hover:scale-105"
+                  fill
+                  className="object-cover transition duration-500 hover:scale-105"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{project.name}</h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, i) => (
-                    <span 
+                    <span
                       key={i}
                       className="px-2 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded"
                     >
@@ -83,7 +82,7 @@ const projects = [
                     </span>
                   ))}
                 </div>
-                
+
                 <a
                   href={project.codeLink}
                   target="_blank"

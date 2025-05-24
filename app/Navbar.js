@@ -1,14 +1,12 @@
-"use client";
-import React, { useState, useEffect } from 'react';
+'use client';
+import React, { useState } from 'react';
 import Image from 'next/image';
 
-// Navbar Component
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => setIsOpen(!isOpen);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const menuItems = ['Introduction', 'Technologies', 'Projects', 'Contact'];
 
   return (
     <nav className="sticky top-0 bg-white/80 backdrop-blur-md z-50 shadow-sm">
@@ -23,8 +21,7 @@ export default function Navbar() {
               className="h-10 w-auto"
             />
           </a>
-          
-          {/* Mobile menu button */}
+
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
@@ -50,10 +47,9 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
-          
-          {/* Desktop menu */}
+
           <div className="hidden md:flex items-center space-x-8">
-            {['Introduction', 'Technologies', 'Projects', 'Contact'].map((item) => (
+            {menuItems.map((item) => (
               <a
                 key={item}
                 href={`/${item.toLowerCase()}`}
@@ -66,11 +62,10 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      
-      {/* Mobile menu */}
+
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden bg-white shadow-lg`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          {['Introduction', 'Technologies', 'Projects', 'Contact'].map((item) => (
+          {menuItems.map((item) => (
             <a
               key={item}
               href={`/${item.toLowerCase()}`}

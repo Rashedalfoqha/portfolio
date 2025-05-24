@@ -1,3 +1,7 @@
+'use client';
+
+import Image from 'next/image';
+
 export function TechnologiesSection() {
   const techCategories = [
     {
@@ -56,7 +60,7 @@ export function TechnologiesSection() {
             My <span className="text-indigo-600">Tech Stack</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Technologies I've been working with recently
+            Technologies I&apos;ve been working with recently
           </p>
           <div className="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
         </div>
@@ -72,10 +76,12 @@ export function TechnologiesSection() {
                     className="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-indigo-50 transition duration-300 group"
                   >
                     <div className="w-12 h-12 mb-3 flex items-center justify-center">
-                      <img 
+                      <Image 
                         src={tech.icon} 
                         alt={tech.name} 
-                        className="h-8 w-8 object-contain group-hover:scale-110 transition duration-300"
+                        width={32} 
+                        height={32} 
+                        className="object-contain group-hover:scale-110 transition duration-300"
                       />
                     </div>
                     <span className="text-sm font-medium text-gray-700">{tech.name}</span>
@@ -89,5 +95,3 @@ export function TechnologiesSection() {
     </section>
   );
 }
-
-
