@@ -40,12 +40,9 @@ export function ProjectsSection() {
     },{
       name: "EV Solution JO",
       description: "This project provides a comprehensive system for managing and showcasing DC and AC electric vehicle (EV) charging solutions. The repository includes a full-stack application with both client-facing and admin dashboard interfaces, built primarily with JavaScript.",
-<<<<<<< HEAD
       image: "https://i.ibb.co/PvyfYYVG/image.png",
-=======
->>>>>>> 30a33cf31315edb7b289553c107a79ed92896d11
       codeLink: "https://front-end-for-dc-charge-iota.vercel.app/",
-      image:"https://i.ibb.co/39bLssPm/image.png"
+      image:"https://i.ibb.co/39bLssPm/image.png",
       tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"]
     },
   ];
