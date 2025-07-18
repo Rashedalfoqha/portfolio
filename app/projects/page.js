@@ -1,9 +1,8 @@
-"use client";
-import { useState } from "react";
-import Image from "next/image";
+'use client';
+import Image from 'next/image';
 
-export default function Page() {
- const projects = [
+export function ProjectsSection() {
+  const projects = [
     {
       name: "RA Job Search",
       description: "I independently developed a full-stack website aimed at assisting users in finding suitable job opportunities. The site was designed with a user-friendly interface to streamline the job search process for individuals of all backgrounds.",
@@ -41,10 +40,14 @@ export default function Page() {
     },{
       name: "EV Solution JO",
       description: "This project provides a comprehensive system for managing and showcasing DC and AC electric vehicle (EV) charging solutions. The repository includes a full-stack application with both client-facing and admin dashboard interfaces, built primarily with JavaScript.",
+<<<<<<< HEAD
       image: "https://i.ibb.co/PvyfYYVG/image.png",
+=======
+>>>>>>> 30a33cf31315edb7b289553c107a79ed92896d11
       codeLink: "https://front-end-for-dc-charge-iota.vercel.app/",
+      image:"https://i.ibb.co/39bLssPm/image.png"
       tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"]
-    }
+    },
   ];
 
   return (
