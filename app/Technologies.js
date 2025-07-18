@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-export function TechnologiesSection() {
+export default function TechnologiesSection() {
   const techCategories = [
     {
       title: "Frontend",

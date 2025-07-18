@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 
-export function ProjectsSection() {
+export default function ProjectsSection() {
   const projects = [
     {
       name: "RA Job Search",

@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
 
-export function Footer() {
+export default function Footer() {
   const currentYear = new Date().getFullYear();
   const socialLinks = [
     {

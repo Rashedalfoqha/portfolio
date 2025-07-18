@@ -1,7 +1,7 @@
-"use client";
+'use client'
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-export function HeroSection() {
+export default function HeroSection() {
   const roles = ["FullStack Developer", "FrontEnd Specialist", "BackEnd Engineer"];
   const [currentRole, setCurrentRole] = useState(0);
 
@@ -10,7 +10,7 @@ export function HeroSection() {
       setCurrentRole((prev) => (prev + 1) % roles.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [ roles.length ]);
 
   return (
     <section className="relative bg-gradient-to-br from-indigo-50 to-blue-100 min-h-screen flex items-center justify-center overflow-hidden">

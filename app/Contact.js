@@ -3,7 +3,7 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 import Image from 'next/image';
 
-export function ContactSection() {
+export default function ContactSection() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',

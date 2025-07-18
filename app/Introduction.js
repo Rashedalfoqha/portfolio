@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 
-export function IntroductionSection() {
+export default function IntroductionSection() {
   const contact = [
     {
       image: "https://www.svgrepo.com/show/475654/github-color.svg",
