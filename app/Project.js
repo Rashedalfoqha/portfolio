@@ -10,8 +10,8 @@ export default function ProjectsSection() {
       name: "EV Solution JO",
       description: "A comprehensive system for managing DC and AC electric vehicle charging solutions with admin dashboard, real-time updates, and analytics. Improved operational efficiency by 25% through optimized workflows.",
       image: "https://i.ibb.co/39bLssPm/image.png",
-      codeLink: "https://front-end-for-dc-charge-iota.vercel.app/",
-      demoLink: "https://front-end-for-dc-charge-iota.vercel.app/",
+      codeLink: "https://evsjo.com/home",
+      demoLink: "https://evsjo.com/home",
       tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
       category: "Full Stack",
       featured: true
