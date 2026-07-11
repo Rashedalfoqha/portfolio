@@ -2,77 +2,188 @@
 @tailwind components;
 @tailwind utilities;
 
-.animated-text {
-  color: #000;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0 20px;
-  height: 60px;
-  overflow: hidden;
+:root {
+  /* Night Mode (Default) */
+  --bg-base: #0A0A0F;
+  --bg-surface: #111118;
+  --bg-surface-rgb: 17, 17, 24;
+  --color-primary: #7C3AED;
+  --color-accent: #06B6D4;
+  --color-gold: #D97706;
+  --color-grid: #1E293B;
+  --color-text: #F8FAFC;
+  --color-muted: #64748B;
+  
+  --pattern-opacity: 0.05;
+  --grid-opacity: 0.08;
+  --glow-opacity: 0.2;
+
+  --font-space: 'Space Grotesk', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-fira: 'Fira Code', monospace;
+
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.line {
+[data-theme="blueprint"] {
+  /* Blueprint Mode */
+  --bg-base: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-surface-rgb: 255, 255, 255;
+  --color-primary: #6D28D9;
+  --color-accent: #0891B2;
+  --color-grid: #CBD5E1;
+  --color-text: #0F172A;
+  --color-muted: #64748B;
+  
+  --pattern-opacity: 0.08;
+  --grid-opacity: 0.2;
+  --glow-opacity: 0.05;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.5s var(--ease-premium), color 0.5s var(--ease-premium), border-color 0.5s var(--ease-premium);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-base);
+  color: var(--color-text);
+}
+
+body {
+  font-family: var(--font-inter);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-space);
+}
+
+.mono {
+  font-family: var(--font-fira);
+}
+
+/* Layering System */
+.layer-gradient { z-index: 1; }
+.layer-pattern { z-index: 2; }
+.layer-grid { z-index: 3; }
+.layer-content { z-index: 4; }
+.layer-accents { z-index: 5; }
+
+/* Custom Textures */
+.glass {
+  background: rgba(var(--bg-surface-rgb), 0.7);
+  backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent), var(--color-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Orbiting Animation */
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(var(--orbit-radius)) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(var(--orbit-radius)) rotate(-360deg); }
+}
+
+.animate-orbit {
+  animation: orbit var(--orbit-duration) linear infinite;
+}
+
+/* Typewriter Cursor */
+.typewriter-cursor::after {
+  content: '|';
+  animation: blink 1s step-end infinite;
+  color: var(--color-primary);
+  margin-left: 4px;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Scroll Progress */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, var(--color-primary), var(--color-accent));
+  transform-origin: 0%;
+  z-index: 10001;
+}
+
+/* Hire Me Button - Animated Gradient Border */
+.btn-hire-me {
+  position: relative;
+  padding: 1px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent), var(--color-gold), var(--color-primary));
+  background-size: 300% 100%;
+  animation: gradient-flow 4s linear infinite;
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.btn-hire-me-inner {
+  background: var(--bg-surface);
+  color: var(--color-text);
+  padding: 10px 24px;
+  border-radius: 11px;
+  display: block;
+  font-weight: 700;
+  font-family: var(--font-space);
   text-transform: uppercase;
-  text-align: center;
-  font-size: 3rem;
-  line-height: 60px;
-  font-weight: bolder;
+  letter-spacing: 0.1em;
+  font-size: 12px;
 }
 
-.line:first-child {
-  animation: a 12s infinite;
+/* SVG Geometry */
+.islamic-star {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 0.5;
+  opacity: var(--pattern-opacity);
 }
 
-@keyframes a {
-  0% {
-    margin-top: 0px;
-  }
-  16% {
-    margin-top: -60px;
-  }
-  33% {
-    margin-top: -120px;
-  }
-  50% {
-    margin-top: -180px;
-  }
-  66% {
-    margin-top: -120px;
-  }
-  82% {
-    margin-top: -60px;
-  }
-  100% {
-    margin-top: 0px;
-  }
+/* CAD Grid System */
+.cad-grid {
+  background-size: 80px 80px;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
 }
 
-@media (min-width: 640px) {
-  .line {
-    font-size: 1.25rem;
-    font-weight: bolder;
-  }
+.tracking-tightest {
+  letter-spacing: -0.05em;
 }
 
-@media (min-width: 768px) {
-  .line {
-    font-size: 5rem;
-    font-weight: bolder;
-  }
+.portfolio-card {
+  transition: all 0.6s var(--ease-premium);
 }
 
-@media (min-width: 1024px) {
-  .line {
-    font-size: 5rem;
-    font-weight: bolder;
-  }
-}
-
-@media (min-width: 1280px) {
-  .line {
-    font-size: 5rem;
-    font-weight: bolder;
-  }
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.03);
 }

@@ -1,205 +1,105 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
-
-const MENU_ITEMS = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Technologies', href: '#technologies' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Contact', href: '#contact' }
-];
+import { motion, AnimatePresence } from 'framer-motion';
+import { HiMenuAlt3, HiX } from 'react-icons/hi';
+import ThemeToggle from './ThemeToggle';
+import { navLinks, profile } from './portfolioData';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
-
-  const toggleMenu = () => setIsOpen(!isOpen);
-  const menuItems = MENU_ITEMS;
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-      
-      // Update active section based on scroll position
-      const sections = MENU_ITEMS.map(item => item.href.substring(1));
-      const current = sections.find(section => {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          return rect.top <= 100 && rect.bottom >= 100;
-        }
-        return false;
-      });
-      
-      if (current) {
-        setActiveSection(current);
-      }
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (href) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsOpen(false);
-  };
-
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-      isScrolled 
-        ? 'bg-white/90 backdrop-blur-xl shadow-xl border-b border-gray-200/50' 
-        : 'bg-transparent'
-    }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <a 
-            href="#home" 
-            className="flex-shrink-0 group"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection('#home');
-            }}
-          >
-            <div className="flex items-center gap-3">
-              <div className="relative">
-                <Image
-                  src="https://i.ibb.co/BHJ4MRh/Untitled-1.png"
-                  alt="Rashed Alfogha Logo"
-                  width={160}
-                  height={40}
-                  className="h-10 w-auto transition-all duration-300 group-hover:scale-105"
-                />
-                {/* Animated border effect */}
-                <div className="absolute -inset-2 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg opacity-0 group-hover:opacity-10 blur-sm transition-opacity duration-300"></div>
-              </div>
-              
-              {/* Availability Badge - Mobile */}
-              <div className="md:hidden flex items-center gap-2 px-3 py-1 bg-green-500/10 border border-green-500/20 rounded-full">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                </span>
-                <span className="text-xs text-green-600 font-medium">Available</span>
-              </div>
-            </div>
+    <nav className={`fixed top-0 w-full z-[1000] transition-all duration-500 ${scrolled ? 'py-4' : 'py-8'}`}>
+      <div className="container mx-auto px-6">
+        <div className={`glass rounded-2xl px-6 py-3 flex items-center justify-between border-white/5 transition-all duration-300 ${scrolled ? 'bg-bg-surface/80 shadow-2xl' : 'bg-transparent border-transparent'}`}>
+          
+          <a href="#home" className="flex items-center group shrink-0">
+            <span className="text-sm font-bold tracking-tight text-color-text group-hover:text-color-accent transition-colors">{profile.fullName}</span>
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
-            {menuItems.map((item) => (
-              <button
-                key={item.name}
-                onClick={() => scrollToSection(item.href)}
-                className={`relative px-6 py-3 text-sm font-semibold transition-all duration-300 group ${
-                  activeSection === item.href.substring(1)
-                    ? 'text-indigo-600'
-                    : 'text-gray-700 hover:text-indigo-600'
-                }`}
+          <div className="hidden lg:flex items-center gap-10">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="relative text-[10px] font-bold mono uppercase tracking-[0.2em] text-color-muted hover:text-color-text transition-colors group"
               >
-                <span className="relative z-10">{item.name}</span>
-                
-                {/* Active indicator */}
-                {activeSection === item.href.substring(1) && (
-                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full"></div>
-                )}
-                
-                {/* Hover effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/5 to-purple-600/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </button>
+                {link.name}
+                <motion.span 
+                  className="absolute -bottom-1 left-0 w-0 h-[1px] bg-color-accent transition-all group-hover:w-full"
+                />
+              </a>
             ))}
             
-            {/* Availability Badge - Desktop */}
-            <div className="ml-4 flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-              </span>
-              <span className="text-sm text-green-600 font-medium">Available for work</span>
+            <div className="flex items-center gap-6 pl-6 border-l border-white/10">
+              <ThemeToggle />
+              <a href="#contact" className="btn-hire-me group" aria-label="Hire Rashed Alfuqaha">
+                <span className="btn-hire-me-inner px-6 py-2.5 text-[10px] mono uppercase font-bold tracking-widest group-hover:bg-transparent group-hover:text-white transition-all">
+                  Hire Me
+                </span>
+              </a>
             </div>
-
-            {/* CTA Button */}
-            <button
-              onClick={() => scrollToSection('#contact')}
-              className="ml-4 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-xl hover:from-indigo-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              Get In Touch
-            </button>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden flex items-center gap-4">
-            {/* Availability Badge - Mobile */}
-            <div className="hidden sm:flex items-center gap-2 px-3 py-1 bg-green-500/10 border border-green-500/20 rounded-full">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-              </span>
-              <span className="text-xs text-green-600 font-medium">Available</span>
-            </div>
-
-            <button
-              onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-3 rounded-xl text-gray-700 hover:text-indigo-600 hover:bg-gray-100/50 transition-all duration-300"
-              aria-label="Toggle menu"
+          {/* Mobile Menu Trigger */}
+          <div className="flex lg:hidden items-center gap-4">
+            <ThemeToggle />
+            <button 
+              className="text-color-text p-2 hover:bg-white/5 rounded-lg transition-colors"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle Menu"
             >
-              <div className="relative w-6 h-6">
-                <span className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-0.5 bg-current transition-all duration-300 ${
-                  isOpen ? 'rotate-45 translate-y-0' : '-translate-y-2'
-                }`}></span>
-                <span className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-0.5 bg-current transition-all duration-300 ${
-                  isOpen ? 'opacity-0' : 'opacity-100'
-                }`}></span>
-                <span className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-0.5 bg-current transition-all duration-300 ${
-                  isOpen ? '-rotate-45 translate-y-0' : 'translate-y-2'
-                }`}></span>
-              </div>
+              {isOpen ? <HiX size={24} /> : <HiMenuAlt3 size={24} />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      <div className={`md:hidden transition-all duration-500 ease-in-out ${
-        isOpen 
-          ? 'max-h-96 opacity-100 bg-white/95 backdrop-blur-xl shadow-2xl border-t border-gray-200/50' 
-          : 'max-h-0 opacity-0 overflow-hidden'
-      }`}>
-        <div className="px-4 pt-2 pb-6 space-y-2">
-          {menuItems.map((item) => (
-            <button
-              key={item.name}
-              onClick={() => scrollToSection(item.href)}
-              className={`w-full text-left px-4 py-4 rounded-xl text-base font-semibold transition-all duration-300 group ${
-                activeSection === item.href.substring(1)
-                  ? 'bg-gradient-to-r from-indigo-600/10 to-purple-600/10 text-indigo-600 border border-indigo-200'
-                  : 'text-gray-700 hover:bg-gray-100/50 hover:text-indigo-600'
-              }`}
-            >
-              <div className="flex items-center justify-between">
-                <span>{item.name}</span>
-                {activeSection === item.href.substring(1) && (
-                  <div className="w-2 h-2 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full"></div>
-                )}
-              </div>
-            </button>
-          ))}
-          
-          {/* Mobile CTA Button */}
-          <button
-            onClick={() => scrollToSection('#contact')}
-            className="w-full mt-4 px-6 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-xl hover:from-indigo-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg text-center"
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, x: '100%' }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: '100%' }}
+            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+            className="fixed inset-0 z-[999] bg-bg-base/95 backdrop-blur-2xl flex flex-col items-center justify-center gap-10 lg:hidden"
           >
-            Start a Project
-          </button>
-        </div>
-      </div>
+            {navLinks.map((link, i) => (
+              <motion.a
+                key={link.name}
+                href={link.href}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                onClick={() => setIsOpen(false)}
+                className="text-4xl font-bold tracking-tighter hover:text-color-accent transition-colors"
+              >
+                {link.name}
+              </motion.a>
+            ))}
+            <motion.a
+              href="#contact"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              onClick={() => setIsOpen(false)}
+              className="btn-hire-me mt-6"
+              aria-label="Hire Rashed Alfuqaha"
+            >
+              <span className="btn-hire-me-inner px-12 py-5 text-xl">Hire Me</span>
+            </motion.a>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }

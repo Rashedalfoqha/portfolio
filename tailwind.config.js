@@ -1,6 +1,4 @@
-"use client";
 /** @type {import('tailwindcss').Config} */
-const colors = require("tailwindcss/colors");
 module.exports = {
   images: {
     domains: ["i.ibb.co"],
@@ -12,6 +10,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        "bg-base": "var(--bg-base)",
+        "bg-surface": "var(--bg-surface)",
+        "color-primary": "var(--color-primary)",
+        "color-accent": "var(--color-accent)",
+        "color-gold": "var(--color-gold)",
+        "color-text": "var(--color-text)",
+        "color-muted": "var(--color-muted)",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
