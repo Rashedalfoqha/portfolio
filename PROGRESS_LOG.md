@@ -1561,4 +1561,6 @@ This log records completed improvement rounds so each pass stays cumulative and 
 - **Interactive art:** Added four dependency-light canvas experiences: reactive terminal portrait and matrix field, inertial geometric mesh, pointer-responsive liquid sphere, and frame-stepped pixel engineer.
 - **Entry and switching:** Added an accessible welcome hub plus a persistent global vibe switcher. Vibe changes use `AnimatePresence` and retain the selected system between visits.
 - **Responsive and accessibility:** Canvas rendering respects device pixel ratio and reduced motion, interactions support pointer input, dialogs manage focus and keyboard dismissal, and mobile-specific compositions preserve readable spacing.
-- **Next priority:** Complete automated checks, inspect all four systems at desktop and mobile sizes, and publish the verified build.
+- **Verification:** TypeScript, ESLint, the Vite production build, and all four rendered-output tests passed. Local browser inspection confirmed the Cyberpunk canvas, theme state, sizing, and zero horizontal overflow; the remaining browser session became unavailable before the full eight-viewport matrix could be completed.
+- **Deployment:** Published commit `5604dd7` from `main` through the existing Netlify Git workflow. Netlify reported a ready Vite production deploy, and the live HTML and JavaScript returned HTTP 200 with all four vibe systems present.
+- **Next priority:** Complete a focused visual polish pass after stakeholder review of the four live directions.
