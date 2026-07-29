@@ -56,7 +56,6 @@ export function Hero({ currentVibe }: { currentVibe: Vibe }) {
               <span>~/rashed/portrait.webp</span>
             </div>
             {/* A native image keeps the portfolio portable across local and edge runtimes. */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/rashed-photo.webp"
               alt="Rashed Alfuqaha in Amman, Jordan"

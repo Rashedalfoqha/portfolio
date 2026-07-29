@@ -11,8 +11,8 @@ function normalizeSiteUrl(value: string) {
 
 export function getSiteUrl() {
   const configuredUrl =
-    process.env.URL ??
-    process.env.NEXT_PUBLIC_SITE_URL ??
+    (typeof window !== "undefined" ? window.location.origin : undefined) ??
+    import.meta.env.VITE_SITE_URL ??
     fallbackSiteUrl;
 
   try {

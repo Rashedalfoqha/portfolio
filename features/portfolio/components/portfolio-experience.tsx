@@ -1,5 +1,3 @@
-"use client";
-
 import { usePortfolioExperience } from "../hooks/use-portfolio-experience";
 import { CapabilitiesSection } from "./capabilities-section";
 import { ContactSection } from "./contact-section";

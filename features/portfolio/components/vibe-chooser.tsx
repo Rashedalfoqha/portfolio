@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useRef } from "react";
 import { vibes } from "../data/portfolio-content";
 import type { VibeId } from "../types";

@@ -1,0 +1,17 @@
+import "@fontsource-variable/jetbrains-mono";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { App } from "./app";
+import "./globals.css";
+
+const root = document.getElementById("root");
+
+if (!root) {
+  throw new Error("Portfolio root element was not found.");
+}
+
+createRoot(root).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+);

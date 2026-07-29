@@ -30,10 +30,9 @@ The experience treats the portfolio as a living system rather than a gallery of 
 
 ## Stack
 
-- Next.js 16 and React 19
+- Vite 8 and React 19
 - TypeScript
 - CSS custom properties and handcrafted responsive CSS
-- vinext / Vite for the deployment target
 - Node's built-in test runner for rendered-output checks
 
 The interface deliberately avoids a heavy animation dependency. Its pattern system, state transitions, and micro-interactions are implemented with React and CSS so the concept stays fast and maintainable.
@@ -47,7 +46,7 @@ pnpm install
 pnpm dev
 ```
 
-Open `http://localhost:3000`.
+Open the local URL printed by Vite, normally `http://localhost:5173`.
 
 ## Verification
 
@@ -67,7 +66,7 @@ The checks cover the production build, rendered portfolio content, language vari
 
 ## Deployment
 
-The project is configured for OpenAI Sites through `.openai/hosting.json`. The current review deployment remains private until publication is explicitly approved. The metadata and canonical configuration are ready to move to a personal domain once one is selected.
+The project builds as a static Vite site in `dist/` and includes a repository-owned `netlify.toml`. Netlify can publish it with `pnpm run build` and the `dist` publish directory. Canonical metadata automatically uses Netlify's production URL and can later use a personal domain through `VITE_SITE_URL`.
 
 ## Contact
 

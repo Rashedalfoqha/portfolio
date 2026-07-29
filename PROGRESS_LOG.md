@@ -1541,3 +1541,13 @@ This log records completed improvement rounds so each pass stays cumulative and 
 - **SEO portability:** Canonical URLs, Open Graph metadata, structured data, robots, and sitemap now use Netlify's build-provided production URL automatically.
 - **Verification:** TypeScript and ESLint passed. `pnpm run build:netlify` completed successfully and produced every required deployment artifact.
 - **Dashboard requirement:** Disable the UI-installed `@netlify/plugin-nextjs`, then clear the build cache and redeploy.
+
+## Round 144 — Vite migration — 2026-07-29
+
+- **Status:** Complete after production build, content regression tests, and desktop/mobile browser verification.
+- **Runtime migration:** Replaced Next.js and Vinext with a standard Vite 8 + React 19 entry while preserving the existing portfolio components, copy, CSS, assets, state, interactions, and four visual modes.
+- **Static delivery:** Vite now builds directly to `dist/`. A small post-build step creates the custom 404, robots, and sitemap; the web manifest and existing public assets ship unchanged.
+- **Metadata:** Moved title, description, canonical, Open Graph, Twitter card, and crawler metadata to the Vite HTML entry. Structured data remains generated from the same portfolio schema and resolves against the live origin.
+- **Netlify:** Simplified the repository configuration to `pnpm run build` with `dist` as the publish directory. The Next.js runtime plugin is no longer required.
+- **Quality tooling:** Replaced Next-specific TypeScript and ESLint configuration with Vite/browser and Node-script boundaries. Removed Next, Vinext, Cloudflare runtime, RSC, and Wrangler dependencies from the application build.
+- **Verification:** TypeScript and ESLint passed. The Vite production build passed and all four regression tests passed. Quiet, System, Geometry, and Playground rendered with their expected theme state and zero horizontal overflow on desktop and at 390×844. The mobile vibe chooser fits the viewport.
