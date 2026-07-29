@@ -8,11 +8,10 @@ import {
   createChapterParts,
   createProjectList,
 } from "@/features/portfolio/schema";
+import { getSiteUrl } from "@/shared/config/site-url";
 import "./globals.css";
 
-const productionUrl = new URL(
-  "https://rashed-alfuqaha-portfolio.rashedalfoqha002.chatgpt.site",
-);
+const productionUrl = getSiteUrl();
 const metadataBase = process.env.NODE_ENV === "development"
   ? new URL("http://localhost:3000")
   : productionUrl;
@@ -169,7 +168,7 @@ export default function RootLayout({
     name: "Rashed Alfuqaha - Full-Stack Software Engineer",
     headline: "Full-Stack Software Engineer building production-grade web apps end to end.",
     url: productionUrl.href,
-    dateModified: "2026-07-28",
+    dateModified: "2026-07-29",
     inLanguage: "en",
     mainEntity: person,
     hasPart: [...createChapterParts(productionUrl.href, "en", person["@id"]), createProjectList(productionUrl.href, "en")],

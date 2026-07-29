@@ -1532,3 +1532,12 @@ This log records completed improvement rounds so each pass stays cumulative and 
 - **Behavior preserved:** All four vibes retain their copy, projects, skills, visual identity, URL state, persistent choice, theme colors, modal focus management, and zero horizontal overflow.
 - **Verification:** TypeScript and ESLint passed with zero errors or warnings. The Vinext production build succeeded. All six rendered-output tests passed. Live browser checks confirmed three featured project cards, five capability groups, correct theme colors, zero horizontal overflow in every vibe, chooser focus on open, and focus restoration to the view switch on close.
 - **Next priority:** Split the accumulated global stylesheet only as a dedicated low-risk CSS architecture round; do not mix that mechanical move with visual redesign.
+
+## Round 143 — Netlify deployment compatibility — 2026-07-29
+
+- **Status:** Complete after production-equivalent Netlify export verification.
+- **Root cause:** Netlify's Next.js plugin expected `.next`, while Vinext produces `dist/client` and `dist/server`.
+- **Implementation:** Added a static exporter and repository-owned Netlify configuration that publishes `netlify-dist`, including the home page, custom 404, assets, icon, manifest, robots, and sitemap.
+- **SEO portability:** Canonical URLs, Open Graph metadata, structured data, robots, and sitemap now use Netlify's build-provided production URL automatically.
+- **Verification:** TypeScript and ESLint passed. `pnpm run build:netlify` completed successfully and produced every required deployment artifact.
+- **Dashboard requirement:** Disable the UI-installed `@netlify/plugin-nextjs`, then clear the build cache and redeploy.

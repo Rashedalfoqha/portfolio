@@ -9,10 +9,11 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build",
+    "build:netlify": "pnpm run build && node scripts/export-netlify.mjs",
     "start": "vinext start",
-    "check": "tsc --noEmit && eslint app features shared tests next.config.ts",
+    "check": "tsc --noEmit && eslint app features shared scripts tests next.config.ts vite.config.ts",
     "test": "pnpm run build && node --test tests/rendered-html.test.mjs",
-    "lint": "eslint app features shared tests next.config.ts",
+    "lint": "eslint app features shared scripts tests next.config.ts vite.config.ts",
     "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
