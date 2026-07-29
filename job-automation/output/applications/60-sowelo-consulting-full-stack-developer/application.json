@@ -1,0 +1,43 @@
+{
+  "job": {
+    "source": "We Work Remotely",
+    "source_id": "https://weworkremotely.com/remote-jobs/sowelo-consulting-full-stack-developer",
+    "title": "Full Stack Developer",
+    "company": "Sowelo Consulting",
+    "location": "Anywhere in the World",
+    "remote": true,
+    "published_at": "2026-06-30",
+    "url": "https://weworkremotely.com/remote-jobs/sowelo-consulting-full-stack-developer",
+    "description": "Headquarters: Krakow, Poland Do you have Full Stack experience where you feel comfortable working with different OOP programming languages? Are you an advocate for clean code who thrives in a collaborative, Agile environment where you have the freedom to influence the entire stack from database to DevOps? Great, then please read on as we have a role for you. Our client is currently the UK market leader in providing digital solutions to the health and social care sector. Their platform revolutionizes how vital information is recorded, analyzed, and shared, ensuring a better life for everyone involved in the care process. They are currently in an era of unprecedented growth which is enabling them to expand their technology department. Despite our market-leading status, we remain hungry for innovation and are looking for individuals with the passion and drive to contribute to a mission-driven development team. The Engineering Culture: They deliver incrementally in sprints using a SCRUM framework. Every team member has a voice in planning, stand-ups, and retrospectives. The process favors pair-programming, thorough code reviews, and automated testing. They value clean code over over-engineering. They believe in being \"truly\" full-stack. Beyond front-to-back development, the engineers share responsibility for AWS Infrastructure, DevOps, and CI/CD pipelines. The systems handle thousands of requests per minute and manage hundreds of millions of records. They design with a scalability-first mindset. Your tasks will include: Design, develop, and maintain features across the entire stack, ensuring seamless integration between the frontend and backend. Architect scalable solutions capable of handling high-volume traffic and massive datasets. Engage in pair-programming and contribute to a culture of continuous peer feedback through code reviews. Take an active role in managing AWS infrastructure and optimizing CI/CD workflows (dependent on experience level). Constantly review and improve the product, offering proactive suggestions to enhance user experience and system performance. Opportunities to broaden your skill set into requirements gathering, research, and project management. To be a good fit for the Full Stack Developer role, you will have: 3+ years of commercial experience in full stack development. Experience with Javascript or Typescript on the frontend with experience in either Vue.js, React or Angular Experience with 2 of the following languages or ability to switch to another language : Java, C#, Python, Ruby, Golang or any OOP language Experience in a cloud environment A drive to learn new technologies and a \"right tool for the job\" approach. You take pride in your work and enjoy working in a team where ideas are shared and challenged constructively. A genuine desire to work on a product that has a tangible, positive impact on society. Reasons to join: Work in a no blame culture where the team will work together to find solutions Available to work remotely Healthy work life balance Exposure to a wide range of technologies Training opportunities to expand your skillset and gain certifications Work in a team where they value knowledge sharing Sounds interesting? Send us your CV by applying to this page The provision of personal data by you is fully voluntary and the basis for their processing is your consent. We have prepared some necessary information, you can find in document: \"Information regarding the processing of your personal data\" . There you will find how your Personal Data is being processed and what your rights are in connection to this. The personal data will be processed by Sowelo Consulting spółka z ograniczoną odpowiedzialnością with its registered seat in Cracow (LLC) registered in National Court Register (KRS) under no. 0000671136, our Employees and Subcontractors (jointly referred to as the Company). / October 1, 2025, Sowelo Consulting spółka z ograniczoną odpowiedzialnością spółka komandytowa ( limited partnership with KRS no. 0000680493 ) merged with Sowelo Consulting spółka z ograniczoną odpowiedzialnością ( limited liability company with KRS no. 0000671136 ). As of the merger date, all existing rights and obligations of the limited partnership were transferred to the limited liability company, based on the principle of general succession. / Sowelo Consulting sp. z o.o. (LLC) is entered in the register of employment agencies under the number: 35288 Our candidate selection process relies entirely on human judgment. We explicitly avoid using automated screening algorithms or AI-driven scoring systems for any part of the assessment. Every single profile is reviewed personally by our experienced recruiters, ensuring a thorough and unbiased consideration of your fit. IT Recruitment Poland | Executive Search | Recruitment Process Outsourcing To apply: https://weworkremotely.com/remote-jobs/sowelo-consulting-full-stack-developer",
+    "salary": "",
+    "score": 60,
+    "matched_skills": [
+      "JavaScript",
+      "TypeScript",
+      "React"
+    ],
+    "missing_skills": [
+      "aws",
+      "java",
+      "golang",
+      "ruby",
+      "angular"
+    ],
+    "reasons": [
+      "Target role title",
+      "Full-stack focus",
+      "Primary stack: JavaScript, TypeScript, React",
+      "Remote",
+      "Location appears compatible"
+    ],
+    "status": "New",
+    "first_seen": "2026-07-27T08:00:06+03:00",
+    "application_warning": "",
+    "policy_source": "",
+    "key": "7aefe871a6c940408ad8"
+  },
+  "cv": "C:\\Users\\rashe\\Documents\\Codex\\2026-07-20\\1-personal-branding-linkedin-optimization-strategist\\job-automation\\output\\applications\\60-sowelo-consulting-full-stack-developer\\Rashed_Alfuqaha_Tailored_CV.docx",
+  "coverLetter": "C:\\Users\\rashe\\Documents\\Codex\\2026-07-20\\1-personal-branding-linkedin-optimization-strategist\\job-automation\\output\\applications\\60-sowelo-consulting-full-stack-developer\\Rashed_Alfuqaha_Cover_Letter.docx",
+  "cvPdf": "C:\\Users\\rashe\\Documents\\Codex\\2026-07-20\\1-personal-branding-linkedin-optimization-strategist\\job-automation\\output\\applications\\60-sowelo-consulting-full-stack-developer\\Rashed_Alfuqaha_Tailored_CV.pdf",
+  "coverLetterPdf": "C:\\Users\\rashe\\Documents\\Codex\\2026-07-20\\1-personal-branding-linkedin-optimization-strategist\\job-automation\\output\\applications\\60-sowelo-consulting-full-stack-developer\\Rashed_Alfuqaha_Cover_Letter.pdf"
+}

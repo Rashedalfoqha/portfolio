@@ -1,0 +1,60 @@
+{
+  "status": "sent",
+  "updatedAt": "2026-07-28T21:59:05+03:00",
+  "sentKeys": [
+    "1381424e5d0b605ef870",
+    "331ec08ac66d25f10297",
+    "5c0ce967f99b454f485c",
+    "70106dfbb13dfd5bf17c",
+    "7aefe871a6c940408ad8",
+    "81d38f115cbdea9679e4",
+    "99bf362ed5ef1a384580",
+    "b49a60d7225149abfa43",
+    "bb4f1cc9ed4d68a8eafe",
+    "cdf5748231d9bfcd6f0b",
+    "f1822ce375bac2553812",
+    "fa1aa4da98684ea02c61"
+  ],
+  "lastSuccessfulAt": "2026-07-28T21:59:05+03:00",
+  "recipients": [
+    "rashedmohammadalfuqaha@gmail.com"
+  ],
+  "jobs": [
+    {
+      "key": "5c0ce967f99b454f485c",
+      "score": 68,
+      "title": "Full Stack Engineer",
+      "company": "Sukljian Trading & Marketing Co."
+    },
+    {
+      "key": "70106dfbb13dfd5bf17c",
+      "score": 59,
+      "title": "AI Software Engineer- AI Hub - Amman",
+      "company": "EY"
+    },
+    {
+      "key": "fa1aa4da98684ea02c61",
+      "score": 49,
+      "title": "AI Backend Engineer - Associate",
+      "company": "PwC Middle East"
+    },
+    {
+      "key": "cdf5748231d9bfcd6f0b",
+      "score": 46,
+      "title": "Software Developer - Frontend",
+      "company": "MedNet Jordan Co. W.L.L"
+    },
+    {
+      "key": "b49a60d7225149abfa43",
+      "score": 40,
+      "title": "Software Engineer",
+      "company": "Maqsam"
+    }
+  ],
+  "attachments": [
+    "Rashed_Alfuqaha_Tailored_CV.pdf",
+    "Rashed_Alfuqaha_Cover_Letter.pdf",
+    "Rashed_Alfuqaha_Tailored_CV.pdf",
+    "Rashed_Alfuqaha_Cover_Letter.pdf"
+  ]
+}

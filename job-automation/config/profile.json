@@ -1,0 +1,146 @@
+{
+  "name": "Rashed Mohammad Alfuqaha",
+  "headline": "Full-Stack Software Engineer",
+  "location": "Amman, Jordan",
+  "email": "rashedmohammadalfuqaha@gmail.com",
+  "phone": "+962 77 170 9080",
+  "linkedin": "https://www.linkedin.com/in/rashedalfuqaha/",
+  "github": "https://github.com/Rashedalfoqha",
+  "portfolio": "https://rashed-alfuqaha-portfolio.rashedalfoqha002.chatgpt.site/",
+  "targetRoles": [
+    "Full Stack Developer",
+    "Full Stack Engineer",
+    "Software Engineer",
+    "Frontend Developer",
+    "Frontend Engineer",
+    "Backend Developer",
+    "Backend Engineer"
+  ],
+  "targetLevel": "Mid-level",
+  "workPreference": "Remote",
+  "skills": {
+    "primary": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "NestJS",
+      "Express.js",
+      "REST APIs",
+      "MongoDB",
+      "PostgreSQL"
+    ],
+    "secondary": [
+      "Redux",
+      "Tailwind CSS",
+      "Material UI",
+      "Socket.IO",
+      "Firebase",
+      "Git",
+      "GitHub",
+      "Docker",
+      "Postman",
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Sass"
+    ],
+    "emerging": [
+      "Python",
+      "Microservices"
+    ],
+    "aiWorkflow": [
+      "Codex",
+      "Claude",
+      "Cursor",
+      "GLM"
+    ]
+  },
+  "languages": [
+    "Arabic - Native",
+    "English - Professional",
+    "Turkish - Professional"
+  ],
+  "experience": [
+    {
+      "company": "GoldenTik (formerly CartBuzz)",
+      "role": "Software Engineer",
+      "start": "2026-01",
+      "end": "Present",
+      "publicSummary": "Contributing to a private multi-vendor e-commerce product using Next.js, NestJS, TypeScript, SCSS, Docker, and Python where required. Product details and internal results remain confidential."
+    },
+    {
+      "company": "Vero IT",
+      "role": "Full-Stack Developer (Contract)",
+      "start": "2025-05",
+      "end": "2025-12",
+      "publicSummary": "Built client web applications using React, Next.js, Node.js, Express.js, TypeScript, PostgreSQL, MongoDB, REST APIs, authentication, and real-time features."
+    },
+    {
+      "company": "Independent",
+      "role": "Freelance CAD Designer",
+      "start": "2022-07",
+      "end": "2023-10",
+      "publicSummary": "Designed precise mosaic and architectural patterns and coordinated specifications with artisans and production teams."
+    }
+  ],
+  "education": [
+    {
+      "school": "MERAKI Academy",
+      "program": "Immersive Full-Stack Web Development",
+      "period": "2023-10 to 2024-03",
+      "detail": "400+ hours of hands-on full-stack development."
+    },
+    {
+      "school": "WISE University",
+      "program": "Bachelor of Islamic Arts",
+      "period": "2019-07 to 2023-07",
+      "detail": "Islamic architecture, decorative arts, and design principles."
+    }
+  ],
+  "projects": [
+    {
+      "name": "EV Solution JO",
+      "stack": ["JavaScript", "React.js", "Node.js", "MongoDB", "PostgreSQL"],
+      "summary": "A management system for DC/AC EV charging operations with live dashboards, reporting, and analytics."
+    },
+    {
+      "name": "Tickln",
+      "stack": ["React.js", "Node.js", "MongoDB", "Socket.IO"],
+      "summary": "A team collaboration platform with live task tracking and real-time communication."
+    },
+    {
+      "name": "NotNull Social Space",
+      "stack": ["React.js", "Node.js", "PostgreSQL", "Socket.IO", "Firebase"],
+      "summary": "A responsive social platform with authentication, posts, and real-time chat."
+    },
+    {
+      "name": "Ra Job Search",
+      "stack": ["React.js", "Node.js", "MongoDB"],
+      "summary": "A job search platform with filtering and skill-based matching."
+    },
+    {
+      "name": "Course Management System",
+      "stack": ["React.js", "Node.js", "Express.js", "PostgreSQL", "Firebase"],
+      "summary": "A course platform with creation, enrollment tracking, and RBAC."
+    },
+    {
+      "name": "Booster Icon System",
+      "stack": ["TypeScript", "Node.js", "Next.js", "SVG", "SVGO"],
+      "summary": "A framework-agnostic SVG package and local dashboard for validating, editing, searching, and packaging 25,396 SVG files across 4,154 names and 7 styles."
+    },
+    {
+      "name": "Figma Design Intelligence Plugin",
+      "stack": ["TypeScript", "Figma Plugin API", "Design Systems", "Smart Animate"],
+      "summary": "Developer tooling that captures design-system structure, prototype graphs, Smart Animate relationships, and motion metadata."
+    }
+  ],
+  "truthRules": [
+    "Never claim a skill, result, responsibility, or metric not present in this profile.",
+    "Treat Python and Microservices as emerging skills, not primary expertise.",
+    "Do not reveal confidential GoldenTik product details.",
+    "Do not repeat the old unverified 25% efficiency claim unless evidence is added later."
+  ]
+}

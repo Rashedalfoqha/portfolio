@@ -1,0 +1,415 @@
+[
+  {
+    "source": "LinkedIn Jobs",
+    "source_id": "4442338660",
+    "title": "SR Full stack developer",
+    "company": "Classera",
+    "location": "Amman, Amman, Jordan",
+    "remote": false,
+    "published_at": "2026-07-26",
+    "url": "https://jo.linkedin.com/jobs/view/sr-full-stack-developer-at-classera-4442338660",
+    "description": "Job Summary We are seeking an experienced and motivated Senior Full Stack Developer to join our engineering team. In this role, you will design, develop, and maintain scalable web applications while collaborating with cross-functional teams to deliver high-quality softwaresolutions. You will play a key role in technical decision-making, mentoring developers, and driving best practices across the software development lifecycle. Key Responsibilities Design, develop, test, and maintain scalable full-stack web applications. Build responsive and user-friendly front-end interfaces using modern JavaScript frameworks. Develop secure, efficient, and maintainable back-end services and APIs. Design, optimize, and maintain relational andNoSQL databases. Collaborate with product managers, designers, andstakeholders to translate business requirements into technical solutions. Lead code reviews and ensure adherence to coding standards and best practices. Mentor junior and mid-level developers through technical guidance and knowledge sharing. Troubleshoot, debug, and resolve complex technical issues. Optimize application performance, scalability, and security. Implement CI/CD pipelines and contribute to DevOps initiatives. Stay current with emerging technologies andrecommend improvements to existing systems. Participate in architectural discussions and contribute to long-term technology strategy. Required Qualifications Bachelor's degree in Computer Science, Software Engineering, or a related field (or equivalentpractical experience). 5+ years of professional experience in full-stack software development. Strong proficiency in front-end technologies such as HTML5, CSS3, JavaScript, and TypeScript. Experience with modern front-end frameworkssuch as React, Angular, or Vue.js. Strong experience with back-end technologiessuch as Node.js, .NET, Java, Python, or PHP. Experience building and consuming RESTful APIsand/or GraphQL services. Solid understanding of SQL databases (e.g., PostgreSQL, MySQL, SQL Server) and NoSQL databases (e.g., MongoDB). Experience with Git and collaborative developmentworkflows. Familiarity with cloud platforms such as AWS, Azure, or Google Cloud Platform. Experience with Docker, Kubernetes, and CI/CD pipelines is highly desirable. Strong understanding of software architecture, design patterns, and security best practices. Excellent problem-solving, communication, and leadership skills. Preferred Qualifications Experience designing microservices architectures. Knowledge of automated testing frameworks andtest-driven development. Experience with Agile/Scrum methodologies. Experience with monitoring, logging, and observability tools. Relevant cloud or technology certifications are a plus. Key Competencies Technical leadership System design and architecture Problem-solving and analytical thinking Communication and collaboration Mentoring and coaching Time management and prioritization Continuous learning and innovation",
+    "salary": "",
+    "score": 74,
+    "matched_skills": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "PostgreSQL",
+      "Git",
+      "Docker",
+      "HTML5",
+      "CSS3"
+    ],
+    "missing_skills": [
+      "aws",
+      "kubernetes",
+      "graphql",
+      "java",
+      "php",
+      ".net",
+      "angular"
+    ],
+    "reasons": [
+      "Target role title",
+      "Full-stack focus",
+      "Primary stack: JavaScript, TypeScript, React, Node.js, MongoDB",
+      "Hybrid in Jordan"
+    ],
+    "status": "New",
+    "first_seen": "2026-07-28T21:56:13+03:00",
+    "application_warning": "",
+    "policy_source": "",
+    "workplace_type": "Hybrid",
+    "key": "e2f3dc1728003a56d1e5"
+  },
+  {
+    "source": "LinkedIn Jobs",
+    "source_id": "4442306209",
+    "title": "Full Stack Engineer",
+    "company": "Sukljian Trading & Marketing Co.",
+    "location": "Amman, Amman, Jordan",
+    "remote": false,
+    "published_at": "2026-07-25",
+    "url": "https://jo.linkedin.com/jobs/view/full-stack-engineer-at-sukljian-trading-marketing-co-4442306209",
+    "description": "Full-Stack Engineer Backend-Focused, AI-Assisted Development We’re hiring a full-time Full-Stack Engineer to continue building our internal operations dashboard. The platform brings together our ERP, GPS fleet tracking, field sales tools, delivery dispatching, and other operational systems. It is used daily by our team, so your work will be tested in real situations and shipped quickly. This is an AI-assisted development role. Codex or Claude will be central to how you work. We are looking for someone who can understand an operational need, turn it into an exact specification, guide the AI effectively, review the result carefully, and deliver reliable features. What Matters Most The most important part of this role is getting the specification right. You will regularly sit with stakeholders, listen to how they work, ask the right questions, identify edge cases, and translate their needs into clear technical requirements. You must be able to: Communicate fluently in spoken and written English Hold productive conversations with both technical and non-technical stakeholders Understand operational problems, including details that may not be obvious at first Turn conversations into precise specifications and acceptance criteria Use Codex or Claude extensively for software development Review, test, and improve AI-generated code instead of accepting it blindly Work independently while knowing when to ask for clarification Work regularly from our offices in Al Bayader and live within a practical commuting distance These are core requirements, not bonus qualifications. What You’ll Be Working On You will continue developing an existing application and feature backlog, including: ERP write-backs Delivery capacity planning Audit logging Third-party system integrations Data synchronization and reliability UX improvements Operational reporting System maintenance and performance The Role Most of the complexity is in integrations, data pipelines, business rules, permissions, and system architecture. The frontend is clean, practical, and focused on data-heavy operational workflows. You will work on an established codebase, so you must be comfortable understanding existing behavior before making changes. Tech Stack NestJS TypeScript PostgreSQL Prisma Redis React Vite Docker Required Experience TypeScript experience Backend development experience with Node.js Experience with NestJS, or the ability to become productive with it quickly Confidence working with PostgreSQL and Prisma Some React experience, particularly with data-heavy interfaces Experience integrating third-party APIs Familiarity with REST APIs, XML-RPC, synchronization jobs, or data pipelines A proven history of using Codex or Claude to develop, debug, and ship software Strong testing and code-review judgment, especially when working with AI-generated code Bonus Experience ERP systems, particularly Odoo Maps, GPS tracking, or geospatial features Logistics, delivery, or dispatching systems Operational dashboards and internal business tools Who This Role Suits This role suits someone who enjoys combining software engineering with direct stakeholder collaboration. You do not need every requirement to arrive as a perfectly written ticket. You need to be able to discover what the team actually needs, remove ambiguity, define the correct behavior, and use AI-assisted development to implement it safely and efficiently. During interviews, you will be expected to show the following How you have used Codex or Claude in real software-development work A feature you specified by speaking directly with stakeholders Your experience with backend integrations or data pipelines Your current location and ability to commute regularly to Al Bayader",
+    "salary": "",
+    "score": 68,
+    "matched_skills": [
+      "TypeScript",
+      "React",
+      "Node.js",
+      "NestJS",
+      "REST APIs",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "missing_skills": [],
+    "reasons": [
+      "Target role title",
+      "Full-stack focus",
+      "Primary stack: TypeScript, React, Node.js, NestJS, REST APIs",
+      "Hybrid in Jordan"
+    ],
+    "status": "New",
+    "first_seen": "2026-07-28T21:56:13+03:00",
+    "application_warning": "",
+    "policy_source": "",
+    "workplace_type": "Hybrid",
+    "key": "5c0ce967f99b454f485c"
+  },
+  {
+    "source": "We Work Remotely",
+    "source_id": "https://weworkremotely.com/remote-jobs/sowelo-consulting-full-stack-developer",
+    "title": "Full Stack Developer",
+    "company": "Sowelo Consulting",
+    "location": "Anywhere in the World",
+    "remote": true,
+    "published_at": "2026-06-30",
+    "url": "https://weworkremotely.com/remote-jobs/sowelo-consulting-full-stack-developer",
+    "description": "Headquarters: Krakow, Poland Do you have Full Stack experience where you feel comfortable working with different OOP programming languages? Are you an advocate for clean code who thrives in a collaborative, Agile environment where you have the freedom to influence the entire stack from database to DevOps? Great, then please read on as we have a role for you. Our client is currently the UK market leader in providing digital solutions to the health and social care sector. Their platform revolutionizes how vital information is recorded, analyzed, and shared, ensuring a better life for everyone involved in the care process. They are currently in an era of unprecedented growth which is enabling them to expand their technology department. Despite our market-leading status, we remain hungry for innovation and are looking for individuals with the passion and drive to contribute to a mission-driven development team. The Engineering Culture: They deliver incrementally in sprints using a SCRUM framework. Every team member has a voice in planning, stand-ups, and retrospectives. The process favors pair-programming, thorough code reviews, and automated testing. They value clean code over over-engineering. They believe in being \"truly\" full-stack. Beyond front-to-back development, the engineers share responsibility for AWS Infrastructure, DevOps, and CI/CD pipelines. The systems handle thousands of requests per minute and manage hundreds of millions of records. They design with a scalability-first mindset. Your tasks will include: Design, develop, and maintain features across the entire stack, ensuring seamless integration between the frontend and backend. Architect scalable solutions capable of handling high-volume traffic and massive datasets. Engage in pair-programming and contribute to a culture of continuous peer feedback through code reviews. Take an active role in managing AWS infrastructure and optimizing CI/CD workflows (dependent on experience level). Constantly review and improve the product, offering proactive suggestions to enhance user experience and system performance. Opportunities to broaden your skill set into requirements gathering, research, and project management. To be a good fit for the Full Stack Developer role, you will have: 3+ years of commercial experience in full stack development. Experience with Javascript or Typescript on the frontend with experience in either Vue.js, React or Angular Experience with 2 of the following languages or ability to switch to another language : Java, C#, Python, Ruby, Golang or any OOP language Experience in a cloud environment A drive to learn new technologies and a \"right tool for the job\" approach. You take pride in your work and enjoy working in a team where ideas are shared and challenged constructively. A genuine desire to work on a product that has a tangible, positive impact on society. Reasons to join: Work in a no blame culture where the team will work together to find solutions Available to work remotely Healthy work life balance Exposure to a wide range of technologies Training opportunities to expand your skillset and gain certifications Work in a team where they value knowledge sharing Sounds interesting? Send us your CV by applying to this page The provision of personal data by you is fully voluntary and the basis for their processing is your consent. We have prepared some necessary information, you can find in document: \"Information regarding the processing of your personal data\" . There you will find how your Personal Data is being processed and what your rights are in connection to this. The personal data will be processed by Sowelo Consulting spółka z ograniczoną odpowiedzialnością with its registered seat in Cracow (LLC) registered in National Court Register (KRS) under no. 0000671136, our Employees and Subcontractors (jointly referred to as the Company). / October 1, 2025, Sowelo Consulting spółka z ograniczoną odpowiedzialnością spółka komandytowa ( limited partnership with KRS no. 0000680493 ) merged with Sowelo Consulting spółka z ograniczoną odpowiedzialnością ( limited liability company with KRS no. 0000671136 ). As of the merger date, all existing rights and obligations of the limited partnership were transferred to the limited liability company, based on the principle of general succession. / Sowelo Consulting sp. z o.o. (LLC) is entered in the register of employment agencies under the number: 35288 Our candidate selection process relies entirely on human judgment. We explicitly avoid using automated screening algorithms or AI-driven scoring systems for any part of the assessment. Every single profile is reviewed personally by our experienced recruiters, ensuring a thorough and unbiased consideration of your fit. IT Recruitment Poland | Executive Search | Recruitment Process Outsourcing To apply: https://weworkremotely.com/remote-jobs/sowelo-consulting-full-stack-developer",
+    "salary": "",
+    "score": 60,
+    "matched_skills": [
+      "JavaScript",
+      "TypeScript",
+      "React"
+    ],
+    "missing_skills": [
+      "aws",
+      "java",
+      "golang",
+      "ruby",
+      "angular"
+    ],
+    "reasons": [
+      "Target role title",
+      "Full-stack focus",
+      "Primary stack: JavaScript, TypeScript, React",
+      "Remote",
+      "Location appears compatible"
+    ],
+    "status": "New",
+    "first_seen": "2026-07-26T23:30:00+03:00",
+    "application_warning": "",
+    "policy_source": "",
+    "workplace_type": "Remote",
+    "key": "7aefe871a6c940408ad8"
+  },
+  {
+    "source": "LinkedIn Jobs",
+    "source_id": "4385054131",
+    "title": "AI Software Engineer- AI Hub - Amman",
+    "company": "EY",
+    "location": "Amman, Amman, Jordan",
+    "remote": false,
+    "published_at": "2026-07-25",
+    "url": "https://jo.linkedin.com/jobs/view/ai-software-engineer-ai-hub-amman-at-ey-4385054131",
+    "description": "Senior AI Software Engineer – AI Hub Overview We empower clients to overcome accounting and financial reporting challenges by delivering innovative technology solutions. As part of our Data & AI team in the AI Hub, you will help drive analytics, decision-making, and innovation, contributing to a more agile and efficient finance function. By fostering outstanding leadership and teamwork, we fulfil our commitment to stakeholders and play a pivotal role in building a better working world for our people, clients, and communities. The Opportunity We are seeking a Senior AI Software Engineer to join our AI Hub, where we rapidly deliver prototypes, proof-of-concepts (PoCs), and minimum viable products (MVPs), as well as delivering production‑grade solutions that bring AI use cases to life. This role demands expertise across both front-end and back-end development, supporting the creation of dynamic AI-driven products such as GenAI-enabled web applications, use case marketplaces, and diagnostic tools. You will be responsible for designing, building, and optimizing end-to-end solutions, translating business requirements into robust, scalable, secure, and accessible web experiences suitable for enterprise production environments. Core Requirements 5+ years of professional experience delivering enterprise-grade software solutions across backend and frontend systems. Strong hands-on experience building secure, scalable, and maintainable APIs using Python and Node.js, with frameworks such as FastAPI and Fastify. Solid frontend engineering experience with TypeScript, React, and Next.js, following enterprise UI and accessibility standards. Proven experience containerizing, deploying, and operating applications in production using Docker and Kubernetes, with a strong understanding of reliability and scalability. Experience designing, implementing, and maintaining CI/CD pipelines using Jenkins, GitHub Actions, or Azure DevOps, with automated testing and quality gates. Hands-on experience deploying and operating production workloads on Microsoft Azure, including services such as AKS, Azure Container Apps, Azure Container Registry, and related platform services. Strong understanding and application of software engineering best practices, including SOLID principles, clean architecture, and common enterprise design patterns. Experience working with relational databases such as MS SQL Server and PostgreSQL, including schema design, query optimization, and transactional consistency. Practical experience with vector databases (e.g., Chroma, Milvus, Pinecone) and pgvector, including building and operating Retrieval Augmented Generation (RAG) pipelines in production environments. Ability to collaborate effectively in cross-functional enterprise teams, including product, architecture, security, and cloud/platform teams. Experience working with LLMs and AI platforms, such as Azure OpenAI, OpenAI APIs, or similar enterprise AI services. Familiarity with LLM orchestration frameworks such as LangChain, Semantic Kernel, or equivalent. hands-on experience using AI coding assistants (Claude Code, OpenAI Codex,..etc) Strong documentation skills and experience contributing to architecture decisions, technical standards, and internal best practices. Prior experience mentoring junior engineers or contributing to engineering excellence initiatives. Nice to Have Exposure to MLOps or AI platform operations, including model lifecycle management, monitoring, and observability. Experience with event-driven or distributed architecture (e.g., message queues, service buses, async processing). Knowledge of observability and monitoring tools (e.g., Azure Monitor, Application Insights, Prometheus, Grafana). Experience working in regulated or compliance-driven environments (e.g., financial services, audit). Familiarity with infrastructure-as-code tools such as Terraform, Bicep, or ARM templates. What We Look For We are seeking ambitious builders who excel at transforming ambiguity into impactful digital solutions. You are passionate about AI-driven products, comfortable with rapid prototyping, and motivated by delivering market-relevant, client-centric applications that generate tangible value. What We Offer Competitive compensation package, performance-based rewards, and recognition for your contributions. Continuous learning and world-class professional development opportunities. Flexible work arrangements to empower your impact. Coaching, mentorship, and transformative leadership experiences. A diverse, inclusive, and collaborative culture. If you meet the above criteria, we encourage you to apply and become part of the exceptional EY experience, where you can shape your future and help us build a better working world.",
+    "salary": "",
+    "score": 59,
+    "matched_skills": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Node.js",
+      "PostgreSQL",
+      "GitHub",
+      "Docker"
+    ],
+    "missing_skills": [
+      "kubernetes"
+    ],
+    "reasons": [
+      "Target role title",
+      "Primary stack: TypeScript, React, Next.js, Node.js, PostgreSQL",
+      "Hybrid in Jordan"
+    ],
+    "status": "New",
+    "first_seen": "2026-07-28T21:56:13+03:00",
+    "application_warning": "",
+    "policy_source": "",
+    "workplace_type": "Hybrid",
+    "key": "70106dfbb13dfd5bf17c"
+  },
+  {
+    "source": "Greenhouse/canonical",
+    "source_id": "2804965",
+    "title": "Web Developer",
+    "company": "Canonical",
+    "location": "Home based - EMEA",
+    "remote": true,
+    "published_at": "2026-07-16",
+    "url": "https://job-boards.greenhouse.io/canonical/jobs/2804965",
+    "description": "<p><span style=\"font-weight: 400;\">Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation, and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1200+ colleagues in 75+ countries and very few office-based roles. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution.</span></p> <p><span style=\"font-weight: 400;\">The company is founder-led, profitable, and growing.</span></p> <h3><strong>Our mission is great open source</strong></h3> <p><span style=\"font-weight: 400;\">It is our mission to make open source software available to people everywhere. We create world-renowned software, impacting the lives of millions of people every day.</span></p> <p><span style=\"font-weight: 400;\">The web team works in a multi-disciplinary environment with visual designers, UX designers and other developers to bring exciting new web projects to life. We help and learn from each other and constantly strive to improve both our work and our processes.</span></p> <h3><strong>Required skills and experience</strong></h3> <ul> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Demonstrable experience of work on modern web applications</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">A strong understanding of HTML, CSS with SCSS and JavaScript</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Experience with Javascript components libraries</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Experience with TypeScript</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Experience with responsive user interfaces for a wide range of devices and browsers</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Experience with Git or other version control systems</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Awareness of SEO best practice</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Consideration of accessibility in all aspects of your work</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">A strong understanding of web performance in complex user interfaces</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Ability to interact with UX, designers and server-side developers</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Curiosity about technology and a thirst to learn</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Based in EMEA timezones (Europe, the Middle East and Africa)</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">University degree or equivalent education</span></li> </ul> <h3><strong>Useful experience if you have it</strong></h3> <ul> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Familiarity with Linux desktop technologies</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Server-side languages, such as Python or NodeJS</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Experience working on a large scale React (with TypeScript) project</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">A history of open source contributions</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Relevant work experience</span></li> </ul> <h3><strong>Who you are</strong></h3> <p><span style=\"font-weight: 400;\">We want a Web Developer who loves what they do. You are passionate about web standards and keep abreast of new developments in our industry. You always look for opportunities to improve your skills. You like to show off what you’re working on and also learn from others. You have strong attention to detail and value the design of a product as much as you value the code. You have strong communication skills and maybe even blog once in a while. You’re aware of the latest CSS techniques but also know the limitations that developing for a broad audience can bring - actually, you embrace the challenge.</span></p> <h3><strong>In this team</strong></h3> <ul> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">You’ll create high fidelity websites and web apps using the latest incarnations of HTML, CSS (SCSS) and Javascript (React and TypeScript)</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">You’ll help maintain existing projects including updating content and adding new pages</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">You’ll manage incoming requests for updates and liaise with or delegate to other people as necessary</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">You’ll ensure the standard of our output remains high and consistent across our whole product portfolio</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">You’ll ensure new pages are published according to specification and in compliance with our web style guide</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">You’ll participate in and contribute to our living style guide, Vanilla Framework.</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Work closely with UX designers and visual designers to implement exemplary user experiences.</span></li> </ul> <h3><strong>What we offer colleagues</strong></h3> <p><span style=\"font-weight: 400;\">We consider geographical location, experience, and performance in shaping compensation worldwide. We revisit compensation annually (and more often for graduates and associates) to ensure we recognize outstanding performance. In addition to base pay, we offer a performance-driven annual bonus or commission. We provide all team members with additional benefits which reflect our values and ideals. We balance our programs to meet local needs and ensure fairness globally.</span></p> <ul> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Distributed work environment with twice-yearly team sprints in person</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Personal learning and development budget of USD 2,000 per year</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Annual compensation review</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Recognition rewards</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Annual holiday leave</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Maternity and paternity leave</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Team Member Assistance Program &amp; Wellness Platform</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Opportunity to travel to new locations to meet colleagues</span></li> <li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Priority Pass and travel upgrades for long-haul company events</span></li> </ul> <h3><strong>About Canonical</strong></h3> <p><span style=\"font-weight: 400;\">Canonical is a pioneering tech firm at the forefront of the global move to open source. As the company that publishes Ubuntu, one of the most important open-source projects and the platform for AI, IoT, and the cloud, we are changing the world of software. We recruit on a global basis and set a very high standard for people joining the company. We expect excellence; in order to succeed, we need to be the best at what we do. Most colleagues at Canonical have worked from home since our inception in 2004.​ Working here is a step into the future and will challenge you to think differently, work smarter, learn new skills, and raise your game.</span></p> <p><strong>Canonical is an equal opportunity employer</strong></p> <p><span style=\"font-weight: 400;\">We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products.</span><a href=\"https://canonical.com/careers/diversity/identity\"><span style=\"font-weight: 400;\"> Whatever your identity, we will give your application fair consideration.</span></a></p> <p><span style=\"font-weight: 400;\">#LI-remote</span></p> <p>&nbsp;</p> <p>&nbsp;</p>",
+    "salary": "",
+    "score": 58,
+    "matched_skills": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Git",
+      "SCSS"
+    ],
+    "missing_skills": [
+      "java"
+    ],
+    "reasons": [
+      "Target role title",
+      "Primary stack: JavaScript, TypeScript, React",
+      "Remote",
+      "Location appears compatible"
+    ],
+    "status": "Manual Review",
+    "first_seen": "2026-07-27T08:32:14+03:00",
+    "application_warning": "Manual-only application: Canonical's application form requires the applicant's own words and states that AI-generated content can disqualify the application.",
+    "policy_source": "https://canonical.com/careers/5150422",
+    "workplace_type": "Remote",
+    "key": "99bf362ed5ef1a384580"
+  },
+  {
+    "source": "We Work Remotely",
+    "source_id": "https://weworkremotely.com/remote-jobs/base-com-full-stack-developer-react-aws",
+    "title": "Full-Stack Developer (React + AWS)",
+    "company": "Base.com",
+    "location": "Anywhere in the World",
+    "remote": true,
+    "published_at": "2026-06-30",
+    "url": "https://weworkremotely.com/remote-jobs/base-com-full-stack-developer-react-aws",
+    "description": "Headquarters: Gdańsk, Pomeranian Voivodeship, Poland W Base naszą misją jest wspieranie przedsiębiorców, by mogli podbijać globalny świat e-commerce. Dajemy im technologię, która rewolucjonizuje sposób, w jaki sprzedają online. Nasz międzynarodowy zespół, pracujący od Europy po obie Ameryki , dostarcza system all-in-one dla tysięcy sprzedawców. Integrujemy ich z liderami branży, między innymi z takimi jak Amazon, eBay, Shopify, DHL czy FedEx. Ale nie jesteśmy tylko kolejną firmą technologiczną. Jesteśmy jedną z najszybciej rozwijających się platform w branży – w ciągu ostatnich 3 lat urośliśmy 15-krotnie! Stawiamy na kulturę, w której liczy się realny wpływ i współpraca, a nasz zespół jest sercem naszej innowacji. Obecnie szukamy Full-Stack Developera do pracy przy projekcie aplikacji analitycznej Base Analytics, która umożliwia naszym klientom m.in. monitorowanie sprzedaży, rentowności oraz kluczowych wskaźników biznesowych. Twoja rola będzie kluczowa w budowie aplikacji frontendowej w React , która przetwarza duże zbiory danych i wizualizuje je w formie interaktywnych wykresów, dashboardów i tabel przestawnych. Szukamy osoby, która będzie współpracować przy projekcie z Lead Frontend Developerem, zespołem Data Engineers oraz DevOps działających w środowisku AWS (ClickHouse, Lambda, Glue). Jeśli jesteś doświadczonym React Developerem z bardzo dobrą znajomością AWS stacku i chcesz mieć realny wpływ na rozwój produktu, ta rola jest właśnie dla Ciebie! Twoje zadania: Tworzenie wydajnych i skalowalnych aplikacji webowych w React, React Router v7, TypeScript i Tailwind CSS. Udział w utrzymaniu i rozwoju backendu rozwiązania w usłudze AWS (ClickHouse, Lambda, Glue, S3, API Gateway). Pisanie czystego kodu zgodnie z najlepszymi praktykami i standardami projektowymi. Implementacja responsywnych interfejsów użytkownika oraz zapewnienie kompatybilności między przeglądarkami. Optymalizacja wydajności aplikacji i identyfikacja obszarów do usprawnień. Pisanie unit, integration oraz e2e testów w celu zapewnienia wysokiej jakości i niezawodności aplikacji. Koordynacja i współpraca z Lead Frontend Developerem, Product Ownerem, UX Designerem, Data Analyst i DevOpsem. Na co dzień pracujemy z: React, React Router v7 (framework), TypeScript, Tailwind CSS, shadcn/ui, Radix UI. REST API. AWS - ClickHouse (backend), Lambda, Glue, S3, CloudWatch. Git, GitHub, CI/CD. Oczekiwania: Minimum 3 lata doświadczenia w tworzeniu aplikacji frontendowych z wykorzystaniem React. Doświadczenie w pracy z backendem w środowisku AWS. Doświadczenie w pracy z dużymi zbiorami danych oraz bibliotekami do prezentacji danych, takimi jak TanStack Table .(tabele) i Recharts (wykresy) Zdolność do strategicznego myślenia o produkcie i odpowiedzialność za techniczne aspekty działania aplikacji. Znajomość języka angielskiego na poziomie minimum B2. Proaktywność, odpowiedzialność i poczucie humoru. Mile widziane: Doświadczenie w budowie aplikacji analitycznych lub BI. Doświadczenie z narzędziami CI/CD w AWS. Wiedza z zakresu optymalizacji wydajności aplikacji React. Oferujemy: Będziesz częścią zespołu, który aktywnie pisze scenariusz dla globalnego e-commerce Współpraca przy innowacyjnym produkcie w szybko rosnącym środowisku, to idealne miejsce, jeśli lubisz, gdy rzeczy dzieją się dynamicznie Będziesz współpracować z czołowymi ekspertami z międzynarodowym doświadczeniem - to nasz najlepszy program rozwojowy, który oferujemy Atrakcyjny wachlarz dodatków wspierających Twoje zdrowie, pasje i rozwój To apply: https://weworkremotely.com/remote-jobs/base-com-full-stack-developer-react-aws",
+    "salary": "",
+    "score": 53,
+    "matched_skills": [
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Git",
+      "GitHub"
+    ],
+    "missing_skills": [
+      "aws"
+    ],
+    "reasons": [
+      "Target role title",
+      "Full-stack focus",
+      "Primary stack: TypeScript, React",
+      "Remote",
+      "Location appears compatible",
+      "Title-level skill gap: aws"
+    ],
+    "status": "New",
+    "first_seen": "2026-07-26T23:30:00+03:00",
+    "application_warning": "",
+    "policy_source": "",
+    "workplace_type": "Remote",
+    "key": "81d38f115cbdea9679e4"
+  },
+  {
+    "source": "Ashby/Supabase",
+    "source_id": "2e6ee4b3-6573-477f-9c95-d1221cd9f9f9",
+    "title": "Design Engineer",
+    "company": "Supabase",
+    "location": "Remote",
+    "remote": true,
+    "published_at": "2026-04-28",
+    "url": "https://jobs.ashbyhq.com/supabase/2e6ee4b3-6573-477f-9c95-d1221cd9f9f9",
+    "description": "ABOUT SUPABASE Supabase is the Postgres development platform, built by developers for developers. We provide a complete backend solution including Database, Auth, Storage, Edge Functions, Realtime, and Vector Search. All services are deeply integrated and designed for growth. ABOUT THE ROLE We're looking for a Design Engineer to join our Design Team and take full ownership of the look, feel, and experience of our marketing and documentation sites. In this role, design and code are fully intertwined — you won't be handing off to engineers, you'll be shipping it yourself. You'll move from identifying what needs improving to building and deploying it, with minimal direction and maximum ownership. This role is ideal for someone who builds at work and in your personal time, is deeply curious about developer tools, and thrives in async environments where you're trusted to run with a problem and figure out the best solution. WHAT YOU'LL BE RESPONSIBLE FOR - Own the end-to-end design and experience of supabase.com http://supabase.com sites, like our marketing website, documentation site, and mini sites like Select conf, Launch Week — you will also be identifying problems with these sites, shipping fixes and continually improving them. - Collaborate with Product Marketing, Engineering, Product and the Docs team to ensure every page is clear and useful. - Make sure our sites have beautiful typography, layout, diagrams, code blocks etc. - Develop and ship live pages using modern front-end frameworks (React, Next.js, Vite). You’ll have an active voice in choosing libraries and frameworks. - Evolve our design system and reusable components to keep sites consistent and scalable. - Refine illustrations, diagrams, and messaging to improve technical clarity. - Proactively identify areas of the site that need improvement and drive them forward without waiting to be asked. YOU MIGHT BE A GOOD FIT IF YOU - Are genuinely both a designer and a front-end developer — you're as comfortable in code as you are in Figma, and you don't think of them as separate activities - Actively use AI tools (Claude, Cursor, Codex etc) to experiment, prototype or ship websites/apps/features/products. - Have designed and built for developers or technical audiences — dev tools, crypto, tech startups, AI or similar; you understand who we're talking to - Are actively building things outside of work — side projects, personal experiments; you're curious and you ship. - Write production-quality front-end code using React, Next.js, Vite, Tailwind CSS, and component libraries like shadcn/Radix/Base UI - Take a broad brief and run with it — you identify what's worth working on, communicate your thinking, and get it done - Are comfortable working async and independently in a globally distributed team - Move fast without sacrificing craft — you balance quality with speed and know when good enough is good enough WHAT WE OFFER - Fully Remote We hire globally. We believe you can do your best work from anywhere. There are no Supabase offices, but we provide a WeWork membership or co-working allowance you can use anywhere in the world. - ESOP Every team member receives ESOP (equity ownership) in the company. We want everyone to share in the upside of what we’re building together. - Tech Allowance Use this budget to set up your ideal work environment—laptop, monitor, headphones, or whatever helps you do your best work. - Health Benefits Supabase covers 100% of health insurance for employees and 80% for dependents, wherever you are. Your wellbeing and your family’s health are important to us. - Annual Off-Sites Once a year, the entire company gathers in a new city for a week of connection, collaboration, and fun. It’s a highlight of our year. - Flexible Work We operate asynchronously and trust you to manage your own time. You know what needs to be done and when. - Professional Development Every team member receives an annual education allowance to spend on learning—courses, books, conferences, or anything that supports your growth. ABOUT THE TEAM Supabase was born-remote and open-source-first. We believe our globally distributed team is our secret weapon in building tools developers love. - ~400 team members - 60+ countries - 20+ languages spoken - Over $1B raised (including our $500M Series F) - 540,000+ community members We move fast, build in public, and use what we ship. If it’s in your project, we probably use it in ours too. We believe deeply in the open-source ecosystem and strive to support—not replace—existing tools and communities.",
+    "salary": "",
+    "score": 51,
+    "matched_skills": [
+      "React",
+      "Next.js",
+      "Tailwind CSS"
+    ],
+    "missing_skills": [],
+    "reasons": [
+      "Target role title",
+      "Primary stack: React, Next.js",
+      "Remote",
+      "Location appears compatible"
+    ],
+    "status": "New",
+    "first_seen": "2026-07-27T22:12:49+03:00",
+    "application_warning": "",
+    "policy_source": "",
+    "workplace_type": "Remote",
+    "key": "331ec08ac66d25f10297"
+  },
+  {
+    "source": "LinkedIn Jobs",
+    "source_id": "4446340635",
+    "title": "AI Backend Engineer - Associate",
+    "company": "PwC Middle East",
+    "location": "Amman, Jordan",
+    "remote": false,
+    "published_at": "2026-07-28",
+    "url": "https://jo.linkedin.com/jobs/view/ai-backend-engineer-associate-at-pwc-middle-east-4446340635",
+    "description": "About Us With offices in 152 countries and nearly 328,000 professionals, we are one of the world’s leading professional services networks, helping organisations and individuals create lasting value through Assurance, Tax and Advisory services. For over 40 years, we have contributed to the Middle East’s transformation journey, partnering with governments and businesses to deliver sustainable solutions. Today, more than 12,000 of us across Bahrain, Egypt, Iraq, Jordan, Kuwait, Lebanon, Libya, Oman, Palestine, Qatar, Saudi Arabia and the UAE are shaping the region’s future. Line Of Service Overview Internal Firm Services (IFS) is the trusted foundation of PwC, delivering innovative managed services and operational capabilities that enable our clients’ evolving needs. A career in IFS offers diverse opportunities across Human Capital, Finance, Technology, Clients & Markets, Marketing & Communications, Risk & Quality, Partner Development, Office Management, and Managed Services. We don’t just support the business—we shape it, driving strategies and initiatives that power growth and transformation across PwC Middle East. Business Unit Overview T he AI Centre of Excellence (AI CoE) is our central engine for AI strategy, product build, and scale. It governs standards and cost and risk controls, runs AI Factory squads to design and ship custom AI solutions and reusable frameworks (LLM and RAG stacks, integrations on Azure), provides technical consultation on architecture, solution design, and best practices, and drives workforce transformation through training and upskilling to accelerate adoption across our lines of service. Operating within IFS, the CoE partners with Experience Design and adjacent technology teams, follows a codified operating model and RACI for approvals and observability, and supports proposals, demos, and delivery with a focus on distinctive outcomes and trusted leadership. How You’ll Contribute As an AI Backend Engineer, you’ll work as part of a team of problem solvers, helping to build and ship the backend services that power our AI products, from strategy to execution. As an AI Backend Engineer, your responsibilities include but are not limited to: Design and implement RESTful APIs for authentication, data access, and system health checks. Develop modular services to handle model inference, prompt orchestration, and pipeline management. Orchestrate background and asynchronous tasks for long-running AI workloads. Integrate with leading LLM platforms (e.g., Azure OpenAI, OpenAI, Hugging Face) and help optimize calls for performance and cost. Containerize services using Docker and Docker Compose, and collaborate on CI/CD pipelines. Help manage and scale data stores in partnership with the team. Define clear API contracts and data models together with frontend engineers. Produce clear documentation: OpenAPI/Swagger specs, architecture diagrams, and in-code comments. Participate in design discussions, architectural reviews, and peer code reviews to keep quality high. Continuously build your skills and keep up with emerging AI tools, frameworks, and best practices. Experience What You’ll Bring 1–3 years of backend engineering experience, including exposure to building AI-enabled solutions. Experience designing and consuming RESTful APIs. Hands-on experience with containerized services and CI/CD. Education & Certifications Bachelor’s degree in Computer Science, Information Technology, Engineering, or a related field. Relevant Azure or Microsoft certifications are a plus. Technical Skills & Specialized Knowledge Strong backend development skills in Node.js, Python, or equivalent. Hands-on experience with Docker, Docker Compose, and container orchestration. Familiarity with databases such as MongoDB, Redis, or similar systems. Solid understanding of JWT/session-based authentication and security best practices. Proven ability to design and consume RESTful APIs. Experience integrating AI/ML services — especially large language models — into applications. Attributes & Soft Skills Excellent communication skills and the ability to collaborate across multi-located and diverse teams. Ability to understand and translate business requirements into technical solutions. Curious, proactive, and eager to learn. Excellent verbal and written communication in English; Arabic is preferred. How You’ll Make a Difference At PwC Midde East, we expect all our people to embody the skills and behaviours of The PwC Professional framework, helping us deliver on our strategy while growing and developing as leaders at every level. Why You’ll Love Working at PwC At PwC Middle East, you’ll find more than just a job - you’ll build a meaningful career, supported by rewards and benefits that help you thrive. We offer competitive pay, comprehensive benefits, and programs that promote well-being, balance, and personal growth. You’ll have access to continuous learning, digital upskilling, and a collaborative environment that values innovation, mentorship, and diversity. Are you ready to make a difference? Want to unlock new value by applying your unique perspective and talents? You can grow exponentially here. Discover more about Life at PwC Middle East.",
+    "salary": "",
+    "score": 49,
+    "matched_skills": [
+      "Node.js",
+      "MongoDB",
+      "Docker"
+    ],
+    "missing_skills": [],
+    "reasons": [
+      "Target role title",
+      "Primary stack: Node.js, MongoDB",
+      "Hybrid in Jordan",
+      "Location appears compatible"
+    ],
+    "status": "New",
+    "first_seen": "2026-07-28T21:56:13+03:00",
+    "application_warning": "",
+    "policy_source": "",
+    "workplace_type": "Hybrid",
+    "key": "fa1aa4da98684ea02c61"
+  },
+  {
+    "source": "We Work Remotely",
+    "source_id": "https://weworkremotely.com/remote-jobs/arize-ai-open-source-design-engineer",
+    "title": "Open Source Design Engineer",
+    "company": "Arize Ai",
+    "location": "Anywhere in the World",
+    "remote": true,
+    "published_at": "2026-06-30",
+    "url": "https://weworkremotely.com/remote-jobs/arize-ai-open-source-design-engineer",
+    "description": "Headquarters: Remote (United States) About Arize AI is rapidly transforming the world. As generative AI reshapes industries, teams need powerful ways to monitor, troubleshoot, and optimize their AI systems. That’s where we come in. Arize AI is the leading AI & Agent Engineering observability and evaluation platform , empowering AI engineers to ship high-performing, reliable agents and applications. From first prototype to production scale, Arize AX unifies build, test, and run in a single workspace—so teams can ship faster with confidence. We’re a Series C company backed by top-tier investors, with over $135M in funding and a rapidly growing customer base of 150+ leading enterprises and Fortune 500 companies. Customers like Booking.com , Uber, Siemens, and PepsiCo leverage Arize to deliver AI that works. The Role We're looking for a Design Engineer to build ambitious interfaces at the frontier of AI development, evaluation, and observability. You'll design, prototype, and ship experiences that help AI teams understand, troubleshoot, and improve the systems powering their next-generation applications. Here's what makes this role different: Modern AI work is no longer purely human-driven. Arize Phoenix is a platform used by AI teams and AI agents such as Claude Code. You won't just craft great UX. You'll pioneer great AX (Agent Experience)—product surfaces that are delightful for people and interoperable, safe, and legible for agents. What You’ll Work On Product & Interface Design Design and build compelling product experiences for Arize Phoenix across UI-driven and programmatic workflows Create interactive visualizations for embeddings, traces, evaluation runs, and agent/tool workflows Develop reusable components and templates for our design system, from concept to production Agent Experience (AX) Build Agent Experience primitives: interaction contracts, human-in-the-loop workflows, and agent-friendly UI surfaces Enable agents to query, navigate, trigger evaluations Shape the patterns that define how humans and AI agents collaborate within a shared workspace Prototyping & Exploration Prototype new AI features and UI patterns for visualizing performance, surfacing anomalies, and explaining AI behavior—especially for multi-step agent systems Use AI-assisted UI generation to accelerate prototyping while maintaining craft, accessibility, and consistency Push the boundaries of what's possible when your users include both humans and machines You Might Be a Great Fit If You Have strong frontend engineering skills (React, TypeScript) paired with design sensibility Think deeply about interaction design, information architecture, and developer experience Are curious about AI systems and eager to learn how agents, evaluations, and observability work Enjoy prototyping quickly and iterating toward polish Care about accessibility, performance, and craft Thrive in open-source communities and async collaboration Why Arize Arize Phoenix is becoming the shared workspace where AI teams investigate issues and make decisions—while agents run evaluations, triage failures, and propose fixes alongside them. We're not just building tools for AI development. We're building the environment where humans and AI agents work together. This is a rare opportunity to define the design language for a new category of product experience. If you're excited about designing for users that include both people and AI systems, we'd love to talk. The estimated annual salary and variable compensation for this role is between $145,000 - $185,000, plus a competitive equity package. Actual compensation is determined based upon a variety of job related factors that may include: transferable work experience, skill sets, and qualifications. Total compensation also includes a comprehensive benefit package, including: medical, dental, vision, 401(k) plan, unlimited paid time off, generous parental leave plan, and others for mental and wellness support. While we are a remote-first company, we have opened offices in New York City and the San Francisco Bay Area, as an option for those in those cities who wish to work in-person. For all other employees, there is a WFH monthly stipend to pay for co-working spaces. More About Arize Arize’s mission is to make the world’s AI work—and work for people. Our founders came together through a shared frustration: while investments in AI are growing rapidly across every industry, organizations face a critical challenge—understanding whether AI is performing and how to improve it at scale. Learn more about what we're doing here: https://techcrunch.com/2025/02/20/arize-ai-hopes-it-has-first-mover-advantage-in-ai-observability/ https://arize.com/blog/arize-ai-raises-70m-series-c-to-build-the-gold-standard-for-ai-evaluation-observability/ Diversity & Inclusion @ Arize Our company's mission is to make AI work and make AI work for the people, we hope to make an impact in bias industry-wide and that's a big motivator for people who work here. We actively hope that individuals contribute to a good culture Regularly have chats with industry experts, researchers, and ethicists across the ecosystem to advance the use of responsible AI Culturally conscious events such as LGBTQ trivia during pride month We have an active Lady Arizers subgroup To apply: https://weworkremotely.com/remote-jobs/arize-ai-open-source-design-engineer",
+    "salary": "",
+    "score": 49,
+    "matched_skills": [
+      "TypeScript",
+      "React"
+    ],
+    "missing_skills": [],
+    "reasons": [
+      "Target role title",
+      "Primary stack: TypeScript, React",
+      "Remote",
+      "Location appears compatible"
+    ],
+    "status": "New",
+    "first_seen": "2026-07-27T08:34:24+03:00",
+    "application_warning": "",
+    "policy_source": "",
+    "workplace_type": "Remote",
+    "key": "1381424e5d0b605ef870"
+  },
+  {
+    "source": "Ashby/Supabase",
+    "source_id": "b7206c22-979f-444a-809b-e70d9ee23c7f",
+    "title": "Software Engineer: IaC Platform Experience",
+    "company": "Supabase",
+    "location": "Remote",
+    "remote": true,
+    "published_at": "2026-05-13",
+    "url": "https://jobs.ashbyhq.com/supabase/b7206c22-979f-444a-809b-e70d9ee23c7f",
+    "description": "ABOUT SUPABASE Supabase is the Postgres development platform, built by developers for developers. We provide a complete backend solution including Database, Auth, Storage, Edge Functions, Realtime, and Vector Search. All services are deeply integrated and designed for growth. ABOUT THE ROLE We are looking for a Software Engineer: IaC Platform Experience to join our Interfaces team and own the Terraform provider as a core part of Supabase's developer platform. This is a hands-on engineering role focused on the Go codebase behind the Supabase Terraform provider. You will partner with product and engineering leadership on roadmap priorities, drive technical execution, and ensure we ship a reliable, predictable, and well-documented Terraform experience for developers at scale. You will focus on resource behavior, lifecycle correctness, schema evolution, upgrade safety, and practical migration paths for existing users. This role is ideal for someone who thrives in async, fast-paced environments and enjoys building practical platform primitives that millions of developers can rely on. WHAT YOU’LL OWN - Own the Go Terraform provider codebase, including architecture, implementation quality, test strategy, and release readiness. - Improve Terraform provider reliability and ergonomics, including resource behavior, data sources, lifecycle edge cases, and upgrade safety. - Drive technical strategy for IaC workflows through design docs, RFCs, and iterative delivery. - Build practical migration and interoperability paths for existing Terraform users. - Partner with product and engineering leadership in a shared roadmap model to define priorities, scope, and outcomes. - Monitor customer feedback, OSS issues, and usage signals to continuously improve the Terraform experience. - Create clear documentation and examples that make IaC workflows easier to understand and adopt. WHAT YOU BRING - 5+ years of software engineering experience in developer platforms, infrastructure tooling, or distributed systems. - Strong proficiency in Go and a track record of shipping production-grade developer tooling. - Deep experience with Terraform provider behavior, declarative resource models, and lifecycle edge cases. - Strong understanding of schema design, versioning, and backwards compatibility. - Experience owning or contributing to a provider codebase with real user adoption and upgrade constraints. - Experience with testing strategy for providers and IaC tooling (unit, integration, and end-to-end) plus CI/CD pipelines. - Familiarity with release/versioning strategies and backwards compatibility in widely used developer tooling. - Strong written communication and a track record of clear technical design docs and RFCs. - Nice to have: familiarity with TypeScript-based tooling, Supabase CLI workflows, and GitHub-centric automation. DECISION-MAKING AND COLLABORATION - This role operates in a shared consensus model for major technical decisions with peers and leadership. - You are expected to lead proposals and recommendations, align stakeholders, and move decisions to clear outcomes. WHAT WE OFFER - Fully Remote We hire globally. We believe you can do your best work from anywhere. There are no Supabase offices, but we provide a WeWork membership or co-working allowance you can use anywhere in the world. - ESOP Every team member receives ESOP (equity ownership) in the company. We want everyone to share in the upside of what we’re building together. - Tech Allowance Use this budget to set up your ideal work environment—laptop, monitor, headphones, or whatever helps you do your best work. - Health Benefits Supabase covers 100% of health insurance for employees and 80% for dependents, wherever you are. Your wellbeing and your family’s health are important to us. - Annual Off-Sites Once a year, the entire company gathers in a new city for a week of connection, collaboration, and fun. It’s a highlight of our year. - Flexible Work We operate asynchronously and trust you to manage your own time. You know what needs to be done and when. - Professional Development Every team member receives an annual education allowance to spend on learning—courses, books, conferences, or anything that supports your growth. ABOUT THE TEAM Supabase was born-remote and open-source-first. We believe our globally distributed team is our secret weapon in building tools developers love. - ~400 team members - 60+ countries - 20+ languages spoken - Over $1B raised (including our $500M Series F) - 540,000+ community members We move fast, build in public, and use what we ship. If it’s in your project, we probably use it in ours too. We believe deeply in the open-source ecosystem and strive to support—not replace—existing tools and communities.",
+    "salary": "",
+    "score": 46,
+    "matched_skills": [
+      "TypeScript",
+      "GitHub"
+    ],
+    "missing_skills": [],
+    "reasons": [
+      "Target role title",
+      "Primary stack: TypeScript",
+      "Remote",
+      "Location appears compatible"
+    ],
+    "status": "New",
+    "first_seen": "2026-07-28T08:16:03+03:00",
+    "application_warning": "",
+    "policy_source": "",
+    "workplace_type": "Remote",
+    "key": "f1822ce375bac2553812"
+  },
+  {
+    "source": "LinkedIn Posts",
+    "source_id": "7486036286047150081",
+    "title": "#hiring #fullstackdeveloper #reactjs #nodejs #remotejobs # ...",
+    "company": "Hiring post on LinkedIn",
+    "location": "Remote — location eligibility not stated",
+    "remote": true,
+    "published_at": "2026-07-23",
+    "url": "https://www.linkedin.com/posts/nidhi-kundaliya-3b37251a3_hiring-fullstackdeveloper-reactjs-activity-7486036286047150081-0HRP",
+    "description": "#hiring #fullstackdeveloper #reactjs #nodejs #remotejobs # ... - LinkedIn Experience with TypeScript, Next.js, AWS, Docker, CI/CD, or microservices is a plus. 📍 100% Remote",
+    "salary": "",
+    "score": 44,
+    "matched_skills": [
+      "TypeScript",
+      "Next.js",
+      "Docker"
+    ],
+    "missing_skills": [
+      "aws"
+    ],
+    "reasons": [
+      "Target role title",
+      "Primary stack: TypeScript, Next.js",
+      "Remote"
+    ],
+    "status": "New",
+    "first_seen": "2026-07-28T12:01:34+03:00",
+    "application_warning": "",
+    "policy_source": "",
+    "workplace_type": "Remote",
+    "key": "bb4f1cc9ed4d68a8eafe"
+  },
+  {
+    "source": "LinkedIn Jobs",
+    "source_id": "4443342057",
+    "title": "Software Engineer",
+    "company": "Maqsam",
+    "location": "Amman, Amman, Jordan",
+    "remote": false,
+    "published_at": "2026-07-21",
+    "url": "https://jo.linkedin.com/jobs/view/software-engineer-at-maqsam-4443342057",
+    "description": "About Maqsam: Maqsam is the leading Arabic AI-powered Contact Center Solution in the MENA region designed to revolutionize customer experience. Leveraging groundbreaking advancements in AI technology, Maqsam has spearheaded accurate Arabic Call Transcription, advanced analytics, and insights, along with unique AI modeling utilizing its in-house designed LLM. Your Opportunity: We are seeking a Backend Software Engineer to join our innovative team at Maqsam. This role is ideal for those eager to develop their technical skills in a dynamic SaaS environment. You will participate in various stages of software development, from design to deployment, making significant contributions to our cutting-edge contact center solutions. In this role, you'll work closely with tech leads, senior engineers, and operations managers, gaining crucial industry experience and contributing to projects that enhance user experiences and broaden our product's capabilities. Your Top Responsibilities: Translate business requirements into well-defined technical solutions and implement them to achieve the desired functionality Debug and troubleshoot complex software issues in a high-availability environment Optimize system performance through rigorous testing and code refinement Collaborate with cross-functional teams to integrate new technologies and frameworks Conduct code reviews to ensure code quality and implementation of best practices Document development processes, code changes, and other critical information accurately Participate in the design and architecture decisions of our internal systems and databases Support junior software engineers and participate in ramping up new joiners What We Expect from You Experience with backend or full-stack web development is a MUST, focusing on scalable and robust system design Proven ability in writing high-quality, readable, and scalable code Strong skills in debugging complex systems, with the ability to analyze and resolve challenging technical issues Experience with relational databases and their integration into systems Solid foundation in computer science, with strong competencies in data structures, algorithms, and software design optimized for scalable systems Ability to work in a fast-paced, team-oriented environment and to contribute to the team with innovative solutions Proven ability to learn new technologies and explore new concepts and frameworks quickly and effectively Additional Information: 3-5 years of experience in backend or full-stack web development Excellent problem-solving and analytical skills Strong communication skills, capable of effectively articulating technical challenges and solutions to both technical and non-technical team members A commitment to continuous professional development and eagerness to learn new technologies A degree in Computer Science, Engineering, or a related field is preferred Experience in mobile development is a plus Experience working on VoIP-related projects is a plus Experience with Ruby on Rails or any similar web framework, JavaScript, Vue.js or a comparable frontend framework, and PostgreSQL or other relational databases is a strong plus What We Provide: Join a world-class team at Maqsam, where your growth is our priority. Here's what you can expect: A Collaborative and Friendly Environment Personal and Professional Growth: Opportunities to learn and become a world-class professional Fair Compensation: We value your contribution Transparency: A culture that thrives on open communication Benefits: First-class health insurance, and more Part of Something Big: Work with seasoned professionals and be proud of being part of the exciting world of SaaS business Ready to join Maqsam's team? Apply now!",
+    "salary": "",
+    "score": 40,
+    "matched_skills": [
+      "JavaScript",
+      "PostgreSQL"
+    ],
+    "missing_skills": [
+      "java",
+      "ruby"
+    ],
+    "reasons": [
+      "Target role title",
+      "Primary stack: JavaScript, PostgreSQL",
+      "Hybrid in Jordan"
+    ],
+    "status": "New",
+    "first_seen": "2026-07-28T21:56:13+03:00",
+    "application_warning": "",
+    "policy_source": "",
+    "workplace_type": "Hybrid",
+    "key": "b49a60d7225149abfa43"
+  }
+]

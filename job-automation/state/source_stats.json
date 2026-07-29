@@ -1,0 +1,153 @@
+{
+  "generatedAt": "2026-07-29T08:12:39+03:00",
+  "rawTotal": 2746,
+  "sources": {
+    "Lever/cscgeneration-2": 460,
+    "Arbeitnow": 375,
+    "Greenhouse/canonical": 302,
+    "Himalayas": 300,
+    "Lever/binance": 295,
+    "Lever/ciandt": 172,
+    "Jobicy": 100,
+    "Remote OK": 100,
+    "Ashby/Replit": 88,
+    "Lever/ttecdigital": 69,
+    "Ashby/Supabase": 57,
+    "LinkedIn Jobs": 49,
+    "Ashby/Sentry": 48,
+    "Workable/Lucidya": 41,
+    "Remotive": 36,
+    "Ashby/Modal": 33,
+    "Workable/Foodics": 32,
+    "Workable/Salla": 28,
+    "Ashby/Linear": 25,
+    "We Work Remotely": 25,
+    "Ashby/WorkOS": 24,
+    "Ashby/Coder": 17,
+    "Lever/betr": 10,
+    "Ashby/PostHog": 9,
+    "Ashby/Resend": 9,
+    "Ashby/Neon": 6,
+    "Workable/Maqsam": 6,
+    "Greenhouse/future": 5,
+    "Lever/cmgx": 5,
+    "Lever/researchgate": 5,
+    "LinkedIn Posts": 5,
+    "Lever/sphere-laboratories": 4,
+    "Lever/relay": 3,
+    "Ashby/GitBook": 2,
+    "Ashby/Inngest": 1
+  },
+  "qualifiedTotal": 12,
+  "linkedInCollected": 49,
+  "linkedInPostsCollected": 5,
+  "hybridCollected": 169,
+  "qualifiedWorkplaceTypes": {
+    "Remote": 8,
+    "Hybrid": 4
+  },
+  "qualifiedSources": {
+    "LinkedIn Jobs": 4,
+    "We Work Remotely": 3,
+    "Ashby/Supabase": 2,
+    "Greenhouse/canonical": 1,
+    "Himalayas": 1,
+    "LinkedIn Posts": 1
+  },
+  "topRejectionReasons": {
+    "Seniority outside target level": 1205,
+    "Insufficient overlap with the CV core stack": 671,
+    "Remote location restriction excludes Jordan: Asia": 105,
+    "Remote location restriction excludes Jordan: United States": 75,
+    "Remote location restriction excludes Jordan: Brazil": 49,
+    "Remote location restriction excludes Jordan: Foster City, CA": 27,
+    "Remote location restriction excludes Jordan: Germany": 25,
+    "Remote location restriction excludes Jordan: Hong Kong": 21
+  },
+  "linkedInDiagnostics": [
+    {
+      "title": "Node.js Developer - AI Trainer",
+      "company": "DataAnnotation",
+      "location": "Maryland, United States",
+      "score": 0,
+      "reason": "Remote location restriction excludes Jordan: Maryland, United States"
+    },
+    {
+      "title": "Software Engineer II",
+      "company": "MetLife",
+      "location": "Clarks Summit, PA",
+      "score": 0,
+      "reason": "Remote location restriction excludes Jordan: Clarks Summit, PA"
+    },
+    {
+      "title": "Full Stack Engineer",
+      "company": "London Approach",
+      "location": "Scranton, PA",
+      "score": 0,
+      "reason": "Remote location restriction excludes Jordan: Scranton, PA"
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "Berkshire Hathaway GUARD Insurance Companies",
+      "location": "Wilkes-Barre, PA",
+      "score": 0,
+      "reason": "Remote location restriction excludes Jordan: Wilkes-Barre, PA"
+    },
+    {
+      "title": "IT Programmer Analyst II",
+      "company": "SEKISUI KYDEX",
+      "location": "Bloomsburg, PA",
+      "score": 0,
+      "reason": "Remote location restriction excludes Jordan: Bloomsburg, PA"
+    },
+    {
+      "title": "SOFTWARE DEVELOPERS",
+      "company": "Laksus Technologies",
+      "location": "Monroe Township, PA",
+      "score": 0,
+      "reason": "Remote location restriction excludes Jordan: Monroe Township, PA"
+    },
+    {
+      "title": "Software Craftsperson/Node.js/React.js/AI - II",
+      "company": "Incubyte",
+      "location": "India",
+      "score": 0,
+      "reason": "Remote location restriction excludes Jordan: India"
+    },
+    {
+      "title": "Desenvolvedor full stack",
+      "company": "Cielo",
+      "location": "Brazil",
+      "score": 0,
+      "reason": "Remote location restriction excludes Jordan: Brazil"
+    },
+    {
+      "title": "Full Stack Engineer",
+      "company": "Roo",
+      "location": "San Francisco, CA",
+      "score": 0,
+      "reason": "Remote location restriction excludes Jordan: San Francisco, CA"
+    },
+    {
+      "title": "Junior Full Stack Web Developer",
+      "company": "TORIS Technologies",
+      "location": "South Africa",
+      "score": 0,
+      "reason": "Remote location restriction excludes Jordan: South Africa"
+    },
+    {
+      "title": "Freelance Full-Stack Web App Developer",
+      "company": "Mindrift",
+      "location": "Saudi Arabia",
+      "score": 0,
+      "reason": "Remote location restriction excludes Jordan: Saudi Arabia"
+    },
+    {
+      "title": "Full Stack (React.js/Node.js) Developer",
+      "company": "Softermii",
+      "location": "Los Angeles, CA",
+      "score": 0,
+      "reason": "Remote location restriction excludes Jordan: Los Angeles, CA"
+    }
+  ]
+}

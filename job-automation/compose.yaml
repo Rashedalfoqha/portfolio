@@ -1,0 +1,59 @@
+services:
+  scout:
+    build:
+      context: .
+    container_name: rashed-job-scout
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - ./state:/app/state
+      - ./output:/app/output
+      - ./logs:/app/logs
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    pids_limit: 256
+    mem_limit: 2g
+    cpus: 2.0
+
+  netdata:
+    image: netdata/netdata:stable
+    container_name: rashed-server-monitor
+    restart: unless-stopped
+    hostname: rashed-job-scout
+    ports:
+      - "127.0.0.1:19999:19999"
+    pid: host
+    cap_add:
+      - SYS_PTRACE
+      - SYS_ADMIN
+    security_opt:
+      - apparmor:unconfined
+    volumes:
+      - netdata-config:/etc/netdata
+      - netdata-lib:/var/lib/netdata
+      - netdata-cache:/var/cache/netdata
+      - /:/host/root:ro,rslave
+      - /etc/passwd:/host/etc/passwd:ro
+      - /etc/group:/host/etc/group:ro
+      - /etc/localtime:/etc/localtime:ro
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /etc/os-release:/host/etc/os-release:ro
+      - /var/log:/host/var/log:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      NETDATA_CLAIM_TOKEN: ""
+      NETDATA_CLAIM_URL: ""
+      NETDATA_CLAIM_ROOMS: ""
+    mem_limit: 768m
+    cpus: 1.0
+
+volumes:
+  netdata-config:
+  netdata-lib:
+  netdata-cache:
