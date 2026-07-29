@@ -8,6 +8,7 @@ import {
   socialProfileUrls,
 } from "@/shared/config/profile-links";
 import { getSiteUrl } from "@/shared/config/site-url";
+import { VibeProvider } from "@/features/portfolio/vibes/vibe-context";
 import NotFound from "./not-found";
 
 function StructuredData() {
@@ -125,9 +126,9 @@ function StructuredData() {
 
 export function App() {
   return (
-    <>
+    <VibeProvider>
       {window.location.pathname === "/" ? <PortfolioExperience /> : <NotFound />}
       <StructuredData />
-    </>
+    </VibeProvider>
   );
 }

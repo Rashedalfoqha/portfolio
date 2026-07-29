@@ -10,36 +10,48 @@ export const VIBE_STORAGE_KEY = "rashed-portfolio-vibe";
 
 export const vibes: Vibe[] = [
   {
-    id: "quiet",
+    id: "cyberpunk",
     number: "01",
-    name: "Quiet Artifact",
-    mood: "Editorial · Calm · Precise",
-    invitation: "Give the work room to speak.",
-    headline: ["I design systems", "that behave."],
-  },
-  {
-    id: "system",
-    number: "02",
-    name: "System Override",
-    mood: "Terminal · Direct · Technical",
-    invitation: "Read the engineer through the system.",
+    name: "Tech Terminal",
+    mood: "Reactive · Raw · Technical",
+    invitation: "Enter the system. Inspect every layer.",
     headline: ["Full-stack.", "No black boxes."],
+    shortName: "CYBER",
+    accent: "#39ff9c",
+    colorScheme: "dark",
   },
   {
-    id: "geometry",
+    id: "minimal",
+    number: "02",
+    name: "Swiss Signal",
+    mood: "Editorial · Calm · Precise",
+    invitation: "Let structure and evidence do the talking.",
+    headline: ["I design systems", "that behave."],
+    shortName: "SWISS",
+    accent: "#ff3b1f",
+    colorScheme: "light",
+  },
+  {
+    id: "glass",
     number: "03",
-    name: "Living Geometry",
-    mood: "Pattern · Motion · Origin",
-    invitation: "Follow the pattern into the product.",
-    headline: ["From pattern", "to product."],
+    name: "Liquid Interface",
+    mood: "Tactile · Fluid · Futuristic",
+    invitation: "Move through a softer kind of system.",
+    headline: ["Logic can feel", "alive."],
+    shortName: "GLASS",
+    accent: "#71f6c0",
+    colorScheme: "dark",
   },
   {
-    id: "playground",
+    id: "retro",
     number: "04",
-    name: "Product Playground",
-    mood: "Curious · Bold · Experimental",
-    invitation: "Open the lab. Touch everything.",
-    headline: ["Curiosity", "ships."],
+    name: "Arcade Quest",
+    mood: "Playful · Pixelated · Curious",
+    invitation: "Choose the quest. Follow the build.",
+    headline: ["Press start.", "Ship something."],
+    shortName: "ARCADE",
+    accent: "#ffd84a",
+    colorScheme: "dark",
   },
 ];
 
@@ -47,10 +59,10 @@ export const vibeThemes: Record<
   VibeId,
   { color: string; scheme: "light" | "dark" }
 > = {
-  quiet: { color: "#f4f0e7", scheme: "light" },
-  system: { color: "#050806", scheme: "dark" },
-  geometry: { color: "#e8dfd0", scheme: "light" },
-  playground: { color: "#f7f1df", scheme: "light" },
+  cyberpunk: { color: "#06090d", scheme: "dark" },
+  minimal: { color: "#f7f7f3", scheme: "light" },
+  glass: { color: "#15142d", scheme: "dark" },
+  retro: { color: "#111b3d", scheme: "dark" },
 };
 
 export const featuredProjects: Project[] = [
@@ -239,4 +251,16 @@ export const processSteps: ProcessStep[] = [
 
 export function isVibeId(value: string | null): value is VibeId {
   return vibes.some((vibe) => vibe.id === value);
+}
+
+const legacyVibeMap: Record<string, VibeId> = {
+  quiet: "minimal",
+  system: "cyberpunk",
+  geometry: "glass",
+  playground: "retro",
+};
+
+export function normalizeVibeId(value: string | null): VibeId | null {
+  if (isVibeId(value)) return value;
+  return value ? legacyVibeMap[value] ?? null : null;
 }

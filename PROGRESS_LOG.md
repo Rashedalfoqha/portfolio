@@ -1551,3 +1551,14 @@ This log records completed improvement rounds so each pass stays cumulative and 
 - **Netlify:** Simplified the repository configuration to `pnpm run build` with `dist` as the publish directory. The Next.js runtime plugin is no longer required.
 - **Quality tooling:** Replaced Next-specific TypeScript and ESLint configuration with Vite/browser and Node-script boundaries. Removed Next, Vinext, Cloudflare runtime, RSC, and Wrangler dependencies from the application build.
 - **Verification:** TypeScript and ESLint passed. The Vite production build passed and all four regression tests passed. Quiet, System, Geometry, and Playground rendered with their expected theme state and zero horizontal overflow on desktop and at 390×844. The mobile vibe chooser fits the viewport.
+
+## Round 145 — Four independent vibe systems — 2026-07-29
+
+- **Priority:** Creative architecture, motion, and interaction.
+- **Theme engine:** Replaced the legacy view model with the explicit `cyberpunk`, `minimal`, `glass`, and `retro` domain and added backwards-compatible URL migration.
+- **Global state:** Added a typed React context that owns vibe selection, the entry hub, URL and local-storage persistence, root `data-vibe`, color scheme, and browser theme color.
+- **Independent systems:** Added dedicated layout wrappers and hero modules for every vibe rather than branching one generic hero. Each system has its own typography, palette, spatial language, navigation treatment, and interaction character.
+- **Interactive art:** Added four dependency-light canvas experiences: reactive terminal portrait and matrix field, inertial geometric mesh, pointer-responsive liquid sphere, and frame-stepped pixel engineer.
+- **Entry and switching:** Added an accessible welcome hub plus a persistent global vibe switcher. Vibe changes use `AnimatePresence` and retain the selected system between visits.
+- **Responsive and accessibility:** Canvas rendering respects device pixel ratio and reduced motion, interactions support pointer input, dialogs manage focus and keyboard dismissal, and mobile-specific compositions preserve readable spacing.
+- **Next priority:** Complete automated checks, inspect all four systems at desktop and mobile sizes, and publish the verified build.
