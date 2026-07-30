@@ -1564,3 +1564,17 @@ This log records completed improvement rounds so each pass stays cumulative and 
 - **Verification:** TypeScript, ESLint, the Vite production build, and all four rendered-output tests passed. Local browser inspection confirmed the Cyberpunk canvas, theme state, sizing, and zero horizontal overflow; the remaining browser session became unavailable before the full eight-viewport matrix could be completed.
 - **Deployment:** Published commit `5604dd7` from `main` through the existing Netlify Git workflow. Netlify reported a ready Vite production deploy, and the live HTML and JavaScript returned HTTP 200 with all four vibe systems present.
 - **Next priority:** Complete a focused visual polish pass after stakeholder review of the four live directions.
+
+## Round 146 — Container spacing and vertical rhythm — 2026-07-30
+
+- **Priority:** Layout spacing and responsive polish following live stakeholder review.
+- **Root cause:** The new themed surfaces inherited inner spacing from the previous borderless layouts. Once borders, glass panels, and pixel frames were introduced, several content blocks began directly against their containers.
+- **System fix:** Added a final, explicit spacing layer after the legacy CSS so shared rules can no longer reset vibe-specific insets.
+- **Cyberpunk:** Converted projects, experience, process, and skill groups into readable terminal panels with consistent command-line insets and panel gaps.
+- **Swiss:** Increased vertical breathing room while preserving the borderless editorial composition.
+- **Glass:** Added proper optical padding, card gaps, expanded-detail insets, and frosted process panels.
+- **Retro:** Added a larger safe area inside heavy pixel frames and reserved room for offset shadows.
+- **Mobile:** Added compact but deliberate inner padding, section rhythm, expanded-card spacing, and retro shadow clearance.
+- **Typography:** Added balanced headings and prettier paragraph wrapping to reduce awkward final lines.
+- **Verification:** TypeScript, ESLint, production build, and all four rendered-output tests passed. Browser checks at 1280×720 and 390×844 confirmed zero horizontal overflow in all four vibes. Cyberpunk, Glass, and Retro cards now have explicit horizontal insets; Swiss intentionally remains borderless. Glass was visually inspected in both desktop and mobile layouts.
+- **Next priority:** Publish the verified spacing revision and review the live deployment.

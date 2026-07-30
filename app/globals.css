@@ -1762,3 +1762,299 @@ main[data-vibe="playground"] .contact { background: var(--blue); border: 3px sol
   main[data-vibe="quiet"] .capability-grid article:last-child { grid-column: auto; }
   main[data-vibe="system"] .timeline article { grid-template-columns: 1fr; }
 }
+
+/* ==========================================================================
+   VIBE SPACING PASS
+   Surfaces introduced by each vibe need their own inner rhythm. These rules
+   intentionally live after the legacy layer so container padding cannot be
+   reset by the shared, borderless section styles above.
+   ========================================================================== */
+
+main[data-vibe] :is(.section-heading h2, .origin h2, .contact h2) {
+  text-wrap: balance;
+}
+
+main[data-vibe] :is(
+  .section-heading > p:last-child,
+  .project-story,
+  .timeline article > p,
+  .process-list p,
+  .capability-grid article > p,
+  .origin-copy > p:not(.eyebrow),
+  .contact > p:not(.eyebrow)
+) {
+  text-wrap: pretty;
+}
+
+/* Cyberpunk: terminal panels need a readable command-line inset. */
+main[data-vibe="cyberpunk"] .project-list {
+  display: grid;
+  gap: 12px;
+  border-top: 0;
+}
+
+main[data-vibe="cyberpunk"] .project-card {
+  border: 1px solid rgba(57,255,156,.22);
+}
+
+main[data-vibe="cyberpunk"] .project-summary {
+  min-height: 124px;
+  padding: 18px 24px;
+}
+
+main[data-vibe="cyberpunk"] .project-detail-inner {
+  padding-inline: 114px 24px;
+}
+
+main[data-vibe="cyberpunk"] .is-open .project-detail-inner {
+  padding-top: 14px;
+  padding-bottom: 32px;
+}
+
+main[data-vibe="cyberpunk"] .timeline {
+  display: grid;
+  gap: 12px;
+  border-top: 0;
+}
+
+main[data-vibe="cyberpunk"] .timeline article {
+  min-height: 190px;
+  padding: 32px 28px;
+  border: 1px solid rgba(57,255,156,.22);
+}
+
+main[data-vibe="cyberpunk"] .process-list {
+  display: grid;
+  gap: 12px;
+  border-top: 0;
+}
+
+main[data-vibe="cyberpunk"] .process-list li {
+  min-height: 176px;
+  padding: 30px 26px;
+  border: 1px solid rgba(57,255,156,.22);
+  background: rgba(5,12,10,.62);
+}
+
+main[data-vibe="cyberpunk"] .capability-grid {
+  gap: 12px;
+  border-top: 0;
+}
+
+main[data-vibe="cyberpunk"] .capability-grid article,
+main[data-vibe="cyberpunk"] .capability-grid article:nth-child(even) {
+  min-height: 360px;
+  padding: 32px 30px 40px;
+  border: 1px solid rgba(57,255,156,.22);
+}
+
+/* Swiss: preserve editorial openness and keep long rules away from copy. */
+main[data-vibe="minimal"] .project-summary {
+  min-height: 132px;
+  padding-block: 22px;
+}
+
+main[data-vibe="minimal"] .timeline article {
+  padding-block: 46px;
+}
+
+main[data-vibe="minimal"] .process-list li {
+  padding-block: 42px;
+}
+
+main[data-vibe="minimal"] .capability-grid article,
+main[data-vibe="minimal"] .capability-grid article:nth-child(even) {
+  padding-top: 42px;
+  padding-bottom: 54px;
+}
+
+/* Glass: every frosted surface gets a real optical inset and breathing room. */
+main[data-vibe="glass"] .project-list {
+  display: grid;
+  gap: 20px;
+  border-top: 0;
+}
+
+main[data-vibe="glass"] .project-card {
+  overflow: hidden;
+}
+
+main[data-vibe="glass"] .project-summary {
+  min-height: 136px;
+  padding: 24px 30px;
+}
+
+main[data-vibe="glass"] .project-detail-inner {
+  padding-inline: 116px 30px;
+}
+
+main[data-vibe="glass"] .is-open .project-detail-inner {
+  padding-top: 14px;
+  padding-bottom: 38px;
+}
+
+main[data-vibe="glass"] .timeline {
+  display: grid;
+  gap: 20px;
+  border-top: 0;
+}
+
+main[data-vibe="glass"] .timeline article {
+  min-height: 204px;
+  padding: 34px 32px;
+}
+
+main[data-vibe="glass"] .process-list {
+  display: grid;
+  gap: 18px;
+  border-top: 0;
+}
+
+main[data-vibe="glass"] .process-list li {
+  min-height: 184px;
+  padding: 32px 30px;
+  border: 1px solid rgba(255,255,255,.17);
+  border-radius: 24px;
+  background: linear-gradient(145deg,rgba(255,255,255,.13),rgba(255,255,255,.035));
+  backdrop-filter: blur(22px);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 24px 70px rgba(4,2,24,.16);
+}
+
+main[data-vibe="glass"] .capability-grid {
+  gap: 20px;
+  border-top: 0;
+}
+
+main[data-vibe="glass"] .capability-grid article,
+main[data-vibe="glass"] .capability-grid article:nth-child(even) {
+  min-height: 370px;
+  padding: 34px 32px 44px;
+}
+
+/* Retro: pixel frames require a larger safe area than one-pixel rules. */
+main[data-vibe="retro"] .project-list {
+  display: grid;
+  gap: 22px;
+  border-top: 0;
+}
+
+main[data-vibe="retro"] .project-card {
+  overflow: hidden;
+}
+
+main[data-vibe="retro"] .project-summary {
+  min-height: 142px;
+  padding: 22px 26px;
+}
+
+main[data-vibe="retro"] .project-detail-inner {
+  padding-inline: 112px 26px;
+}
+
+main[data-vibe="retro"] .is-open .project-detail-inner {
+  padding-top: 16px;
+  padding-bottom: 38px;
+}
+
+main[data-vibe="retro"] .timeline {
+  display: grid;
+  gap: 22px;
+  border-top: 0;
+}
+
+main[data-vibe="retro"] .timeline article {
+  min-height: 210px;
+  padding: 34px 30px;
+}
+
+main[data-vibe="retro"] .process-list {
+  display: grid;
+  gap: 22px;
+  border-top: 0;
+}
+
+main[data-vibe="retro"] .process-list li {
+  min-height: 190px;
+  padding: 32px 28px;
+  border: 5px solid #071027;
+  background: #fff7d6;
+  box-shadow: 8px 8px 0 #f04444;
+  color: #111b3d;
+}
+
+main[data-vibe="retro"] .process-list p {
+  color: rgba(17,27,61,.72);
+}
+
+main[data-vibe="retro"] .capability-grid {
+  gap: 22px;
+  border-top: 0;
+}
+
+main[data-vibe="retro"] .capability-grid article,
+main[data-vibe="retro"] .capability-grid article:nth-child(even) {
+  min-height: 380px;
+  padding: 34px 30px 44px;
+}
+
+@media (max-width: 680px) {
+  main[data-vibe] .section {
+    padding-block: clamp(82px, 24vw, 112px);
+  }
+
+  main[data-vibe] .section-heading {
+    gap: 24px;
+    margin-bottom: 52px;
+  }
+
+  main[data-vibe] .section-heading h2 {
+    line-height: .94;
+  }
+
+  main[data-vibe] .archive {
+    margin-top: 82px;
+  }
+
+  main[data-vibe="cyberpunk"] :is(.project-summary, .timeline article),
+  main[data-vibe="glass"] :is(.project-summary, .timeline article),
+  main[data-vibe="retro"] :is(.project-summary, .timeline article) {
+    padding: 24px 20px;
+  }
+
+  main[data-vibe="cyberpunk"] .project-detail-inner,
+  main[data-vibe="glass"] .project-detail-inner,
+  main[data-vibe="retro"] .project-detail-inner {
+    padding-inline: 20px;
+  }
+
+  main[data-vibe="cyberpunk"] .is-open .project-detail-inner,
+  main[data-vibe="glass"] .is-open .project-detail-inner,
+  main[data-vibe="retro"] .is-open .project-detail-inner {
+    padding-top: 8px;
+    padding-bottom: 30px;
+  }
+
+  main[data-vibe="cyberpunk"] .process-list li,
+  main[data-vibe="glass"] .process-list li,
+  main[data-vibe="retro"] .process-list li {
+    grid-template-columns: 34px 1fr;
+    gap: 18px;
+    padding: 26px 20px;
+  }
+
+  main[data-vibe="cyberpunk"] .capability-grid article,
+  main[data-vibe="cyberpunk"] .capability-grid article:nth-child(even),
+  main[data-vibe="glass"] .capability-grid article,
+  main[data-vibe="glass"] .capability-grid article:nth-child(even),
+  main[data-vibe="retro"] .capability-grid article,
+  main[data-vibe="retro"] .capability-grid article:nth-child(even) {
+    min-height: 0;
+    padding: 28px 20px 34px;
+  }
+
+  main[data-vibe="retro"] :is(.project-list, .timeline, .process-list, .capability-grid) {
+    gap: 18px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+  }
+}
