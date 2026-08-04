@@ -166,12 +166,15 @@ main[data-vibe="geometry"] .contact h2 em { color: #185d57; }
 .portrait-frame-cutout img {
   width: 100%;
   height: auto;
-  max-height: 620px;
+  max-height: 660px;
   object-fit: contain;
   object-position: center bottom;
+  transform-origin: center bottom;
+  transition: transform .55s cubic-bezier(.2,.8,.2,1), filter .55s ease;
 }
+.hero-visual:hover .portrait-frame-cutout img { transform: translateY(-8px) rotate(.5deg); }
 main[data-vibe="system"] .portrait-frame-cutout {
-  width: min(68%, 430px);
+  width: min(72%, 470px);
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -179,20 +182,20 @@ main[data-vibe="system"] .portrait-frame-cutout {
   overflow: visible;
 }
 main[data-vibe="system"] .portrait-frame-cutout img {
-  filter: grayscale(.35) saturate(.82) contrast(.94) drop-shadow(18px 24px 32px rgba(0,0,0,.28));
+  filter: saturate(.92) contrast(.98) drop-shadow(18px 24px 32px rgba(0,0,0,.26));
 }
 main[data-vibe="geometry"] .portrait-frame-cutout {
-  width: min(410px, 64%);
+  width: min(450px, 70%);
   clip-path: none;
   background: transparent;
   box-shadow: none;
 }
 main[data-vibe="geometry"] .portrait-frame-cutout img {
-  filter: sepia(.12) grayscale(.18) contrast(.95) drop-shadow(18px 24px 24px rgba(0,0,0,.22));
+  filter: sepia(.08) saturate(.88) contrast(.98) drop-shadow(18px 24px 24px rgba(0,0,0,.2));
 }
 main[data-vibe="quiet"] .portrait-frame-cutout img {
   border-radius: 0;
-  filter: grayscale(.72) contrast(.94);
+  filter: grayscale(.28) saturate(.74) contrast(.97) drop-shadow(0 24px 34px rgba(32,29,25,.13));
 }
 main[data-vibe="playground"] .portrait-frame-cutout {
   border: 0;
@@ -202,11 +205,12 @@ main[data-vibe="playground"] .portrait-frame-cutout {
   overflow: visible;
 }
 main[data-vibe="playground"] .portrait-frame-cutout img {
-  filter: saturate(.9) contrast(.95) drop-shadow(12px 14px 0 var(--blue));
+  filter: saturate(1.02) contrast(.98) drop-shadow(10px 12px 0 var(--blue));
 }
 
 @media (max-width: 680px) {
-  .portrait-frame-cutout img { max-height: 430px; }
+  .portrait-frame-cutout img { max-height: 470px; }
+  .hero-visual:hover .portrait-frame-cutout img { transform: none; }
   main[data-vibe="system"] .portrait-frame-cutout,
   main[data-vibe="geometry"] .portrait-frame-cutout,
   main[data-vibe="playground"] .portrait-frame-cutout { width: min(78%, 360px); }

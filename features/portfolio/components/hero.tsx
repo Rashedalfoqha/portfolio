@@ -58,10 +58,10 @@ export function Hero({ currentVibe }: { currentVibe: Vibe }) {
             {/* A native image keeps the portfolio portable across local and edge runtimes. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/rashed-animated-soft-v2.png"
-              alt="Animated portrait of Rashed Alfuqaha"
-              width={1122}
-              height={1402}
+              src="/rashed-3d-avatar.png"
+              alt="3D avatar of Rashed Alfuqaha"
+              width={1086}
+              height={1448}
               loading="eager"
               decoding="async"
               fetchPriority="high"

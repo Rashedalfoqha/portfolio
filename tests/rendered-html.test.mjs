@@ -26,8 +26,8 @@ test("server-renders the multi-vibe portfolio", async () => {
   assert.match(html, /AMMAN → REMOTE/);
   assert.match(html, /Interactive geometric system/);
   assert.equal((html.match(/Pattern cell /g) ?? []).length, 12);
-  assert.match(html, /rashed-animated-soft-v2\.png/);
-  assert.match(html, /Animated portrait of Rashed Alfuqaha/);
+  assert.match(html, /rashed-3d-avatar\.png/);
+  assert.match(html, /3D avatar of Rashed Alfuqaha/);
   assert.match(html, /How do you want/);
   assert.match(html, /<em>meet me\?/);
   for (const vibe of ["Aurora Field", "Machine Moderne", "Clear Space", "Beautiful Noise"]) {
