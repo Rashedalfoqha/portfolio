@@ -52,10 +52,10 @@ export function CapabilitiesSection() {
           <strong>Arabic</strong> Native
         </p>
         <p>
-          <strong>English</strong> Professional
+          <strong>English</strong> Professional working proficiency
         </p>
         <p>
-          <strong>Turkish</strong> Professional
+          <strong>Turkish</strong> Professional working proficiency
         </p>
       </div>
     </section>

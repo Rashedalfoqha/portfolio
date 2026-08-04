@@ -1,4 +1,4 @@
-export type VibeId = "cyberpunk" | "minimal" | "glass" | "retro";
+export type VibeId = "quiet" | "system" | "geometry" | "playground";
 
 export type Vibe = {
   id: VibeId;
@@ -7,9 +7,6 @@ export type Vibe = {
   mood: string;
   invitation: string;
   headline: [string, string];
-  shortName: string;
-  accent: string;
-  colorScheme: "light" | "dark";
 };
 
 export type ProjectIconKey =

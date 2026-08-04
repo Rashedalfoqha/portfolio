@@ -10,48 +10,36 @@ export const VIBE_STORAGE_KEY = "rashed-portfolio-vibe";
 
 export const vibes: Vibe[] = [
   {
-    id: "cyberpunk",
+    id: "system",
     number: "01",
-    name: "Tech Terminal",
-    mood: "Reactive · Raw · Technical",
-    invitation: "Enter the system. Inspect every layer.",
-    headline: ["Full-stack.", "No black boxes."],
-    shortName: "CYBER",
-    accent: "#39ff9c",
-    colorScheme: "dark",
+    name: "Aurora Field",
+    mood: "Luminous · Organic · Immersive",
+    invitation: "Explore the work through light, depth, and fluid movement.",
+    headline: ["Full-stack software,", "built carefully."],
   },
   {
-    id: "minimal",
+    id: "geometry",
     number: "02",
-    name: "Swiss Signal",
-    mood: "Editorial · Calm · Precise",
-    invitation: "Let structure and evidence do the talking.",
-    headline: ["I design systems", "that behave."],
-    shortName: "SWISS",
-    accent: "#ff3b1f",
-    colorScheme: "light",
+    name: "Machine Moderne",
+    mood: "Art Deco · Geometric · Precise",
+    invitation: "A structured view shaped by geometry and precise spacing.",
+    headline: ["Clear systems.", "Reliable delivery."],
   },
   {
-    id: "glass",
+    id: "quiet",
     number: "03",
-    name: "Liquid Interface",
-    mood: "Tactile · Fluid · Futuristic",
-    invitation: "Move through a softer kind of system.",
-    headline: ["Logic can feel", "alive."],
-    shortName: "GLASS",
-    accent: "#71f6c0",
-    colorScheme: "dark",
+    name: "Clear Space",
+    mood: "Minimal · Editorial · Exact",
+    invitation: "A quiet view focused on the work and its technical scope.",
+    headline: ["Software that", "holds up."],
   },
   {
-    id: "retro",
+    id: "playground",
     number: "04",
-    name: "Arcade Quest",
-    mood: "Playful · Pixelated · Curious",
-    invitation: "Choose the quest. Follow the build.",
-    headline: ["Press start.", "Ship something."],
-    shortName: "ARCADE",
-    accent: "#ffd84a",
-    colorScheme: "dark",
+    name: "Beautiful Noise",
+    mood: "Maximal · Layered · Restless",
+    invitation: "A louder view with layered type, color, and movement.",
+    headline: ["Interfaces, APIs,", "and everything between."],
   },
 ];
 
@@ -59,10 +47,10 @@ export const vibeThemes: Record<
   VibeId,
   { color: string; scheme: "light" | "dark" }
 > = {
-  cyberpunk: { color: "#06090d", scheme: "dark" },
-  minimal: { color: "#f7f7f3", scheme: "light" },
-  glass: { color: "#15142d", scheme: "dark" },
-  retro: { color: "#111b3d", scheme: "dark" },
+  system: { color: "#071217", scheme: "dark" },
+  geometry: { color: "#11100f", scheme: "dark" },
+  quiet: { color: "#f4f3ef", scheme: "light" },
+  playground: { color: "#f4ff42", scheme: "light" },
 };
 
 export const featuredProjects: Project[] = [
@@ -70,7 +58,7 @@ export const featuredProjects: Project[] = [
     number: "01",
     name: "EV Solution JO",
     label: "OPERATIONS PLATFORM",
-    line: "One view for a moving network.",
+    line: "Monitoring and reporting for EV charging operations.",
     story:
       "A solo full-stack build for managing DC and AC charging operations. I shaped the interface, services, data, and live monitoring into one clear operating surface.",
     proof: [
@@ -87,7 +75,7 @@ export const featuredProjects: Project[] = [
     number: "02",
     name: "Booster Icon System",
     label: "DEVELOPER TOOLING",
-    line: "25,396 files. One controlled pipeline.",
+    line: "A controlled pipeline for 25,396 SVG files.",
     story:
       "A framework-agnostic SVG package and local operations dashboard. It turns a large Figma-sourced library into safe direct imports while keeping validation and releases explicit.",
     proof: [
@@ -103,7 +91,7 @@ export const featuredProjects: Project[] = [
     number: "03",
     name: "Figma Design Intelligence",
     label: "FIGMA PLUGIN",
-    line: "The design travels with its logic intact.",
+    line: "Extracting structure, prototypes, and motion from Figma.",
     story:
       "A plugin that reads a Figma file as structured design intelligence instead of a flat screenshot, capturing its system, prototype graph, Smart Animate relationships, and motion metadata.",
     proof: [
@@ -122,7 +110,7 @@ export const archiveProjects: Project[] = [
     number: "04",
     name: "Tickln",
     label: "REAL-TIME WORKSPACE",
-    line: "Tasks and context in one live flow.",
+    line: "Live task tracking and team communication.",
     story:
       "Team collaboration with live task tracking, role-aware workflows, and real-time messaging.",
     proof: [],
@@ -134,7 +122,7 @@ export const archiveProjects: Project[] = [
     number: "05",
     name: "NotNull Social Space",
     label: "SOCIAL PLATFORM",
-    line: "A responsive social product with live conversation.",
+    line: "Posts, relationships, notifications, and live chat.",
     story:
       "Authentication, posts, social relationships, notifications, and real-time chat.",
     proof: [],
@@ -146,7 +134,7 @@ export const archiveProjects: Project[] = [
     number: "06",
     name: "RA Job Search",
     label: "SEARCH PRODUCT",
-    line: "A shorter path from discovery to action.",
+    line: "Job search with skill matching and practical filters.",
     story: "Skill matching, filters, job details, profiles, and protected actions.",
     proof: [],
     tech: ["React", "Express", "MongoDB", "JWT"],
@@ -157,7 +145,7 @@ export const archiveProjects: Project[] = [
     number: "07",
     name: "Course Management",
     label: "RBAC PLATFORM",
-    line: "A different, clear flow for every role.",
+    line: "Course and enrollment flows with role-based access.",
     story:
       "Course creation, enrollment, authentication, and role-specific access for teachers and students.",
     proof: [],
@@ -171,7 +159,7 @@ export const capabilities: Capability[] = [
   {
     kind: "frontend",
     name: "Product interfaces",
-    note: "Responsive UI, state, and systems people can understand.",
+    note: "Responsive interfaces, application state, and reusable UI systems.",
     skills: [
       "TypeScript",
       "React",
@@ -185,12 +173,13 @@ export const capabilities: Capability[] = [
   {
     kind: "backend",
     name: "Services & realtime",
-    note: "APIs, access control, and behavior behind the interface.",
+    note: "APIs, access control, and real-time application behavior.",
     skills: [
       "Node.js",
       "NestJS",
       "Express.js",
       "REST APIs",
+      "GraphQL",
       "Socket.IO",
       "Authentication",
       "RBAC",
@@ -199,7 +188,7 @@ export const capabilities: Capability[] = [
   {
     kind: "data",
     name: "Data & delivery",
-    note: "From the schema to the environment where the product runs.",
+    note: "Databases, local environments, source control, and API delivery.",
     skills: [
       "PostgreSQL",
       "MongoDB",
@@ -213,19 +202,19 @@ export const capabilities: Capability[] = [
   {
     kind: "tooling",
     name: "Developer systems",
-    note: "Tools that make design and engineering work repeatable.",
+    note: "Plugins and build pipelines with explicit validation steps.",
     skills: [
       "Figma Plugin API",
       "Design Systems",
       "SVG pipelines",
-      "Package architecture",
+      "Icon package architecture",
       "Build validation",
     ],
   },
   {
     kind: "growing",
     name: "Expanding layer",
-    note: "Deliberately growing beyond the core stack.",
+    note: "Skills I am developing alongside the core JavaScript stack.",
     skills: ["Python", "Microservices (emerging)"],
   },
 ];
@@ -251,16 +240,4 @@ export const processSteps: ProcessStep[] = [
 
 export function isVibeId(value: string | null): value is VibeId {
   return vibes.some((vibe) => vibe.id === value);
-}
-
-const legacyVibeMap: Record<string, VibeId> = {
-  quiet: "minimal",
-  system: "cyberpunk",
-  geometry: "glass",
-  playground: "retro",
-};
-
-export function normalizeVibeId(value: string | null): VibeId | null {
-  if (isVibeId(value)) return value;
-  return value ? legacyVibeMap[value] ?? null : null;
 }

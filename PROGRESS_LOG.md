@@ -1578,3 +1578,16 @@ This log records completed improvement rounds so each pass stays cumulative and 
 - **Typography:** Added balanced headings and prettier paragraph wrapping to reduce awkward final lines.
 - **Verification:** TypeScript, ESLint, production build, and all four rendered-output tests passed. Browser checks at 1280×720 and 390×844 confirmed zero horizontal overflow in all four vibes. Cyberpunk, Glass, and Retro cards now have explicit horizontal insets; Swiss intentionally remains borderless. Glass was visually inspected in both desktop and mobile layouts.
 - **Next priority:** Publish the verified spacing revision and review the live deployment.
+
+## Round 147 - Canonical project move, Anime.js, and content audit - 2026-08-04
+
+- Made `C:\Users\rashe\Documents\Codex\2026-07-20\portfolio` the canonical project directory.
+- Replaced the mixed Vite and Next setup with the same Vinext structure used by the published portfolio.
+- Moved the obsolete four-vibe implementation and old entry files to `portfolio-migration-backup` instead of deleting them.
+- Cloned `blader/humanizer` beside the project and used its no-fabrication rules to remove promotional and aphoristic copy.
+- Added Anime.js 4.5 for the welcome sequence and vibe entrance choreography.
+- Scoped every Anime.js instance to its React root, reverted it during cleanup, and disabled choreography when the visitor requests reduced motion.
+- Rewrote vibe invitations, project lines, capability notes, the origin paragraph, and the experience introduction using only existing portfolio and CV facts.
+- Verified TypeScript, ESLint, the production build, and all six server-rendered tests.
+
+- **Next priority:** Run browser-based visual QA from the canonical folder before the next production deployment.

@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 
 export function Artifact() {
@@ -37,7 +39,7 @@ export function Artifact() {
           {"{ }"}
         </span>
       </div>
-      <p>Pattern becomes component. Component becomes system.</p>
+      <p>Toggle the cells to assemble a geometric pattern from reusable parts.</p>
     </div>
   );
 }

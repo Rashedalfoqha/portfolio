@@ -1,52 +1,38 @@
-# Rashed Alfuqaha — System Atlas
+# Rashed Alfuqaha portfolio
 
-A bilingual, proof-first portfolio for **Rashed Mohammad Alfuqaha**, a full-stack software engineer whose path into software began with Islamic art, architectural ornament, and CAD pattern design.
+This is the source for Rashed Mohammad Alfuqaha's portfolio. It presents the same verified work through four visual systems: Aurora, Art Deco, Minimalism, and Maximalism.
 
-The experience treats the portfolio as a living system rather than a gallery of cards: visitors can scan the professional signal in seconds, then progressively explore project evidence, engineering decisions, AI-augmented workflow, and the design logic behind the work.
+The content focuses on full-stack delivery, developer tooling, and the path from Islamic art and CAD pattern work into software engineering. Current employer work stays at a safe, high level. Python and microservices are listed as developing skills.
 
-![System Atlas social preview](public/og.png)
+## What is included
 
-## Experience principles
-
-- **Proof before adjectives** — projects, stack, links, and constraints appear before broad claims.
-- **Progressive discovery** — the project atlas rewards exploration without hiding essential hiring information.
-- **One identity, two languages** — English and Arabic are first-class experiences, including correct RTL behavior.
-- **Art as engineering context** — the visual grammar connects geometric pattern thinking to reusable software systems.
-- **Motion with restraint** — interaction supports orientation and curiosity, while respecting reduced-motion preferences.
-- **Honest boundaries** — private repositories and confidential employer work are labeled instead of simulated.
-
-## What is inside
-
-- A fast first-screen signal for recruiters and collaborators
-- Five project stories with verified stack and destinations
-- Interactive project tabs with keyboard navigation and visit progress
-- A concise AI-augmented development workflow focused on review and verification
-- A visual bridge between CAD/pattern design and software architecture
-- Dark and light themes with a locally remembered preference
-- English and Arabic content with layout-direction switching
-- Responsive layouts for desktop, tablet, and mobile
-- Metadata, Open Graph image, structured data, sitemap, robots, and web manifest
-- Content Security Policy and other defensive response headers
+- Seven projects, including three expanded case studies
+- Current and previous technical experience
+- A practical AI-assisted workflow with human review
+- A skills section covering frontend, backend, data, tooling, and developing capabilities
+- Four switchable layouts with a remembered visitor preference
+- Anime.js entrance motion with a reduced-motion fallback
+- Metadata, structured data, social images, sitemap, robots, and web manifest
 
 ## Stack
 
-- Vite 8 and React 19
-- TypeScript
-- CSS custom properties and handcrafted responsive CSS
-- Node's built-in test runner for rendered-output checks
-
-The interface deliberately avoids a heavy animation dependency. Its pattern system, state transitions, and micro-interactions are implemented with React and CSS so the concept stays fast and maintainable.
+- React 19 and TypeScript
+- Next.js APIs running through Vinext and Vite
+- Anime.js 4 for scoped entrance choreography
+- CSS custom properties and responsive CSS
+- React Icons for technology marks
+- Node's built-in test runner
 
 ## Local development
 
-Requirements: Node.js 22.13 or newer and pnpm.
+Use Node.js 22.13 or newer and pnpm.
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-Open the local URL printed by Vite, normally `http://localhost:5173`.
+Open the local URL printed by the development server.
 
 ## Verification
 
@@ -55,25 +41,17 @@ pnpm run check
 pnpm test
 ```
 
-The checks cover the production build, rendered portfolio content, language variants, link integrity signals, and security headers. Visual QA additionally covers desktop/mobile layouts, RTL, both themes, keyboard tab behavior, focus states, reduced-motion support, and horizontal overflow.
+The checks cover types, linting, the production build, server-rendered content, metadata, security headers, and responsive motion safeguards.
 
 ## Content boundaries
 
-- Current employer work is described only at a safe, high level.
-- No unverified performance metric is presented as fact.
-- Public project repositories link directly to their current GitHub locations.
-- Python and microservices are positioned as developing capabilities, not primary expertise.
-
-## Deployment
-
-The project builds as a static Vite site in `dist/` and includes a repository-owned `netlify.toml`. Netlify can publish it with `pnpm run build` and the `dist` publish directory. Canonical metadata automatically uses Netlify's production URL and can later use a personal domain through `VITE_SITE_URL`.
+- The portfolio does not expose confidential employer or client details.
+- It does not present unverified performance numbers as facts.
+- Public project links point to their live site or GitHub repository.
+- The CV remains the source of truth for experience, education, and language proficiency.
 
 ## Contact
 
 - Email: [rashedmohammadalfuqaha@gmail.com](mailto:rashedmohammadalfuqaha@gmail.com)
 - GitHub: [Rashedalfoqha](https://github.com/Rashedalfoqha)
 - LinkedIn: [Rashed Alfuqaha](https://www.linkedin.com/in/rashedalfuqaha/)
-
----
-
-Built around a simple idea: **structure was Rashed's first language; code became the next one.**

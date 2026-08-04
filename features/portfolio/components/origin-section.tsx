@@ -22,18 +22,20 @@ export function OriginSection() {
           <em>The precision stayed.</em>
         </h2>
         <p>
-          Before software, I studied Islamic Arts and ornamental architecture
-          and worked with CAD patterns. That trained my eye to see structure,
-          repetition, spacing, and the small errors that break a system.
+          Before software, I completed a Bachelor&apos;s Degree in Islamic Arts
+          at WISE University and worked independently on CAD patterns for
+          mosaics and architectural production. That trained my eye to see
+          structure, repetition, spacing, and the small errors that break a
+          system.
         </p>
         <p>
-          Today the pattern is a component, the geometry is a layout, and the
-          precision is careful implementation. The art background supports the
-          engineering. It does not compete with it.
+          I now apply the same attention to components, layouts, and
+          implementation details. My art background helps me notice spacing,
+          repetition, and visual inconsistencies while I build software.
         </p>
         <div className="origin-ledger">
           <span>ISLAMIC ARTS · WISE UNIVERSITY · 2019-2023</span>
-          <span>FREELANCE CAD DESIGN · 2022-2023</span>
+          <span>FREELANCE CAD DESIGN · JUL 2022-OCT 2023</span>
         </div>
       </div>
     </section>

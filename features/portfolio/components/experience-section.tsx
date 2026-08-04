@@ -7,13 +7,13 @@ export function ExperienceSection() {
           <span>THE WORK BEHIND THE WORK</span>
         </p>
         <h2>
-          Software in
+          Software and client
           <br />
-          <em>production.</em>
+          <em>work.</em>
         </h2>
         <p>
-          Client details can stay private. The engineering scope can still be
-          clear.
+          The client work stays private, but the role, stack, and delivery
+          scope are clear.
         </p>
       </header>
       <div className="timeline">
@@ -26,8 +26,9 @@ export function ExperienceSection() {
             </h3>
           </div>
           <p>
-            Contributing across a private multi-vendor e-commerce platform with
-            Next.js, NestJS, TypeScript, SCSS, and Docker.
+            Contribute across front-end, API, and data-layer delivery for a
+            private multi-vendor e-commerce platform using Next.js, NestJS,
+            TypeScript, SCSS, Python where required, and Docker.
           </p>
         </article>
         <article>
@@ -37,8 +38,20 @@ export function ExperienceSection() {
             <h3>Independent + Vero IT</h3>
           </div>
           <p>
-            Delivered client web applications from requirements through
+            Delivered responsive client applications, REST APIs, authentication
+            flows, and database-backed features from requirements through
             deployment using React, Next.js, Node.js, PostgreSQL, and MongoDB.
+          </p>
+        </article>
+        <article>
+          <time>JUL 2022 - OCT 2023</time>
+          <div>
+            <span>FREELANCE CAD DESIGNER</span>
+            <h3>Independent</h3>
+          </div>
+          <p>
+            Produced precise mosaic and architectural patterns and coordinated
+            technical specifications with artisans and production teams.
           </p>
         </article>
         <article className="timeline-note">
