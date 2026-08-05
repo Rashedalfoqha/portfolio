@@ -1,9 +1,41 @@
-import type { Vibe } from "../types";
+import type { Vibe, VibeId } from "../types";
 import { Artifact } from "./artifact";
 
 const primaryStack = ["TypeScript", "Next.js", "NestJS", "PostgreSQL"];
 
+const avatarByVibe: Record<
+  VibeId,
+  { src: string; width: number; height: number; label: string }
+> = {
+  system: {
+    src: "/rashed-avatar-aurora.png",
+    width: 1122,
+    height: 1402,
+    label: "Aurora",
+  },
+  geometry: {
+    src: "/rashed-avatar-art-deco.png",
+    width: 1122,
+    height: 1402,
+    label: "Art Deco",
+  },
+  quiet: {
+    src: "/rashed-avatar-minimal.png",
+    width: 1254,
+    height: 1254,
+    label: "Minimal",
+  },
+  playground: {
+    src: "/rashed-avatar-maximal.png",
+    width: 1086,
+    height: 1448,
+    label: "Maximal",
+  },
+};
+
 export function Hero({ currentVibe }: { currentVibe: Vibe }) {
+  const avatar = avatarByVibe[currentVibe.id];
+
   return (
     <>
       <section className="hero">
@@ -58,10 +90,10 @@ export function Hero({ currentVibe }: { currentVibe: Vibe }) {
             {/* A native image keeps the portfolio portable across local and edge runtimes. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/rashed-3d-avatar.png"
-              alt="3D avatar of Rashed Alfuqaha"
-              width={1086}
-              height={1448}
+              src={avatar.src}
+              alt={`${avatar.label} 3D avatar of Rashed Alfuqaha`}
+              width={avatar.width}
+              height={avatar.height}
               loading="eager"
               decoding="async"
               fetchPriority="high"

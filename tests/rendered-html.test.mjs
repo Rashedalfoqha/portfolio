@@ -19,6 +19,10 @@ test("server-renders the multi-vibe portfolio", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   assert.equal(response.headers.get("x-frame-options"), "DENY");
   const html = await response.text();
+  const source = await readFile(
+    new URL("../features/portfolio/components/hero.tsx", import.meta.url),
+    "utf8",
+  );
   assert.match(html, /<html lang="en" dir="ltr">/);
   assert.match(html, /Full-stack software/);
   assert.match(html, /<em>built carefully\./);
@@ -26,8 +30,11 @@ test("server-renders the multi-vibe portfolio", async () => {
   assert.match(html, /AMMAN → REMOTE/);
   assert.match(html, /Interactive geometric system/);
   assert.equal((html.match(/Pattern cell /g) ?? []).length, 12);
-  assert.match(html, /rashed-3d-avatar\.png/);
-  assert.match(html, /3D avatar of Rashed Alfuqaha/);
+  assert.match(html, /rashed-avatar-aurora\.png/);
+  assert.match(html, /Aurora 3D avatar of Rashed Alfuqaha/);
+  assert.match(source, /rashed-avatar-art-deco\.png/);
+  assert.match(source, /rashed-avatar-minimal\.png/);
+  assert.match(source, /rashed-avatar-maximal\.png/);
   assert.match(html, /How do you want/);
   assert.match(html, /<em>meet me\?/);
   for (const vibe of ["Aurora Field", "Machine Moderne", "Clear Space", "Beautiful Noise"]) {
