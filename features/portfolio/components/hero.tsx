@@ -9,25 +9,25 @@ const avatarByVibe: Record<
 > = {
   system: {
     src: "/rashed-avatar-aurora.png",
-    width: 1086,
+    width: 696,
     height: 1448,
     label: "Aurora",
   },
   geometry: {
     src: "/rashed-avatar-art-deco.png",
-    width: 1024,
-    height: 1536,
+    width: 583,
+    height: 1533,
     label: "Art Deco",
   },
   quiet: {
     src: "/rashed-avatar-minimal.png",
-    width: 1086,
-    height: 1448,
+    width: 547,
+    height: 1394,
     label: "Minimal",
   },
   playground: {
     src: "/rashed-avatar-maximal.png",
-    width: 1024,
+    width: 669,
     height: 1536,
     label: "Maximal",
   },

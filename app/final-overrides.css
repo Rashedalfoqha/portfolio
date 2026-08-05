@@ -203,16 +203,26 @@ main[data-vibe="playground"] .portrait-frame-cutout {
   background: transparent;
   box-shadow: none;
   overflow: visible;
-  width: min(520px, 76%);
+  right: -4%;
+  bottom: 0;
+  z-index: 3;
+  width: min(360px, 52%);
 }
 main[data-vibe="playground"] .portrait-frame-cutout img {
   filter: saturate(1.02) contrast(.98) drop-shadow(10px 12px 0 var(--blue));
+}
+main[data-vibe="playground"] .hero-visual .artifact-shell {
+  left: -2%;
+  top: 7%;
+  z-index: 2;
+  width: 64%;
 }
 
 @media (max-width: 680px) {
   .portrait-frame-cutout img { max-height: 470px; }
   .hero-visual:hover .portrait-frame-cutout img { transform: none; }
   main[data-vibe="system"] .portrait-frame-cutout,
-  main[data-vibe="geometry"] .portrait-frame-cutout,
-  main[data-vibe="playground"] .portrait-frame-cutout { width: min(78%, 360px); }
+  main[data-vibe="geometry"] .portrait-frame-cutout { width: min(78%, 360px); }
+  main[data-vibe="playground"] .portrait-frame-cutout { width: min(56%, 280px); }
+  main[data-vibe="playground"] .hero-visual .artifact-shell { left: 0; width: 70%; }
 }
