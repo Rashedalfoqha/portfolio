@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build",
+    "build:netlify": "pnpm run build && node scripts/export-netlify.mjs",
     "start": "vinext start",
     "check": "tsc --noEmit && eslint app features shared tests next.config.ts",
     "test": "pnpm run build && node --test tests/rendered-html.test.mjs",
