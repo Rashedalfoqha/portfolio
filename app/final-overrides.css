@@ -174,7 +174,7 @@ main[data-vibe="geometry"] .contact h2 em { color: #185d57; }
 }
 .hero-visual:hover .portrait-frame-cutout img { transform: translateY(-8px) rotate(.5deg); }
 main[data-vibe="system"] .portrait-frame-cutout {
-  width: min(72%, 470px);
+  width: min(78%, 520px);
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -185,7 +185,7 @@ main[data-vibe="system"] .portrait-frame-cutout img {
   filter: saturate(.92) contrast(.98) drop-shadow(18px 24px 32px rgba(0,0,0,.26));
 }
 main[data-vibe="geometry"] .portrait-frame-cutout {
-  width: min(450px, 70%);
+  width: min(520px, 78%);
   clip-path: none;
   background: transparent;
   box-shadow: none;
@@ -195,7 +195,7 @@ main[data-vibe="geometry"] .portrait-frame-cutout img {
 }
 main[data-vibe="quiet"] .portrait-frame-cutout img {
   border-radius: 0;
-  filter: grayscale(.28) saturate(.74) contrast(.97) drop-shadow(0 24px 34px rgba(32,29,25,.13));
+  filter: grayscale(1) contrast(.96) drop-shadow(0 24px 34px rgba(32,29,25,.13));
 }
 main[data-vibe="playground"] .portrait-frame-cutout {
   border: 0;
@@ -203,6 +203,7 @@ main[data-vibe="playground"] .portrait-frame-cutout {
   background: transparent;
   box-shadow: none;
   overflow: visible;
+  width: min(520px, 76%);
 }
 main[data-vibe="playground"] .portrait-frame-cutout img {
   filter: saturate(1.02) contrast(.98) drop-shadow(10px 12px 0 var(--blue));
