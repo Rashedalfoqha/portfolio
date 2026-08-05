@@ -12,7 +12,7 @@ import "./globals.css";
 import "./final-overrides.css";
 
 const productionUrl = new URL(
-  "https://rashed-alfuqaha-portfolio.rashedalfoqha002.chatgpt.site",
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://rashedalfouqaha.netlify.app",
 );
 const metadataBase = process.env.NODE_ENV === "development"
   ? new URL("http://localhost:3000")
@@ -151,14 +151,11 @@ export default function RootLayout({
       "ESM and CommonJS packages",
       "Docker",
       "SCSS",
-      "Linux",
       "GitHub",
       "Postman",
       "Bootstrap",
-      "jQuery",
       "API development",
       "Database design",
-      "SaaS products",
       "Islamic arts and ornamental architecture",
       "Geometric pattern design",
     ],
@@ -168,9 +165,9 @@ export default function RootLayout({
     "@type": "ProfilePage",
     "@id": profilePageId,
     name: "Rashed Alfuqaha - Full-Stack Software Engineer",
-    headline: "Full-Stack Software Engineer building production-grade web apps end to end.",
+    headline: "Full-Stack Software Engineer building maintainable web applications end to end.",
     url: productionUrl.href,
-    dateModified: "2026-07-28",
+    dateModified: "2026-08-05",
     inLanguage: "en",
     mainEntity: person,
     hasPart: [...createChapterParts(productionUrl.href, "en", person["@id"]), createProjectList(productionUrl.href, "en")],

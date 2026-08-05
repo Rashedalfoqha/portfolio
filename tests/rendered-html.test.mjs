@@ -60,7 +60,7 @@ test("renders seven truthful projects with three detailed case studies", async (
   assert.equal((html.match(/class="project-card is-open"|class="project-card "/g) ?? []).length, 3);
   assert.match(html, /25,396 SVG files · 4,154 names · 7 styles/);
   assert.match(html, /Smart Animate/);
-  assert.match(html, /solo full-stack build/i);
+  assert.match(html, /station and session monitoring/i);
   assert.doesNotMatch(html, /React Native/i);
 });
 
@@ -79,15 +79,16 @@ test("renders verified experience, skills, and origin without private data", asy
   assert.match(html, /formerly CartBuzz/);
   assert.match(html, /JAN 2026 - PRESENT/);
   assert.match(html, /Next\.js, NestJS, TypeScript, SCSS, Python where required, and Docker/);
-  assert.match(html, /Independent \+ Vero IT/);
+  assert.match(html, /<h3>Vero IT<\/h3>/);
   assert.match(html, /FREELANCE CAD DESIGNER/);
   assert.match(html, /JUL 2022 - OCT 2023/);
   assert.match(html, /MERAKI Academy/);
   assert.match(html, /Bachelor(?:&#x27;|')s Degree in Islamic Arts/);
-  for (const skill of ["TypeScript", "Socket.IO", "GraphQL", "PostgreSQL", "Figma Plugin API", "Icon package architecture", "Python", "Microservices (emerging)"]) {
+  for (const skill of ["TypeScript", "Socket.IO", "PostgreSQL", "Figma Plugin API", "Icon package architecture", "Python", "Microservices (emerging)"]) {
     assert.match(html, new RegExp(skill.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
   for (const language of ["Arabic", "English", "Turkish"]) assert.match(html, new RegExp(language));
+  assert.match(html, /English<\/strong> Basic conversational/);
   assert.doesNotMatch(html, /0771709080|\+962\s?771709080/);
 });
 

@@ -35,12 +35,12 @@ export function ExperienceSection() {
           <time>MAY - DEC 2025</time>
           <div>
             <span>FREELANCE FULL-STACK DEVELOPER</span>
-            <h3>Independent + Vero IT</h3>
+            <h3>Vero IT</h3>
           </div>
           <p>
-            Delivered responsive client applications, REST APIs, authentication
-            flows, and database-backed features from requirements through
-            deployment using React, Next.js, Node.js, PostgreSQL, and MongoDB.
+            Built client applications, REST APIs, authentication flows,
+            real-time features, and data models using React, Next.js, Node.js,
+            Express.js, TypeScript, PostgreSQL, and MongoDB.
           </p>
         </article>
         <article>

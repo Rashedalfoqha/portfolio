@@ -52,7 +52,7 @@ export function CapabilitiesSection() {
           <strong>Arabic</strong> Native
         </p>
         <p>
-          <strong>English</strong> Professional working proficiency
+          <strong>English</strong> Basic conversational · actively improving
         </p>
         <p>
           <strong>Turkish</strong> Professional working proficiency

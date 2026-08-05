@@ -60,7 +60,7 @@ export const featuredProjects: Project[] = [
     label: "OPERATIONS PLATFORM",
     line: "Monitoring and reporting for EV charging operations.",
     story:
-      "A solo full-stack build for managing DC and AC charging operations. I shaped the interface, services, data, and live monitoring into one clear operating surface.",
+      "A full-stack platform for managing DC and AC charging operations, bringing station and session monitoring, reporting, and application data into one clear operating surface.",
     proof: [
       "Live station and session monitoring",
       "Usage and performance reporting",
@@ -179,7 +179,6 @@ export const capabilities: Capability[] = [
       "NestJS",
       "Express.js",
       "REST APIs",
-      "GraphQL",
       "Socket.IO",
       "Authentication",
       "RBAC",
