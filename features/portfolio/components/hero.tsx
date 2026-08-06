@@ -50,13 +50,12 @@ export function Hero({ currentVibe }: { currentVibe: Vibe }) {
             <em>{currentVibe.headline[1]}</em>
           </h1>
           <p className="hero-lede">
-            I&apos;m Rashed, a full-stack software engineer building
-            maintainable web applications across responsive interfaces,
-            APIs, real-time workflows, and relational and document databases.
+            I build maintainable web products across interfaces, APIs,
+            real-time workflows, and data systems.
           </p>
           <div className="hero-actions">
             <a className="button button-dark" href="#work">
-              Inspect selected work <span>↓</span>
+              Selected work <span>↓</span>
             </a>
             <a
               className="button button-quiet"

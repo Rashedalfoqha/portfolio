@@ -10,6 +10,7 @@ import {
 } from "@/features/portfolio/schema";
 import "./globals.css";
 import "./final-overrides.css";
+import "@/app/creative-direction.css";
 
 const productionUrl = new URL(
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://rashedalfouqaha.netlify.app",

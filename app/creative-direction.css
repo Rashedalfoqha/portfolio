@@ -1,0 +1,429 @@
+/* Creative direction pass: distinct compositions with one shared content model. */
+
+/* Welcome is a neutral gallery foyer. It does not borrow the language of a mode. */
+.vibe-welcome {
+  --welcome-ink: #f1f1ed;
+  --welcome-muted: #a7aaa6;
+  display: grid;
+  grid-template-rows: 72px auto minmax(250px, 1fr) 28px;
+  gap: 0;
+  min-height: 100dvh;
+  padding: 0 clamp(20px, 4vw, 64px) 18px;
+  color: var(--welcome-ink);
+  background: #101213;
+  overflow-y: auto;
+}
+
+.vibe-welcome::before { display: none; }
+
+.vibe-welcome .welcome-top {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  min-height: 72px;
+  border-bottom: 1px solid rgb(241 241 237 / 18%);
+}
+
+.vibe-welcome .welcome-brand { color: var(--welcome-ink); }
+.vibe-welcome .welcome-top > p {
+  color: var(--welcome-muted);
+  font: 500 10px/1 var(--mono);
+  letter-spacing: .14em;
+}
+
+.vibe-welcome .welcome-top > button {
+  justify-self: end;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  color: var(--welcome-ink);
+  background: transparent;
+  font: 600 12px/1 var(--mono);
+}
+
+.vibe-welcome .welcome-top > button:hover,
+.vibe-welcome .welcome-top > button:focus-visible { color: #c8ff55; }
+
+.vibe-welcome .welcome-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(260px, .75fr);
+  align-items: end;
+  gap: clamp(28px, 5vw, 80px);
+  padding: clamp(26px, 4vh, 48px) 0 clamp(22px, 3vh, 38px);
+}
+
+.vibe-welcome .welcome-copy .eyebrow {
+  grid-column: 1 / -1;
+  margin: 0 0 -12px;
+  color: #c8ff55;
+  font: 600 10px/1 var(--mono);
+  letter-spacing: .12em;
+}
+
+.vibe-welcome .welcome-copy h2 {
+  grid-column: 1;
+  max-width: 780px;
+  margin: 0;
+  color: var(--welcome-ink);
+  font: 650 clamp(46px, 6vw, 88px)/.91 "Bricolage Grotesque Variable", sans-serif;
+  letter-spacing: -.065em;
+  text-transform: none;
+  text-wrap: balance;
+}
+
+.vibe-welcome .welcome-copy h2 em {
+  color: #c8ff55;
+  font: inherit;
+  font-style: normal;
+}
+
+.vibe-welcome .welcome-copy > p:last-child {
+  grid-column: 2;
+  align-self: end;
+  max-width: 38ch;
+  margin: 0 0 4px;
+  color: var(--welcome-muted);
+  font: 450 16px/1.55 "Bricolage Grotesque Variable", sans-serif;
+}
+
+.vibe-welcome .vibe-options {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 12px;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+}
+
+.vibe-welcome .vibe-option {
+  display: grid;
+  grid-template-rows: minmax(118px, 1fr) auto auto;
+  gap: 16px;
+  min-width: 0;
+  min-height: 0;
+  padding: 12px;
+  border: 1px solid rgb(241 241 237 / 18%);
+  border-radius: 0;
+  color: var(--welcome-ink);
+  background: #17191a;
+  box-shadow: none;
+  text-align: left;
+  transition: color 220ms ease, background-color 220ms ease, border-color 220ms ease, transform 220ms ease;
+}
+
+.vibe-welcome .vibe-option:hover,
+.vibe-welcome .vibe-option:focus-visible {
+  z-index: 1;
+  transform: translateY(-4px);
+  border-color: #c8ff55;
+  box-shadow: none;
+}
+
+.vibe-welcome .vibe-preview {
+  min-height: 118px;
+  margin: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+.vibe-welcome .vibe-option-copy { gap: 6px; }
+.vibe-welcome .vibe-option-copy small {
+  min-height: 2.5em;
+  color: var(--welcome-muted);
+  font: 500 8px/1.4 var(--mono);
+  letter-spacing: .06em;
+}
+.vibe-welcome .vibe-option-copy strong {
+  color: inherit;
+  font: 620 clamp(20px, 2vw, 30px)/1 "Bricolage Grotesque Variable", sans-serif;
+  letter-spacing: -.04em;
+  text-transform: none;
+  transform: none;
+}
+.vibe-welcome .vibe-option-copy > span { display: none; }
+.vibe-welcome .vibe-enter {
+  align-self: end;
+  margin: 0;
+  color: inherit;
+  font: 650 9px/1 var(--mono);
+  letter-spacing: .12em;
+}
+.vibe-welcome .vibe-option[aria-pressed="true"] .vibe-enter::before { content: "CURRENT / "; }
+.vibe-welcome .welcome-foot {
+  align-self: end;
+  margin: 0;
+  color: var(--welcome-muted);
+  font: 500 8px/1 var(--mono);
+  letter-spacing: .08em;
+  text-align: right;
+}
+
+/* Minimalism: a quiet technical monograph with decisive hierarchy. */
+main[data-vibe="quiet"] {
+  --display: "Bricolage Grotesque Variable", sans-serif;
+  --paper: #f3f3ef;
+  --paper-2: #e7e8e3;
+  --ink: #171a18;
+  --muted: #5f6561;
+  --line: rgb(23 26 24 / 18%);
+  --blue: #155c4e;
+  background: var(--paper);
+}
+
+main[data-vibe="quiet"] .vibe-stage,
+main[data-vibe="quiet"] .vibe-atmosphere { display: none; }
+
+main[data-vibe="quiet"] .site-header,
+main[data-vibe="quiet"] .site-header.is-scrolled {
+  top: 0;
+  height: 72px;
+  padding-inline: max(24px, calc((100% - 1180px) / 2));
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  background: rgb(243 243 239 / 92%);
+  backdrop-filter: blur(14px);
+}
+
+main[data-vibe="quiet"] .site-header nav a,
+main[data-vibe="quiet"] .header-contact { font-family: var(--display); font-style: normal; }
+
+main[data-vibe="quiet"] .vibe-layout-minimal .hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.22fr) minmax(360px, .78fr);
+  align-items: center;
+  gap: clamp(36px, 7vw, 110px);
+  width: min(1180px, calc(100% - 48px));
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: 96px 0 24px;
+  border-bottom: 0;
+}
+
+main[data-vibe="quiet"] .hero-copy { padding: 0; }
+main[data-vibe="quiet"] .hero .eyebrow {
+  max-width: 660px;
+  margin: 0 0 clamp(28px, 5vh, 52px);
+  padding: 0 0 12px;
+  border-bottom: 1px solid var(--line);
+  font: 600 9px/1 var(--mono);
+  letter-spacing: .1em;
+}
+
+main[data-vibe="quiet"] .vibe-layout-minimal .hero h1 {
+  max-width: 690px;
+  margin: 0;
+  color: var(--ink);
+  font: 660 clamp(58px, 6.2vw, 94px)/.9 var(--display);
+  letter-spacing: -.075em;
+  text-transform: none;
+  text-wrap: balance;
+}
+
+main[data-vibe="quiet"] .hero h1 em {
+  display: block;
+  padding-bottom: .06em;
+  color: var(--blue);
+  font: inherit;
+  font-style: normal;
+}
+
+main[data-vibe="quiet"] .hero-lede {
+  max-width: 49ch;
+  margin-top: 30px;
+  color: var(--muted);
+  font: 460 18px/1.55 var(--display);
+}
+
+main[data-vibe="quiet"] .hero-actions { margin-top: 28px; }
+main[data-vibe="quiet"] .hero-code { display: none; }
+main[data-vibe="quiet"] .vibe-layout-minimal .hero-visual {
+  min-height: min(68vh, 580px);
+  overflow: visible;
+  border-bottom: 1px solid var(--line);
+}
+
+main[data-vibe="quiet"] .hero-visual::before {
+  content: "";
+  position: absolute;
+  inset: 9% 6% 0 18%;
+  background: #e2e3dd;
+}
+
+main[data-vibe="quiet"] .artifact-shell { display: none; }
+main[data-vibe="quiet"] .portrait-frame-cutout {
+  inset: auto 0 0 auto;
+  z-index: 2;
+  width: 92%;
+  height: auto;
+}
+main[data-vibe="quiet"] .portrait-frame-cutout img {
+  width: 100%;
+  height: auto;
+  max-height: min(68vh, 580px);
+  object-fit: contain;
+  object-position: center bottom;
+  filter: grayscale(1) contrast(.96) drop-shadow(0 26px 30px rgb(31 34 31 / 12%));
+}
+
+main[data-vibe="quiet"] .signal-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  border-width: 1px 0;
+  transform: none;
+}
+main[data-vibe="quiet"] .signal-strip p {
+  min-height: 118px;
+  padding: 25px 30px 28px 0;
+  border-right: 1px solid var(--line);
+  font: 450 14px/1.55 var(--display);
+}
+main[data-vibe="quiet"] .signal-strip p + p { padding-left: 30px; }
+main[data-vibe="quiet"] .signal-strip p:last-child { border-right: 0; }
+main[data-vibe="quiet"] .signal-strip span { font: 600 8px/1 var(--mono); letter-spacing: .12em; }
+main[data-vibe="quiet"] .section { padding-block: clamp(96px, 10vw, 150px); }
+main[data-vibe="quiet"] .section-heading h2,
+main[data-vibe="quiet"] .origin h2,
+main[data-vibe="quiet"] .contact h2,
+main[data-vibe="quiet"] .project-name strong {
+  font-family: var(--display);
+  font-style: normal;
+}
+
+/* Aurora: open composition, no card trapped inside another card. */
+main[data-vibe="system"] .vibe-layout-aurora .hero {
+  grid-template-columns: minmax(0, 1.08fr) minmax(390px, .92fr);
+  gap: clamp(30px, 5vw, 80px);
+  min-height: 100dvh;
+  padding-top: 80px;
+}
+main[data-vibe="system"] .hero-copy {
+  padding: clamp(8px, 2vw, 28px) 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  backdrop-filter: none;
+}
+main[data-vibe="system"] .hero-copy::before { display: none; }
+main[data-vibe="system"] .hero h1 { max-width: 610px; font-size: clamp(54px, 5.15vw, 72px); line-height: .88; }
+main[data-vibe="system"] .hero-lede { max-width: 46ch; margin-top: 22px; font-size: 16px; }
+main[data-vibe="system"] .hero-actions { margin-top: 22px; }
+main[data-vibe="system"] .hero-visual { min-height: min(65vh, 610px); }
+main[data-vibe="system"] .portrait-frame-cutout { width: min(430px, 70%); }
+main[data-vibe="system"] .hero-visual .artifact-shell { left: -2%; top: 18%; width: 44%; }
+
+/* Art Deco: asymmetrical poster frame instead of a centered costume. */
+main[data-vibe="geometry"] .vibe-layout-deco .hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(360px, .88fr);
+  align-items: center;
+  gap: clamp(38px, 6vw, 90px);
+  width: min(1160px, calc(100% - 72px));
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: 112px 34px 36px;
+  border: 1px solid var(--line);
+  text-align: left;
+}
+main[data-vibe="geometry"] .vibe-layout-deco .hero::before { display: none; }
+main[data-vibe="geometry"] .hero-copy { max-width: 720px; margin: 0; }
+main[data-vibe="geometry"] .vibe-layout-deco .hero h1 {
+  max-width: 700px;
+  font-size: clamp(52px, 5.7vw, 84px);
+  line-height: .94;
+  text-align: left;
+}
+main[data-vibe="geometry"] .hero-lede { margin-inline: 0; max-width: 48ch; }
+main[data-vibe="geometry"] .hero-actions,
+main[data-vibe="geometry"] .hero-code { justify-content: flex-start; }
+main[data-vibe="geometry"] .hero-visual { min-height: min(70vh, 650px); margin: 0; }
+main[data-vibe="geometry"] .portrait-frame-cutout { width: min(360px, 76%); }
+main[data-vibe="geometry"] .portrait-frame-cutout img { max-height: min(64vh, 560px); object-fit: contain; object-position: center bottom; }
+main[data-vibe="geometry"] .hero-visual .artifact-shell { display: block; left: -5%; top: 18%; width: 42%; }
+
+/* Maximalism: louder hierarchy without covering the portrait. */
+main[data-vibe="playground"] .hero::after { display: none; }
+main[data-vibe="playground"] .vibe-layout-maximal .hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.06fr) minmax(380px, .94fr);
+  align-items: center;
+  gap: clamp(28px, 4vw, 64px);
+  width: min(1220px, calc(100% - 36px));
+  min-height: 100dvh;
+  padding: 118px 0 30px;
+}
+main[data-vibe="playground"] .hero-copy {
+  z-index: 3;
+  padding: clamp(26px, 3.3vw, 44px);
+  border: 3px solid var(--ink);
+  background: #fffefa;
+  box-shadow: 10px 10px 0 var(--blue);
+  transform: rotate(-.5deg);
+}
+main[data-vibe="playground"] .hero h1 { max-width: 680px; font-size: clamp(54px, 5.6vw, 82px); line-height: .88; }
+main[data-vibe="playground"] .hero-lede { max-width: 48ch; margin-top: 24px; font-size: 16px; }
+main[data-vibe="playground"] .hero-actions { margin-top: 22px; }
+main[data-vibe="playground"] .hero-visual { min-height: min(74vh, 690px); overflow: visible; }
+main[data-vibe="playground"] .portrait-frame-cutout { right: 0; width: min(390px, 66%); }
+main[data-vibe="playground"] .hero-visual .artifact-shell { left: 0; top: 12%; width: 42%; }
+
+@media (max-width: 900px) {
+  .vibe-welcome { grid-template-rows: 64px auto auto 28px; }
+  .vibe-welcome .welcome-top { min-height: 64px; grid-template-columns: 1fr auto; }
+  .vibe-welcome .welcome-top > p { display: none; }
+  .vibe-welcome .welcome-copy { grid-template-columns: 1fr; padding-top: 28px; }
+  .vibe-welcome .welcome-copy .eyebrow,
+  .vibe-welcome .welcome-copy h2,
+  .vibe-welcome .welcome-copy > p:last-child { grid-column: 1; }
+  .vibe-welcome .welcome-copy h2 { font-size: clamp(42px, 9vw, 68px); }
+  .vibe-welcome .vibe-options { grid-template-columns: repeat(2, minmax(0, 1fr)); padding-bottom: 20px; }
+
+  main[data-vibe="quiet"] .vibe-layout-minimal .hero,
+  main[data-vibe="system"] .vibe-layout-aurora .hero,
+  main[data-vibe="geometry"] .vibe-layout-deco .hero,
+  main[data-vibe="playground"] .vibe-layout-maximal .hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    width: min(100% - 32px, 720px);
+    min-height: auto;
+    padding: 104px 0 28px;
+  }
+  main[data-vibe="geometry"] .hero { padding-inline: 22px; }
+  main[data-vibe="quiet"] .hero h1,
+  main[data-vibe="system"] .hero h1,
+  main[data-vibe="geometry"] .hero h1,
+  main[data-vibe="playground"] .hero h1 { font-size: clamp(50px, 12vw, 78px); }
+  main[data-vibe] .hero-visual { min-height: 540px; }
+  main[data-vibe="quiet"] .signal-strip { grid-template-columns: 1fr; width: min(100% - 32px, 720px); }
+  main[data-vibe="quiet"] .signal-strip p,
+  main[data-vibe="quiet"] .signal-strip p + p { min-height: 0; padding: 20px 0; border-right: 0; border-bottom: 1px solid var(--line); }
+  main[data-vibe="quiet"] .signal-strip p:last-child { border-bottom: 0; }
+}
+
+@media (max-width: 560px) {
+  .vibe-welcome { padding-inline: 14px; }
+  .vibe-welcome .welcome-top > button { max-width: 160px; text-align: right; }
+  .vibe-welcome .welcome-copy { gap: 18px; }
+  .vibe-welcome .welcome-copy h2 { font-size: clamp(38px, 12vw, 58px); }
+  .vibe-welcome .welcome-copy > p:last-child { font-size: 14px; }
+  .vibe-welcome .vibe-options { grid-template-columns: 1fr; }
+  .vibe-welcome .vibe-option { grid-template-columns: 112px 1fr auto; grid-template-rows: auto; align-items: center; }
+  .vibe-welcome .vibe-preview { min-height: 88px; }
+  .vibe-welcome .vibe-option-copy small { min-height: 0; }
+  .vibe-welcome .welcome-foot { display: none; }
+  main[data-vibe] .hero-visual { min-height: 440px; }
+  main[data-vibe="playground"] .hero-copy { padding: 24px 18px; box-shadow: 6px 6px 0 var(--blue); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vibe-welcome .vibe-option,
+  .portrait-frame-cutout img { transition: none; }
+  .vibe-welcome .vibe-option:hover,
+  .vibe-welcome .vibe-option:focus-visible,
+  .hero-visual:hover .portrait-frame-cutout img { transform: none; }
+}

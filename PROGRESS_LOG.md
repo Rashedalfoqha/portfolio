@@ -1591,3 +1591,16 @@ This log records completed improvement rounds so each pass stays cumulative and 
 - Verified TypeScript, ESLint, the production build, and all six server-rendered tests.
 
 - **Next priority:** Run browser-based visual QA from the canonical folder before the next production deployment.
+
+## Round 148 - Creative direction reset and responsive polish - 2026-08-06
+
+- Rebuilt the welcome screen as a neutral gallery foyer so visitors choose among four modes without inheriting one mode's visual language.
+- Renamed the modes to Aurora, Art Deco, Minimalism, and Maximalism and clarified that content stays constant while pace, hierarchy, and motion change.
+- Reworked Minimalism into a restrained editorial layout with a compact first viewport, grayscale portrait treatment, and a structured signal ledger.
+- Opened Aurora's hero composition, removed the nested-card feeling, and recalibrated its type scale so the primary actions remain in the first viewport.
+- Reframed Art Deco as an asymmetric geometric poster and corrected the portrait and header collision.
+- Rebalanced Maximalism so its loud typographic card, interactive artifact, and full-body portrait no longer compete or overlap.
+- Tightened mobile rules for the welcome selector and all four hero systems while preserving touch targets, readable line lengths, and full portrait framing.
+- Updated rendered-output expectations to match the new mode names and welcome copy.
+- **Verification:** Desktop and 390x844 browser checks completed for the welcome screen and all four mode families. Type, lint, rendered-output, and production-build checks are recorded after the final run below.
+- **Next priority:** Publish the verified creative-direction revision and monitor the live Netlify deploy.

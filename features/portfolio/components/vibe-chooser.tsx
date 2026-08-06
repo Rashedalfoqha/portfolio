@@ -110,26 +110,26 @@ export function VibeChooser({
             ALFUQAHA
           </span>
         </a>
-        <p>CHOOSE YOUR VIEW</p>
+        <p>PORTFOLIO MODES</p>
         <button
           ref={closeRef}
           type="button"
           onClick={onClose}
           autoFocus={open}
         >
-          Continue with {activeVibe.name} →
+          Continue with {activeVibe.name}
         </button>
       </div>
       <div className="welcome-copy">
-        <p className="eyebrow">ONE ENGINEER / FOUR SIGNALS</p>
+        <p className="eyebrow">SAME WORK. FOUR WAYS IN.</p>
         <h2 id="vibe-welcome-title">
-          How do you want
+          Choose the way
           <br />
-          to <em>meet me?</em>
+          you want to <em>look.</em>
         </h2>
         <p id="vibe-welcome-description">
-          The work stays the same. Choose the layout that feels easiest to
-          explore.
+          Each mode changes the pace, hierarchy, and motion. The engineering
+          work stays exactly the same.
         </p>
       </div>
       <div className="vibe-options">
@@ -150,17 +150,17 @@ export function VibeChooser({
             </span>
             <span className="vibe-option-copy">
               <small>
-                {vibe.number} / {vibe.mood}
+                {vibe.mood}
               </small>
               <strong>{vibe.name}</strong>
               <span>{vibe.invitation}</span>
             </span>
-            <b className="vibe-enter">ENTER ↗</b>
+            <b className="vibe-enter">OPEN</b>
           </button>
         ))}
       </div>
       <p className="welcome-foot">
-        YOUR CHOICE IS REMEMBERED · SWITCH VIEWS ANYTIME
+        YOUR CHOICE IS REMEMBERED. SWITCH MODES ANYTIME.
       </p>
     </aside>
   );

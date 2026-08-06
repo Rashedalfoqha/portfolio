@@ -35,9 +35,9 @@ test("server-renders the multi-vibe portfolio", async () => {
   assert.match(source, /rashed-avatar-art-deco\.png/);
   assert.match(source, /rashed-avatar-minimal\.png/);
   assert.match(source, /rashed-avatar-maximal\.png/);
-  assert.match(html, /How do you want/);
-  assert.match(html, /<em>meet me\?/);
-  for (const vibe of ["Aurora Field", "Machine Moderne", "Clear Space", "Beautiful Noise"]) {
+  assert.match(html, /Choose the way/);
+  assert.match(html, /you want to <em>look\./);
+  for (const vibe of ["Aurora", "Art Deco", "Minimalism", "Maximalism"]) {
     assert.match(html, new RegExp(vibe));
   }
   assert.equal((html.match(/class="vibe-option vibe-option-/g) ?? []).length, 4);
