@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from send_email_report import render_html, select_unsent_jobs  # noqa: E402
+from send_email_report import render_html, select_active_jobs, select_unsent_jobs  # noqa: E402
 
 
 def job(key: str, score: int, status: str = "New") -> dict:
@@ -26,6 +26,14 @@ def job(key: str, score: int, status: str = "New") -> dict:
 
 
 class EmailReportTests(unittest.TestCase):
+    def test_selects_active_fallback_without_terminal_jobs(self):
+        selected = select_active_jobs(
+            [job("review", 70, "To Review"), job("applied", 80, "Applied")],
+            40,
+            10,
+        )
+        self.assertEqual([item["key"] for item in selected], ["review"])
+
     def test_selects_only_unsent_jobs_above_threshold(self):
         selected = select_unsent_jobs(
             [job("already", 90), job("low", 39), job("new", 60)],

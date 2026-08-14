@@ -669,32 +669,37 @@ def parse_linkedin_public(settings: dict[str, Any]) -> list[Job]:
     )
     maximum_jobs = int(settings.get("linkedinMaxJobs", 80))
     maximum_age = int(settings.get("maxJobAgeDays", 21))
+    pages_per_search = max(1, int(settings.get("linkedinPagesPerSearch", 2)))
     collected: dict[str, Job] = {}
 
     for search in searches:
         for location in locations:
-            query = urllib.parse.urlencode(
-                {
-                    "keywords": search,
-                    "location": location,
-                    "f_WT": "2",
-                    "f_TPR": f"r{maximum_age * 86400}",
-                    "sortBy": "DD",
-                    "start": "0",
-                }
-            )
-            document = safe_fetch_text(
-                f"LinkedIn Jobs ({search}, {location})",
-                "https://www.linkedin.com/jobs-guest/jobs/api/"
-                f"seeMoreJobPostings/search?{query}",
-                public_html=True,
-            )
-            for job in parse_linkedin_cards(document):
-                if job_is_recent(job, maximum_age):
-                    collected.setdefault(job.source_id, job)
+            for page in range(pages_per_search):
+                query = urllib.parse.urlencode(
+                    {
+                        "keywords": search,
+                        "location": location,
+                        "f_WT": "2",
+                        "f_TPR": f"r{maximum_age * 86400}",
+                        "sortBy": "DD",
+                        "start": str(page * 25),
+                    }
+                )
+                document = safe_fetch_text(
+                    f"LinkedIn Jobs ({search}, {location}, page {page + 1})",
+                    "https://www.linkedin.com/jobs-guest/jobs/api/"
+                    f"seeMoreJobPostings/search?{query}",
+                    public_html=True,
+                )
+                page_jobs = parse_linkedin_cards(document)
+                for job in page_jobs:
+                    if job_is_recent(job, maximum_age):
+                        collected.setdefault(job.source_id, job)
+                if len(collected) >= maximum_jobs or not page_jobs:
+                    break
+                time.sleep(0.6)
             if len(collected) >= maximum_jobs:
                 break
-            time.sleep(0.6)
         if len(collected) >= maximum_jobs:
             break
 
@@ -956,6 +961,17 @@ def required_technology_mismatch(
     return ""
 
 
+def required_experience_years(description: str) -> int:
+    """Return the lowest explicit required years-of-experience figure."""
+    normalized = description.lower()
+    matches = re.findall(
+        r"(?:minimum|min\.?|at least|over)?\s*(\d{1,2})(?:\s*[-+\u2013\u2014]\s*\d{1,2})?\s*\+?\s*years?"
+        r"(?:\s+of)?\s+(?:professional\s+)?experience",
+        normalized,
+    )
+    return min((int(value) for value in matches), default=0)
+
+
 def location_is_eligible(location: str, settings: dict[str, Any]) -> bool:
     normalized = location.strip().lower()
     if not normalized:
@@ -1043,6 +1059,11 @@ def score_job(job: Job, profile: dict[str, Any], settings: dict[str, Any]) -> Jo
         job.reasons = ["Seniority outside target level"]
         return job
 
+    seniority_penalty_terms = settings.get(
+        "seniorityPenaltyTerms", ["senior", "sr.", "sr ", "lead"]
+    )
+    seniority_penalty = any(term in title for term in seniority_penalty_terms)
+
     if job.remote and not job_location_is_eligible(job, settings):
         job.score = 0
         job.matched_skills = []
@@ -1074,6 +1095,15 @@ def score_job(job: Job, profile: dict[str, Any], settings: dict[str, Any]) -> Jo
         job.matched_skills = []
         job.missing_skills = [blocked_technology]
         job.reasons = [f"Core technology outside CV: {blocked_technology}"]
+        return job
+
+    required_years = required_experience_years(job.description)
+    hard_years = int(settings.get("hardExperienceRequirementYears", 5))
+    if required_years >= hard_years:
+        job.score = 0
+        job.matched_skills = []
+        job.missing_skills = [f"{required_years}+ years required"]
+        job.reasons = [f"Experience requirement is outside target range: {required_years}+ years"]
         return job
 
     target_terms = [
@@ -1155,6 +1185,14 @@ def score_job(job: Job, profile: dict[str, Any], settings: dict[str, Any]) -> Jo
     score += min(10, len(secondary_hits) * 2)
     if primary_hits:
         reasons.append(f"Primary stack: {', '.join(primary_hits[:5])}")
+
+    if seniority_penalty:
+        score -= int(settings.get("seniorityPenalty", 16))
+        reasons.append("Stretch seniority level")
+
+    if required_years in (3, 4):
+        score -= 10 if required_years == 3 else 18
+        reasons.append(f"Experience stretch: {required_years}+ years requested")
 
     if job.remote:
         score += 8

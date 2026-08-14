@@ -11,6 +11,7 @@ from job_scout import (  # noqa: E402
     Job,
     parse_linkedin_cards,
     parse_linkedin_post_results,
+    required_experience_years,
     score_job,
 )
 
@@ -34,6 +35,22 @@ def make_job(title: str, description: str) -> Job:
 
 
 class MatchingRulesTests(unittest.TestCase):
+    def test_extracts_explicit_experience_years(self):
+        self.assertEqual(required_experience_years("At least 5 years of professional experience"), 5)
+        self.assertEqual(required_experience_years("3-4 years of experience with React"), 3)
+
+    def test_rejects_role_requiring_five_years(self):
+        job = score_job(
+            make_job(
+                "Full Stack Developer",
+                "At least 5 years of professional experience with TypeScript, React, Node.js and PostgreSQL.",
+            ),
+            PROFILE,
+            SETTINGS,
+        )
+        self.assertEqual(job.score, 0)
+        self.assertIn("Experience requirement", job.reasons[0])
+
     def test_blocks_java_role_even_when_react_is_mentioned(self):
         job = score_job(
             make_job(
@@ -57,7 +74,7 @@ class MatchingRulesTests(unittest.TestCase):
         )
         self.assertEqual(job.score, 0)
 
-    def test_blocks_sr_abbreviation_without_period(self):
+    def test_keeps_sr_role_as_lower_priority_stretch(self):
         job = score_job(
             make_job(
                 "SR Full Stack Developer",
@@ -66,8 +83,8 @@ class MatchingRulesTests(unittest.TestCase):
             PROFILE,
             SETTINGS,
         )
-        self.assertEqual(job.score, 0)
-        self.assertIn("Seniority", job.reasons[0])
+        self.assertGreater(job.score, 0)
+        self.assertIn("Stretch seniority level", job.reasons)
 
     def test_blocks_unsupported_technology_named_in_title(self):
         job = score_job(
@@ -91,6 +108,33 @@ class MatchingRulesTests(unittest.TestCase):
             SETTINGS,
         )
         self.assertGreaterEqual(job.score, SETTINGS["minimumScore"])
+
+    def test_extracts_required_experience(self):
+        self.assertEqual(required_experience_years("At least 5 years of experience required."), 5)
+        self.assertEqual(required_experience_years("2-3 years of professional experience."), 2)
+
+    def test_rejects_role_requiring_five_years(self):
+        job = score_job(
+            make_job(
+                "Full Stack Developer",
+                "TypeScript, React, Node.js and PostgreSQL. At least 5 years of experience required.",
+            ),
+            PROFILE,
+            SETTINGS,
+        )
+        self.assertEqual(job.score, 0)
+        self.assertIn("outside target range", job.reasons[0])
+
+    def test_rejects_generic_software_engineer_with_one_core_group(self):
+        job = score_job(
+            make_job(
+                "Software Engineer",
+                "Work on a Go Terraform platform. TypeScript familiarity is a nice to have.",
+            ),
+            PROFILE,
+            SETTINGS,
+        )
+        self.assertEqual(job.score, 0)
 
     def test_keeps_focused_react_role_with_short_public_description(self):
         job = score_job(
@@ -138,7 +182,8 @@ class MatchingRulesTests(unittest.TestCase):
           Remote worldwide role using ReactJS, Node.js and TypeScript.
         </div>
         """
-        jobs = parse_linkedin_post_results(markup, SETTINGS)
+        post_settings = {**SETTINGS, "linkedinPostMaxAgeDays": 3650}
+        jobs = parse_linkedin_post_results(markup, post_settings)
         self.assertEqual(len(jobs), 1)
         self.assertEqual(jobs[0].source, "LinkedIn Posts")
         self.assertEqual(jobs[0].location, "Worldwide")

@@ -72,18 +72,41 @@ def select_unsent_jobs(
     return eligible[:limit]
 
 
+def select_active_jobs(
+    jobs: list[dict[str, Any]],
+    minimum_score: int,
+    limit: int,
+) -> list[dict[str, Any]]:
+    eligible = [
+        job
+        for job in jobs
+        if int(job.get("score", 0)) >= minimum_score
+        and job.get("status") not in {"Ignored", "Rejected", "Applied"}
+    ]
+    eligible.sort(
+        key=lambda item: (
+            int(item.get("score", 0)),
+            str(item.get("published_at", "")),
+        ),
+        reverse=True,
+    )
+    return eligible[:limit]
+
+
 def render_plain(
     jobs: list[dict[str, Any]],
     source_stats: dict[str, Any] | None = None,
+    new_count: int | None = None,
 ) -> str:
     stats = source_stats or {}
     active = int(stats.get("qualifiedTotal", 0))
+    fresh = len(jobs) if new_count is None else new_count
     lines = [
-        f"Rashed Job Scout — {len(jobs)} new matching role(s)",
+        f"Rashed Job Scout - {fresh} new role(s), {active} active role(s)",
         "",
         f"Scanned: {int(stats.get('rawTotal', 0))} public job postings "
         f"across {len(stats.get('sources', {}))} sources.",
-        "The jobs below passed your CV, stack, seniority, remote-location, and technology filters.",
+        "The jobs below are the highest-priority active matches for your CV and target level.",
         "",
     ]
     if not jobs:
@@ -121,9 +144,11 @@ def render_plain(
 def render_html(
     jobs: list[dict[str, Any]],
     source_stats: dict[str, Any] | None = None,
+    new_count: int | None = None,
 ) -> str:
     stats = source_stats or {}
     active = int(stats.get("qualifiedTotal", 0))
+    fresh = len(jobs) if new_count is None else new_count
     cards: list[str] = []
     for job in jobs:
         skills = "".join(
@@ -172,7 +197,7 @@ font-weight:700;text-decoration:none}} footer{{border-top:1px solid #111315;padd
 font-size:12px;color:#626970;line-height:1.55}}
 </style></head><body><div class="wrap">
 <p class="kicker">PATTERN → OPPORTUNITY / AUTOMATED REPORT</p>
-<h1>{len(jobs)} new matching role{"s" if len(jobs) != 1 else ""}</h1>
+<h1>{fresh} new / {active} active</h1>
 <p class="intro"><b>{active} active qualified role(s)</b> remain in the dashboard.
 Zero new means no previously unreported match, not a failed search.</p>
 <p class="intro">Scanned <b>{int(stats.get("rawTotal", 0))}</b> public job postings across
@@ -270,6 +295,13 @@ def main() -> int:
         int(os.environ.get("EMAIL_MIN_SCORE", "40")),
         int(os.environ.get("EMAIL_MAX_JOBS", "12")),
     )
+    new_count = len(selected)
+    if not selected and env_bool("EMAIL_INCLUDE_ACTIVE_FALLBACK", True):
+        selected = select_active_jobs(
+            jobs,
+            int(os.environ.get("EMAIL_MIN_SCORE", "40")),
+            int(os.environ.get("EMAIL_MAX_JOBS", "12")),
+        )
     send_empty_report = env_bool("EMAIL_SEND_EMPTY_REPORT", True)
     if not selected and not send_empty_report:
         write_json(
@@ -294,11 +326,11 @@ def main() -> int:
     )
     active_count = int(source_stats.get("qualifiedTotal", len(jobs)))
     message.replace_header("Subject", (
-        f"Rashed Job Scout: {len(selected)} new | {active_count} active | "
+        f"Rashed Job Scout: {new_count} new | {active_count} active | "
         f"{int(source_stats.get('rawTotal', 0))} scanned"
     ))
-    message.set_content(render_plain(selected, source_stats))
-    message.add_alternative(render_html(selected, source_stats), subtype="html")
+    message.set_content(render_plain(selected, source_stats, new_count))
+    message.add_alternative(render_html(selected, source_stats, new_count), subtype="html")
     attached = add_attachments(
         message,
         attachment_candidates(selected) if selected else [],

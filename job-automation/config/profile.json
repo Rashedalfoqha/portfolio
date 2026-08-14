@@ -6,7 +6,7 @@
   "phone": "+962 77 170 9080",
   "linkedin": "https://www.linkedin.com/in/rashedalfuqaha/",
   "github": "https://github.com/Rashedalfoqha",
-  "portfolio": "https://rashed-alfuqaha-portfolio.rashedalfoqha002.chatgpt.site/",
+  "portfolio": "https://rashedalfouqaha.netlify.app/",
   "targetRoles": [
     "Full Stack Developer",
     "Full Stack Engineer",
@@ -29,6 +29,7 @@
       "NestJS",
       "Express.js",
       "REST APIs",
+      "GraphQL",
       "MongoDB",
       "PostgreSQL"
     ],
@@ -45,7 +46,8 @@
       "HTML5",
       "CSS3",
       "SCSS",
-      "Sass"
+      "Sass",
+      "Package Development"
     ],
     "emerging": [
       "Python",
@@ -60,8 +62,8 @@
   },
   "languages": [
     "Arabic - Native",
-    "English - Professional",
-    "Turkish - Professional"
+    "English - Basic Conversational",
+    "Turkish - Fluent"
   ],
   "experience": [
     {
