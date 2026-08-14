@@ -303,14 +303,15 @@ def main() -> int:
             int(os.environ.get("EMAIL_MIN_SCORE", "40")),
             maximum_jobs,
         )
-        selected_keys = {job_key(job) for job in selected}
+        selected_keys = {str(job.get("key", "")) for job in selected}
         for active_job in active_jobs:
             if len(selected) >= maximum_jobs:
                 break
-            if job_key(active_job) in selected_keys:
+            active_key = str(active_job.get("key", ""))
+            if active_key in selected_keys:
                 continue
             selected.append(active_job)
-            selected_keys.add(job_key(active_job))
+            selected_keys.add(active_key)
     send_empty_report = env_bool("EMAIL_SEND_EMPTY_REPORT", True)
     if not selected and not send_empty_report:
         write_json(
