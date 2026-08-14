@@ -138,7 +138,7 @@ def add_header(document: Document, role: str):
     links.paragraph_format.space_after = Pt(4)
     add_text(
         links,
-        "linkedin.com/in/rashedalfuqaha | github.com/Rashedalfoqha",
+        "rashedalfouqaha.netlify.app | linkedin.com/in/rashedalfuqaha | github.com/Rashedalfoqha",
         size=8.3,
         color=ACCENT,
     )
@@ -237,7 +237,7 @@ def make_cv(job, folder: Path):
     add_heading(document, "Education & Languages")
     add_bullet(document, "Immersive Full-Stack Web Development, MERAKI Academy — 400+ hands-on hours (2023-2024).")
     add_bullet(document, "Bachelor of Islamic Arts, WISE University — architecture, decorative arts, and design principles (2019-2023).")
-    add_bullet(document, "Arabic (Native) · English (Professional) · Turkish (Professional).")
+    add_bullet(document, "Arabic (Native) · Turkish (Fluent) · English (Basic Conversational Proficiency).")
 
     path = folder / "Rashed_Alfuqaha_Tailored_CV.docx"
     document.save(path)
@@ -367,7 +367,7 @@ def pdf_header(job, styles, subtitle):
         Paragraph(subtitle, styles["role"]),
         Paragraph(
             f"{PROFILE['location']} | {PROFILE['phone']} | {PROFILE['email']}<br/>"
-            "linkedin.com/in/rashedalfuqaha | github.com/Rashedalfoqha",
+            "rashedalfouqaha.netlify.app | linkedin.com/in/rashedalfuqaha | github.com/Rashedalfoqha",
         styles["contact"],
         ),
     ]
@@ -499,7 +499,7 @@ def make_cv_pdf(job, folder: Path):
     section_pdf(story, "Education & Languages", styles)
     bullet_pdf(story, "Immersive Full-Stack Web Development, MERAKI Academy — 400+ hands-on hours (2023-2024).", styles)
     bullet_pdf(story, "Bachelor of Islamic Arts, WISE University — architecture, decorative arts, and design principles (2019-2023).", styles)
-    bullet_pdf(story, "Arabic (Native) · English (Professional) · Turkish (Professional).", styles)
+    bullet_pdf(story, "Arabic (Native) · Turkish (Fluent) · English (Basic Conversational Proficiency).", styles)
     doc.build(story)
     return path
 
