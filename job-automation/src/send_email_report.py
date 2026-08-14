@@ -289,19 +289,28 @@ def main() -> int:
     jobs = read_json(JOBS_PATH, [])
     previous = read_json(DELIVERY_PATH, {})
     sent_keys = set(previous.get("sentKeys", []))
+    maximum_jobs = int(os.environ.get("EMAIL_MAX_JOBS", "12"))
     selected = select_unsent_jobs(
         jobs,
         sent_keys,
         int(os.environ.get("EMAIL_MIN_SCORE", "40")),
-        int(os.environ.get("EMAIL_MAX_JOBS", "12")),
+        maximum_jobs,
     )
     new_count = len(selected)
-    if not selected and env_bool("EMAIL_INCLUDE_ACTIVE_FALLBACK", True):
-        selected = select_active_jobs(
+    if env_bool("EMAIL_INCLUDE_ACTIVE_FALLBACK", True):
+        active_jobs = select_active_jobs(
             jobs,
             int(os.environ.get("EMAIL_MIN_SCORE", "40")),
-            int(os.environ.get("EMAIL_MAX_JOBS", "12")),
+            maximum_jobs,
         )
+        selected_keys = {job_key(job) for job in selected}
+        for active_job in active_jobs:
+            if len(selected) >= maximum_jobs:
+                break
+            if job_key(active_job) in selected_keys:
+                continue
+            selected.append(active_job)
+            selected_keys.add(job_key(active_job))
     send_empty_report = env_bool("EMAIL_SEND_EMPTY_REPORT", True)
     if not selected and not send_empty_report:
         write_json(
